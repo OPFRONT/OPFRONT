@@ -1,0 +1,57 @@
+*, body {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 86px;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: $default-font-size;
+}
+
+.title {
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+h2.subtitle {
+    @extend .title;
+    margin-bottom: $layout-padding;
+}
+
+h3.subtitle {
+    margin: 50px 0;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: $opfront-black;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+p {
+    font-weight: normal;
+    text-transform: none;
+    line-height: $paragraph-line-height;
+    font-size: 14px;
+    letter-spacing: 1px;
+}

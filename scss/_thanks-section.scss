@@ -1,0 +1,43 @@
+#thanks {
+    position: fixed;
+    z-index: 1;
+    transition: 0.6s;
+    top: 100%;
+    //opacity: 0; // For fade instead, uncomment those lines and comment actual top properties.
+    //z-index: -1;
+    //top:0;
+    background-color: white;
+
+    &.active {
+        top:0;
+        //opacity: 1;
+        //z-index: 1;
+    }
+
+    .section-container {
+        position: relative;
+
+        .prism {
+            position: absolute;
+        }
+        .teal-prism {
+            top: -200px;
+            left: 25px;
+        }
+        .red-prism {
+            right: -200px;
+            top: 155px;
+        }
+        .black-prism {
+            left: -175px;
+            bottom: -200px;
+        }
+    }
+
+    .back-btn {
+        text-align: center;
+        .btn {
+            display: inline-block;
+        }
+    }
+}

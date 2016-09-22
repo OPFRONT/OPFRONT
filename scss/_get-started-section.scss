@@ -1,0 +1,135 @@
+@mixin blackSection() {
+    position: fixed;
+    transition: 0.6s;
+    background-color: black;
+    color: white;
+}
+
+.page-content section.aside-section {
+    .navigation-control {
+        color: white;
+        top: 50px;
+        font-size: 14px;
+        transform: translateX(calc(-50% - #{$navbar-width / 2}));
+    }
+}
+
+#get-started {
+    @include viewport-unit(width, 100vw);
+    padding-right: $navbar-width;
+
+    @include blackSection();
+    top: 0;
+    left: 100%;
+    &.active {
+        left: $navbar-width;
+    }
+
+    .section-container {
+        .option {
+            width: calc(50% - #{$get-started-options-padding / 2});
+            height: 175px;
+            padding: $get-started-options-padding;
+
+            background-color: white;
+            color: black;
+
+            position: relative;
+            &:after {
+                content: '>';
+                position: absolute;
+                bottom: $get-started-options-padding;
+                right: $get-started-options-padding;
+            }
+        }
+    }
+}
+
+#choose-solution {
+    @include viewport-unit(width, 100vw);
+    padding-right: $navbar-width;
+
+    @include blackSection();
+    top: 100%;
+
+    &.active {
+        top: 0;
+    }
+
+    .subtitle {
+        font-size: 50px;
+    }
+
+    .section-container {
+        .section-content {
+            width: 700px;
+        }
+
+        .option {
+            width: calc(50% - #{$choose-solution-options-padding / 2});
+        }
+        .paragraph-image {
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .btn.choose {
+            float:right;
+        }
+    }
+}
+
+#subscribe {
+    @include viewport-unit(width, 100vw);
+    padding-right: $navbar-width;
+
+    @include blackSection();
+    top: 100%;
+
+    &.active {
+        top: 0;
+    }
+
+    .section-container {
+        .btn.subscribe {
+            float:right;
+        }
+    }
+}
+
+#webstore {
+    @include viewport-unit(width, 100vw);
+    padding-right: $navbar-width;
+
+    @include blackSection();
+    top: 100%;
+
+    &.active {
+        top: 0;
+    }
+
+    .section-container {
+        .btn.subscribe {
+            float:right;
+        }
+    }
+}
+
+.section-container {
+    .option {
+        float: left;
+        cursor: pointer;
+
+        &:last-child {
+            float: right;
+        }
+
+        .paragraph-title {
+            letter-spacing: 1px;
+            line-height: $get-started-options-line-height;
+        }
+        p {
+            line-height: $get-started-options-line-height;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+// RESPONSIVE
+
+$breakpoints: (
+    'phone': 450px,
+    'tablet': 768px,
+    'desktop': 1024px,
+) !default;
+
+
+// COLORS
+
+$opfront-teal: rgb(110, 255, 246);
+$opfront-red: rgb(251, 0, 12);
+$opfront-black: black;
+$opfront-white: white;
+$opfont-white-alpha: rgba(255,255,255,0.2);
+
+$menu-border-color: $opfont-white-alpha;
+
+// LAYOUT
+$boobs: 25px;
+$layout-padding: 85px;
+
+$paragraph-line-height: 24px;
+
+
+// GLOBAL
+$default-transition-time: 0.3s;
+
+
+// NAVBAR
+
+$navbar-width: 175px;
+$menu-button-size: 16px;
+$menu-item-width: 85px;
+
+
+// FONT SIZE
+$default-font-size: 12px;
+$buttons-font-size: $default-font-size;
+$nav-font-size: $default-font-size;
+
+
+// FORM
+$form-layout-padding: 4px;
+$form-input-height: 36px;
+$form-textarea-height: 150px;
+
+
+// GET STARTED
+$get-started-options-padding: 22px;
+$choose-solution-options-padding: 200px;
+$get-started-options-line-height: 20px;

@@ -1,0 +1,110 @@
+nav {
+    position: fixed;
+    left: 0;
+
+    height: 100%;
+    width: $navbar-width;
+    padding: $boobs/2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: $nav-font-size;
+
+    img {
+        width: calc(100% - 20px);
+        margin-left: 20px;
+    }
+
+    .menu {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+        cursor: pointer;
+
+        transition: ease 1s;
+
+        .open-menu-btn, .close-menu-btn {
+            height: $menu-button-size;
+        }
+
+        .close-menu-btn {
+            display: none;
+        }
+
+        &.opened {
+            .open-menu-btn {
+                display: none;
+            }
+            .close-menu-btn {
+                display: inline;
+            }
+
+            .menu-items {
+                height: 115px;
+            }
+        }
+
+        .menu-items {
+            position: absolute;
+            top: $menu-button-size + 10px;
+
+            background-color: $opfront-black;
+
+            text-align: center;
+
+            height: 0;
+            overflow: hidden;
+            transition: ease 0.5s;
+
+            .menu-item {
+                display: block;
+                padding: 8px;
+                width: $menu-item-width;
+                color: $opfront-white;
+
+                border-bottom: 1px solid $menu-border-color;
+
+                transition: $default-transition-time;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+                &:hover {
+                    color: $opfront-teal;
+                }
+                &.active {
+                    background-color: $opfront-teal;
+                    color: $opfront-black;
+                }
+            }
+        }
+    }
+
+    .lang {
+        text-align: center;
+
+        .separator {
+            font-size: 14px;
+            margin: 2px;
+        }
+        .en, .fr {
+            cursor: pointer;
+        }
+
+        &.en .fr {
+            font-weight: 300;
+        }
+        &.fr .en {
+            font-weight: 300;
+        }
+    }
+
+    .get-started {
+        margin-bottom: $boobs;
+    }
+}
