@@ -408,6 +408,17 @@ p {
   z-index: -1;
 }
 
+#page-loader img {
+  width: 300px;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+#page-loader img.hidden {
+  opacity: 0;
+  z-index: -1;
+}
+
 #page-loader .base {
   display: -webkit-box;
   display: -ms-flexbox;
