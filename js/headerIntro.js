@@ -1,9 +1,5 @@
-// window.setTimeout(() => {
-//     $('#page-loader img').addClass('hidden');
-// }, 1500);
-// }, 0);
+const timeout = location.hostname === "localhost" || location.hostname === "127.0.0.1" ? 0 : 2000;
 
 window.setTimeout(() => {
     $('#page-loader').addClass('hidden');
-// }, 2000);
-}, 0);
+}, timeout);

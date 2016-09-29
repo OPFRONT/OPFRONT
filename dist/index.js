@@ -81,15 +81,11 @@ $('#thanks .navigation-control.previous').click(function (e) {
     closeGetStarted();
 });
 
-// window.setTimeout(() => {
-//     $('#page-loader img').addClass('hidden');
-// }, 1500);
-// }, 0);
+var timeout = location.hostname === "localhost" || location.hostname === "127.0.0.1" ? 0 : 2000;
 
 window.setTimeout(function () {
     $('#page-loader').addClass('hidden');
-    // }, 2000);
-}, 0);
+}, timeout);
 
 var Menu = function () {
     function Menu() {
