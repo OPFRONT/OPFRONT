@@ -1,30 +1,42 @@
-$('#thanks .back-btn .btn').click((e) => {
-    $('#thanks').removeClass('active');
-    $('.btn.get-started').attr('disabled', false);
-    $('#complete-solution, #choose-solution, #subscribe, #webstore, #thanks, #get-started, .btn.get-started').removeClass('active');
-});
+// $('#thanks .back-btn .btn').click((e) => {
+//     $('#thanks').removeClass('active');
+//     $('.btn.get-started').attr('disabled', false);
+//     $('#complete-solution, #choose-solution, #subscribe, #webstore, #thanks, #get-started, .btn.get-started').removeClass('active');
+// });
 
 $('.btn.get-started').click((e) => {
-    if($('.btn.get-started.active').length == 0) {
-        $('#get-started, .btn.get-started').addClass('active');
-    } else {
-        if($('#complete-solution.active, #choose-solution.active, #subscribe.active, #webstore.active, #thanks.active').length > 0) {
-            $('#complete-solution, #choose-solution, #subscribe, #webstore, #thanks').removeClass('active');
-            $('.btn.get-started').attr('disabled', false);
-            window.setTimeout(() => {
-                $('#get-started, .btn.get-started').removeClass('active');
-            }, 500);
-        } else {
-            $('#get-started, .btn.get-started').removeClass('active');
-        }
-    }
+    $('#get-started').addClass('active');
 });
+
+const closeGetStarted = (callback) => {
+    let openedAsideSections = $('#thanks.active, #get-started.active, #choose-solution.active, #subscribe.active, #webstore.active');
+
+    if(openedAsideSections.length > 0) {
+        openedAsideSections.addClass('closing');
+        openedAsideSections.removeClass('active');
+        window.setTimeout(() => {
+            $('#thanks, #get-started, #choose-solution, #subscribe, #webstore').removeClass('closing');
+        }, 1800);
+
+        if(callback) {
+            window.setTimeout(() => {
+                callback();
+            }, 600);
+        }
+    } else {
+        callback();
+    }
+
+
+};
+
+// TODO: hide get started section on menu item clic and on logo clic
 
 $('#get-started .navigation-control.previous').click((e) => {
     $('#get-started, .btn.get-started').removeClass('active');
 });
 
-$('#complete-solution').click((e) => {
+$('#complete-solution .choose .btn').click((e) => {
     $('#choose-solution').addClass('active');
 });
 
@@ -32,7 +44,7 @@ $('#choose-solution .navigation-control.previous').click((e) => {
     $('#choose-solution').removeClass('active');
 });
 
-$('#choose-solution .btn.choose').click((e) => {
+$('#choose-solution .choose .btn').click((e) => {
     $('#subscribe').addClass('active');
 });
 
@@ -41,9 +53,13 @@ $('#subscribe .navigation-control.previous').click((e) => {
 });
 
 $('#store-solution').click((e) => {
-    $('#webstore').addClass('active');
+    $('#subscribe').addClass('active');
 });
 
 $('#webstore .navigation-control.previous').click((e) => {
-    $('#store-solution').removeClass('active');
+    $('#webstore').removeClass('active');
+});
+
+$('#thanks .navigation-control.previous').click((e) => {
+    closeGetStarted();
 });

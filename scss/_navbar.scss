@@ -4,7 +4,7 @@ nav {
 
     height: 100%;
     width: $navbar-width;
-    padding: $boobs/2;
+    padding: $navbar-padding;
 
     display: flex;
     justify-content: space-between;
@@ -14,8 +14,7 @@ nav {
     font-size: $nav-font-size;
 
     img {
-        width: calc(100% - 20px);
-        margin-left: 20px;
+        width: 100%;
     }
 
     .menu {
@@ -23,6 +22,7 @@ nav {
 
         display: flex;
         justify-content: center;
+        margin-top: -150px;
 
         cursor: pointer;
 
@@ -45,7 +45,7 @@ nav {
             }
 
             .menu-items {
-                height: 115px;
+                height: 119px;
             }
         }
 
@@ -66,6 +66,7 @@ nav {
                 padding: 8px;
                 width: $menu-item-width;
                 color: $opfront-white;
+                letter-spacing: 1px;
 
                 border-bottom: 1px solid $menu-border-color;
 
@@ -87,6 +88,7 @@ nav {
 
     .lang {
         text-align: center;
+        margin-bottom: 40px;
 
         .separator {
             font-size: 14px;

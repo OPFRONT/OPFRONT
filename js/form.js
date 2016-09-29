@@ -1,10 +1,19 @@
-$('#contact-us-form, #subscribe-form, #subscribe-store-form').submit((e) => {
-    $("#thanks").addClass('active');
-    $('.btn.get-started').attr('disabled', true);
-    if($('#complete-solution.active, #choose-solution.active, #subscribe.active, #webstore.active, #thanks.active').length > 0) {
-        window.setTimeout(() => {
-            $('#get-started, #complete-solution, #choose-solution, #subscribe, #webstore, .btn.get-started').removeClass('active');
-        }, 500);
-    }
+$('#subscribe-form').submit((e) => {
+    $('#thanks').addClass('active');
     e.preventDefault();
+});
+
+$('#contact-us-form').submit((e) => {
+    $('#contact .thanks').addClass('active');
+    $('#contact .btn[type="submit"]').attr('disabled', true);
+    e.preventDefault();
+});
+
+$('input, textarea').focusout((e) => {
+    let input = $(e.target);
+    if(input.val()) {
+        input.addClass('filled');
+    } else {
+        input.removeClass('filled');
+    }
 });

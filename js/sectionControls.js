@@ -1,4 +1,4 @@
-const sectionControls = $('.navigation-control');
+const sectionControls = $('section:not(".aside-section") .navigation-control');
 
 sectionControls.click((e) => {
     const sectionId = $(e.currentTarget).attr('href');
@@ -9,4 +9,8 @@ sectionControls.click((e) => {
     }, 300);
 
     e.preventDefault();
+});
+
+$('.nav-logo').click((e) => {
+    closeGetStarted();
 });

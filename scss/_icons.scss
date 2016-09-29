@@ -1,0 +1,36 @@
+.icon {
+    .cls-1 {
+        fill: none;
+        stroke: $opfront-teal;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+    }
+}
+
+#graph {
+    .cls-1 {
+        stroke-linecap: round;
+    }
+}
+
+#star {
+    .cls-2 {
+        fill: $opfront-teal;
+    }
+}
+
+#boxes {
+    .cls-2 {
+        fill: white;
+        stroke: #00d7d1;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+    }
+}
+
+.address {
+    .fa-phone {
+        color: $opfront-teal;
+        margin-right: 5px;
+    }
+}

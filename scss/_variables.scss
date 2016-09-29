@@ -9,11 +9,12 @@ $breakpoints: (
 
 // COLORS
 
-$opfront-teal: rgb(110, 255, 246);
+$opfront-teal: rgb(39, 231, 217);
 $opfront-red: rgb(251, 0, 12);
 $opfront-black: black;
 $opfront-white: white;
 $opfont-white-alpha: rgba(255,255,255,0.2);
+$opfront-gray: rgb(174, 174, 174);
 
 $menu-border-color: $opfont-white-alpha;
 
@@ -30,24 +31,26 @@ $default-transition-time: 0.3s;
 
 // NAVBAR
 
-$navbar-width: 175px;
+$navbar-inner-width: 150px;
+$navbar-padding: 40px;
+$navbar-width: $navbar-inner-width + $navbar-padding*2;
 $menu-button-size: 16px;
-$menu-item-width: 85px;
+$menu-item-width: $navbar-inner-width;
 
 
 // FONT SIZE
 $default-font-size: 12px;
-$buttons-font-size: $default-font-size;
-$nav-font-size: $default-font-size;
+$buttons-font-size: 14px;
+$nav-font-size: 13px;
 
 
 // FORM
 $form-layout-padding: 4px;
-$form-input-height: 36px;
+$form-input-height: 42px;
 $form-textarea-height: 150px;
 
 
 // GET STARTED
-$get-started-options-padding: 22px;
+$get-started-options-padding: 25px;
 $choose-solution-options-padding: 200px;
 $get-started-options-line-height: 20px;

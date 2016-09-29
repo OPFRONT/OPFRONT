@@ -14,11 +14,43 @@
     }
 }
 
-#get-started {
+@keyframes closeGetStarted {
+    0% {
+        left: $navbar-width;
+        top: 0;
+    }
+    33% {
+        left: 100%;
+        top: 0;
+    }
+    67% {
+        left: 100%;
+        top: 100%;
+    }
+    100% {
+        left: $navbar-width;
+        top: 100%;
+    }
+}
+
+#get-started, #choose-solution, #subscribe, #webstore, #thanks {
     @include viewport-unit(width, 100vw);
     padding-right: $navbar-width;
 
     @include blackSection();
+    top: 100%;
+    left: $navbar-width;
+
+    &.active {
+        top: 0;
+    }
+
+    &.closing {
+        animation: closeGetStarted 1.8s;
+    }
+}
+
+#get-started {
     top: 0;
     left: 100%;
     &.active {
@@ -28,36 +60,21 @@
     .section-container {
         .option {
             width: calc(50% - #{$get-started-options-padding / 2});
-            height: 175px;
+            height: 200px;
             padding: $get-started-options-padding;
 
-            background-color: white;
-            color: black;
-
-            position: relative;
-            &:after {
-                content: '>';
-                position: absolute;
-                bottom: $get-started-options-padding;
-                right: $get-started-options-padding;
-            }
+            border: 1px solid white;
         }
     }
 }
 
 #choose-solution {
-    @include viewport-unit(width, 100vw);
-    padding-right: $navbar-width;
-
-    @include blackSection();
-    top: 100%;
-
-    &.active {
-        top: 0;
-    }
-
     .subtitle {
         font-size: 50px;
+    }
+
+    .choose {
+        margin-top: 75px;
     }
 
     .section-container {
@@ -74,51 +91,48 @@
         }
 
         .btn.choose {
-            float:right;
+            float: right;
         }
     }
 }
 
 #subscribe {
-    @include viewport-unit(width, 100vw);
-    padding-right: $navbar-width;
-
-    @include blackSection();
-    top: 100%;
-
-    &.active {
-        top: 0;
-    }
-
     .section-container {
-        .btn.subscribe {
-            float:right;
+        .btn[type="submit"] {
+            margin-top: 75px;
+        }
+    }
+    form .form-row {
+        input, textarea {
+            -webkit-text-fill-color: white;
+            &.filled {
+                -webkit-text-fill-color: white;
+                color: white;
+                border-color: white;
+            }
         }
     }
 }
 
 #webstore {
-    @include viewport-unit(width, 100vw);
-    padding-right: $navbar-width;
-
-    @include blackSection();
-    top: 100%;
-
-    &.active {
-        top: 0;
-    }
-
     .section-container {
         .btn.subscribe {
-            float:right;
+            float: right;
         }
     }
+}
+
+#thanks {
+
 }
 
 .section-container {
     .option {
         float: left;
-        cursor: pointer;
+        .choose {
+            text-align: center;
+            margin-top: 40px;
+        }
 
         &:last-child {
             float: right;

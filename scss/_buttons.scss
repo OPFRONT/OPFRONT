@@ -1,11 +1,10 @@
 .btn {
     text-align: center;
     font-size: $buttons-font-size;
+    letter-spacing: 1px;
 
     cursor: pointer;
-    padding: 8px 20px;
-
-    border: none;
+    padding: 8px 30px;
 
     transition: $default-transition-time;
 
@@ -13,10 +12,12 @@
         outline: none;
     }
 
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    border: 2px solid $opfront-teal;
+    color: $opfront-teal;
     &:hover {
-        color: $opfront-teal;
+        background-color: $opfront-teal;
+        color: white;
     }
     &.active {
         background-color: $opfront-teal;
@@ -32,8 +33,16 @@
     }
 
     &:disabled {
-        background-color: gray;
-        color: white;
+        //background-color: gray;
+        color: $opfront-gray;
+        background-color: lighten($opfront-teal, 25%);
+        border-color: lighten($opfront-teal, 25%);
         cursor: default;
     }
+}
+
+.start-now {
+    width:100%;
+    text-align: center;
+    margin-top: $layout-padding;
 }

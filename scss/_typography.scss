@@ -34,10 +34,18 @@ h2.subtitle {
     margin-bottom: $layout-padding;
 }
 
-h3.subtitle {
-    margin: 50px 0;
-    text-align: left;
-    letter-spacing: 2px;
+h3 {
+    &.subtitle {
+        margin: 50px 0;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+    &.icon-title {
+        font-weight: normal;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
 }
 
 a {

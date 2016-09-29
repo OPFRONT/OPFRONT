@@ -1,0 +1,86 @@
+.page-content section.fixed {
+    position: fixed;
+}
+
+.parallax {
+    position: relative;
+    width: 100%;
+    @include viewport-unit(height, 100vh);
+    .stick {
+        position: absolute;
+    }
+    svg {
+        .cls-1 {
+            isolation: isolate;
+        }
+    }
+}
+
+#red-stick {
+    top: 50%;
+    right: calc(6% + 175px);
+    width: 80px;
+    .cls-2 {
+        fill: #b00;
+    }
+
+    .cls-3 {
+        fill: #ed0000;
+    }
+
+    .cls-4 {
+        fill: #930000;
+    }
+}
+
+#teal-stick {
+    left: 11%;
+    top: 15%;
+    width: 40px;
+    .cls-2 {
+        fill: #00f1ea;
+    }
+
+    .cls-3 {
+        fill: #009d98;
+    }
+
+    .cls-4 {
+        fill: #008c87;
+    }
+}
+
+#black-stick {
+    top: 77%;
+    left: 5%;
+    width: 100px;
+    .cls-2 {
+        fill: #464646;
+    }
+    .cls-3 {
+        fill: #1b1b1b;
+    }
+    .cls-4 {
+        fill: #282828;
+    }
+}
+
+@media (max-width: 1300px) {
+    #red-stick {
+        right: calc(2% + 175px);
+    }
+
+    #teal-stick {
+        left: 5%;
+    }
+
+    #black-stick {
+        left: 0;
+    }
+}
+
+@media (max-width: 1075px) {
+    .parallax {
+        display: none;
+    }
+}

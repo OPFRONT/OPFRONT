@@ -12,333 +12,410 @@
     <link rel="shortcut icon" href="dist/img/favicon.ico">
 </head>
 <body>
-    <header id="page-loader">
+<header id="page-loader">
+    <div class="base">
+        <h1 class="title">soyez vu en ligne</h1>
+    </div>
+    <div class="loaded">
+        <h1 class="title">soyez vu en ligne</h1>
+    </div>
+</header>
+
+<nav>
+    <a href="#" class="nav-logo">
         <img src="dist/img/opfront-logo.png" alt="Opfront logo">
-    </header>
+    </a>
+    <div class="menu opened">
+        <i class="fa fa-bars open-menu-btn" aria-hidden="true"></i>
+        <i class="fa fa-times close-menu-btn" aria-hidden="true"></i>
+        <ul class="menu-items">
+            <a href="#pros" class="menu-item">avantages</a>
+            <a href="#vision" class="menu-item">vision</a>
+            <a href="#about" class="menu-item">à propos</a>
+            <a href="#contact" class="menu-item">contact</a>
+        </ul>
+    </div>
+    <div class="lang en">
+        <div class="en">en</div>
+        <div class="separator">-</div>
+        <div class="fr">fr</div>
+    </div>
+</nav>
 
-    <nav>
-        <img src="dist/img/opfront-logo.png" alt="Opfront logo">
-        <div class="menu">
-            <i class="fa fa-bars open-menu-btn" aria-hidden="true"></i>
-            <i class="fa fa-times close-menu-btn" aria-hidden="true"></i>
-            <ul class="menu-items">
-                <a href="#vision" class="menu-item">vision</a>
-                <a href="#pros" class="menu-item">avantages</a>
-                <a href="#about" class="menu-item">à propos</a>
-                <a href="#contact" class="menu-item">contact</a>
-            </ul>
+<div class="page-content">
+    <section class="fixed">
+        <div class="parallax">
+            <svg id="red-stick" class="stick" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 120.31 143.2">
+                <g class="cls-1">
+                    <polygon class="cls-2" points="41.96 143.2 37.38 114.23 115.72 5.4 120.31 34.37 41.96 143.2"/>
+                    <polygon class="cls-3" points="78.34 0 115.72 5.4 37.38 114.23 0 108.83 78.34 0"/>
+                    <polygon class="cls-4" points="0 108.83 37.38 114.23 41.96 143.2 4.59 137.8 0 108.83"/>
+                </g>
+            </svg>
+            <svg id="black-stick" class="stick" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 134.14 178.97">
+                <g class="cls-1">
+                    <polygon class="cls-2" points="45.48 0 134.13 153.14 111.13 156.37 22.48 3.23 45.48 0"/>
+                    <polygon class="cls-3"
+                             points="134.13 153.14 111.66 175.74 88.65 178.97 111.13 156.37 134.13 153.14"/>
+                    <polygon class="cls-4" points="111.13 156.37 88.65 178.97 0 25.83 22.48 3.23 111.13 156.37"/>
+                </g>
+            </svg>
+            <svg id="teal-stick" class="stick" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 51.4 109.67">
+                <g class="cls-1">
+                    <polygon class="cls-2" points="32.59 0 51.4 11.67 34.07 94.33 15.26 82.65 32.59 0"/>
+                    <polygon class="cls-3" points="34.07 94.33 18.8 109.67 0 98 15.26 82.65 34.07 94.33"/>
+                    <polygon class="cls-4" points="15.26 82.65 0 98 17.33 15.35 32.59 0 15.26 82.65"/>
+                </g>
+            </svg>
         </div>
-        <div class="lang en">
-            <div class="en">en</div>
-            <div class="separator">-</div>
-            <div class="fr">fr</div>
+    </section>
+    <!--<section class="page-controls">-->
+
+    <!--</section>-->
+    <section id="header">
+        <h2>à venir</h2>
+    </section>
+
+    <section id="pros">
+        <!--<a href="#vision" class="navigation-control previous">-</a>-->
+        <div class="section-container">
+            <h2 class="subtitle">avantages</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <h3 class="paragraph-title">une plateforme prête à vous accueillir.</h3>
+                    <p class="paragraph-content">
+                        Nous vous offrons plus qu'une simple vitrine virtuelle. Grâce à la technologie Opfront, vous
+                        pourrez vous connecter directement avec votre inventaire en
+                        magasin.
+                    </p>
+                </div>
+                <div class="paragraph-image">
+                    <img class="preview img-large" src="dist/img/preview.jpg" alt="App preview">
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-title">Des outils technologiques qui représentent un réel avantage
+                        concurrentiel pour votre entreprise.</h3>
+                    <p class="paragraph-content">
+                        Un éventail d'outils de grande qualité, professionnels, conviviaux et sécuritaires, mais surtout
+                        simples et faciles d'utilisation. Ainsi, vous pourrez vous concentrer sur ce qui est le plus
+                        important: vos patients.
+                    </p>
+                </div>
+                <div class="paragraph-icons">
+                    <div class="third">
+                        <svg id="graph" class="icon" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 240 240">
+                            <rect class="cls-1" x="1.24" y="1.27" width="237.51" height="18.73" rx="1.45" ry="1.45"/>
+                            <path class="cls-1"
+                                  d="M7.76,20H232.24a0,0,0,0,1,0,0V172.62a2.08,2.08,0,0,1-2.08,2.08H9.84a2.08,2.08,0,0,1-2.08-2.08V20A0,0,0,0,1,7.76,20Z"/>
+                            <line class="cls-1" x1="150.4" y1="174.7" x2="162.64" y2="238.6"/>
+                            <line class="cls-1" x1="75.43" y1="238.6" x2="87.9" y2="174.7"/>
+                            <line class="cls-1" x1="156.52" y1="207.35" x2="81.9" y2="207.35"/>
+                            <polyline class="cls-1" points="206.5 47.63 133.29 119.62 100.4 87.94 40.25 147.07"/>
+                            <polyline class="cls-1" points="163.79 47.63 206.5 47.63 206.5 88.81"/>
+                        </svg>
+                        <h3 class="icon-title">augmenter vos ventes</h3>
+                    </div>
+                    <div class="third">
+                        <svg id="star" data-name="Calque 1" class="icon" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 240 240">
+                            <path class="cls-1"
+                                  d="M101.81,89.76l18.33-38.13a1.66,1.66,0,0,1,3,0l19.11,37.74a1.66,1.66,0,0,0,1.26.9l41.92,5.65a1.66,1.66,0,0,1,1,2.83l-30,29.84a1.66,1.66,0,0,0-.46,1.48l7.58,41.62a1.66,1.66,0,0,1-2.4,1.78l-37.65-19.3a1.66,1.66,0,0,0-1.55,0L84.68,174.23a1.66,1.66,0,0,1-2.43-1.73L89,130.73a1.66,1.66,0,0,0-.49-1.47L57.87,100a1.66,1.66,0,0,1,.89-2.85l41.8-6.52A1.66,1.66,0,0,0,101.81,89.76Z"/>
+                            <path class="cls-2"
+                                  d="M118.8,3a12,12,0,0,1,9,4l0,0,0,0,5.2,5.5a17.94,17.94,0,0,0,13.27,5.68,19.79,19.79,0,0,0,7.26-1.39l.05,0,.05,0,7.18-3.13a12.66,12.66,0,0,1,4.93-1,11.68,11.68,0,0,1,11.47,8.49l0,.06,0,.06,2.39,7.42c2,7.05,8.65,12.3,16.37,12.77l8,.39a12,12,0,0,1,8.83,4.58,11.47,11.47,0,0,1,2.39,9.2v.07l-1.2,7.44c-1.38,7.35,2.19,14.61,9.11,18.49l0,0,0,0,6.78,3.52a12.15,12.15,0,0,1,6.12,8,11.36,11.36,0,0,1-1.89,9.23l0,0,0,0-4.37,6.24a17,17,0,0,0,.05,21l0,0,0,0,4.76,5.85a11.79,11.79,0,0,1,2,9.52,11.46,11.46,0,0,1-5.73,7.61l-7.1,3.1-.14.06-.13.07a18,18,0,0,0-9.1,18.93V175l1.59,7.44a11.59,11.59,0,0,1-2.35,9.29,11.82,11.82,0,0,1-8.9,4.45l-7.65.4a17.82,17.82,0,0,0-16.35,13.24l-2,7.46a12.16,12.16,0,0,1-11.72,8.83,12,12,0,0,1-4.68-1l0,0,0,0-7.19-2.75a18.58,18.58,0,0,0-6.82-1.29,18.84,18.84,0,0,0-13.72,6l0,0,0,0L129.4,233a12.07,12.07,0,0,1-18,0l0,0,0,0-5.2-5.5a17.94,17.94,0,0,0-13.27-5.68,19.79,19.79,0,0,0-7.26,1.39l-.05,0-.05,0-7.18,3.13a12.66,12.66,0,0,1-4.93,1,11.67,11.67,0,0,1-11.46-8.47l-2-7.49C58,204.27,51.28,199,43.55,198.51l-7.64-.39a12,12,0,0,1-8.83-4.58,11.47,11.47,0,0,1-2.39-9.2v-.07l1.2-7.44c1.38-7.35-2.19-14.61-9.11-18.49l0,0,0,0-6.78-3.52a12.15,12.15,0,0,1-6.12-8,11.36,11.36,0,0,1,1.89-9.23l0,0,0,0,4.37-6.24a17,17,0,0,0-.05-21l0,0,0,0-4.76-5.85a11.79,11.79,0,0,1-2-9.52A11.46,11.46,0,0,1,9.12,87.2l0,0,0,0L16,83.24c6.93-3.89,10.56-11.57,8.66-18.31l-1.57-7.34a11.59,11.59,0,0,1,2.35-9.29,11.82,11.82,0,0,1,8.9-4.45l7.65-.4A17.82,17.82,0,0,0,58.32,30.21l2-7.46A12.16,12.16,0,0,1,72,13.92a12,12,0,0,1,4.68,1l0,0,0,0L84,17.66A18.58,18.58,0,0,0,90.83,19a18.84,18.84,0,0,0,13.72-6l0,0,0,0L109.8,7a12,12,0,0,1,9-4m0-3a15,15,0,0,0-11.23,5l-5.21,5.91a15.77,15.77,0,0,1-11.52,5,15.64,15.64,0,0,1-5.72-1.09l-7.22-2.76A15.15,15.15,0,0,0,57.43,22l-2,7.48a14.88,14.88,0,0,1-13.64,11l-7.62.39a14.72,14.72,0,0,0-14,17.33l1.6,7.48c1.6,5.51-1.6,11.81-7.22,15L7.7,84.56a14.67,14.67,0,0,0-4.81,21.66l4.81,5.91a14,14,0,0,1,0,17.33l-4.41,6.3A14.77,14.77,0,0,0,8.5,157.41L15.32,161c5.62,3.15,8.82,9.06,7.62,15.36l-1.2,7.48c-1.6,8.66,5.21,16.93,14,17.33l7.62.39A15,15,0,0,1,57,212.14l2,7.48a14.73,14.73,0,0,0,14.36,10.69,15.7,15.7,0,0,0,6.1-1.24l7.22-3.15a16.88,16.88,0,0,1,6.16-1.18A15,15,0,0,1,104,229.47l5.21,5.51a15.07,15.07,0,0,0,22.46,0l5.21-5.91a15.7,15.7,0,0,1,17.25-3.94l7.22,2.76A15.15,15.15,0,0,0,181.77,218l2-7.48a14.88,14.88,0,0,1,13.64-11l7.62-.39a14.72,14.72,0,0,0,14-17.33l-1.6-7.48a15,15,0,0,1,7.62-15.75l7.22-3.15a14.67,14.67,0,0,0,4.81-21.66l-4.81-5.91a14,14,0,0,1,0-17.33l4.41-6.3a14.77,14.77,0,0,0-5.21-21.66L224.68,79c-5.62-3.15-8.82-9.06-7.62-15.36l1.2-7.48c1.6-8.66-5.21-16.93-14-17.33l-8-.39a15,15,0,0,1-13.64-10.63l-2.41-7.48A14.73,14.73,0,0,0,165.8,9.69a15.7,15.7,0,0,0-6.1,1.24l-7.22,3.15a16.88,16.88,0,0,1-6.16,1.18,15,15,0,0,1-11.08-4.73L130,5A15,15,0,0,0,118.8,0Z"/>
+                        </svg>
+                        <h3 class="icon-title">raffiner votre image de marque</h3>
+                    </div>
+                    <div class="third">
+                        <svg id="boxes" data-name="Calque 1" class="icon" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 240 240">
+                            <polyline class="cls-1" points="2 88.66 75.08 123.38 148.17 88.66"/>
+                            <path class="cls-1"
+                                  d="M148.17,88.66v71.13a2,2,0,0,1-1.17,1.85L75.95,195.4a2,2,0,0,1-1.73,0L3.17,161.64A2,2,0,0,1,2,159.79V89.93A2.05,2.05,0,0,1,3.12,88.1L36.44,71.24"/>
+                            <path class="cls-1"
+                                  d="M46.62,132.38l-19.28-8.76a.91.91,0,0,1-.53-.83v-3.48a.9.9,0,0,1,1.27-.83l19.28,8.76a.91.91,0,0,1,.53.83v3.48A.9.9,0,0,1,46.62,132.38Z"/>
+                            <line class="cls-1" x1="75.08" y1="123.38" x2="75.08" y2="195.81"/>
+                            <path class="cls-2"
+                                  d="M93,130.49l70.71-35.77a2.35,2.35,0,0,1,2.13,0l70.71,35.77a2.39,2.39,0,0,1,1.31,2.14v69.43a2.39,2.39,0,0,1-1.36,2.16L165.8,237.82a2.35,2.35,0,0,1-2,0L93.07,204.23a2.39,2.39,0,0,1-1.36-2.16V132.63A2.39,2.39,0,0,1,93,130.49Z"/>
+                            <polyline class="cls-1" points="91.71 131.16 164.79 165.87 237.88 131.16"/>
+                            <path class="cls-1"
+                                  d="M136.43,174.92,117,166.09a.83.83,0,0,1-.49-.76v-3.65a.82.82,0,0,1,1.16-.76l19.43,8.83a.83.83,0,0,1,.49.76v3.65A.82.82,0,0,1,136.43,174.92Z"/>
+                            <line class="cls-1" x1="164.79" y1="165.87" x2="164.79" y2="238.3"/>
+                            <path class="cls-1" d="M128.25,112.67l71.64,36.24"/>
+                            <path class="cls-1" d="M49,38.51,121.53,73a1.32,1.32,0,0,0,1.13,0l72.52-34.45"/>
+                            <path class="cls-1" d="M173.81,48.66l-51.15-24.3a1.32,1.32,0,0,0-1.13,0L70.38,48.66"/>
+                            <path class="cls-2"
+                                  d="M195.18,77.2v32.89a1.34,1.34,0,0,1-.76,1.21l-71.75,34.08a1.32,1.32,0,0,1-1.13,0L49.77,111.3a1.34,1.34,0,0,1-.76-1.21V77.31"/>
+                            <line class="cls-1" x1="122.09" y1="73.23" x2="122.09" y2="145.66"/>
+                            <path class="cls-1" d="M195.18,38.51,122.1,73.23"/>
+                            <path class="cls-1"
+                                  d="M122.1,73.23l20.75,27.55a1.32,1.32,0,0,0,1.63.4L215.1,67.64a1.35,1.35,0,0,0,.49-2L195.37,38.76a1.33,1.33,0,0,0-.46-.39L122.69,1.84a1.32,1.32,0,0,0-1.19,0L49.29,38.37a1.33,1.33,0,0,0-.46.39L28.6,65.62a1.35,1.35,0,0,0,.49,2L99.71,101.2a1.32,1.32,0,0,0,1.63-.4L122.1,73.23"/>
+                            <line class="cls-1" x1="122.09" y1="1.54" x2="122.09" y2="24.1"/>
+                        </svg>
+                        <h3 class="icon-title">mieux gérer votre inventaire ?</h3>
+                    </div>
+                </div>
+                <div class="start-now">
+                    <button class="btn get-started">commencer maintenant</button>
+                </div>
+            </div>
         </div>
-        <button class="get-started btn">démarrer</button>
-    </nav>
+        <!--<a href="#about" class="navigation-control next">+</a>-->
+    </section>
 
-    <div class="page-content">
-        <section id="header">
-            <a href="#vision" class="navigation-control next">+</a>
-            <h1 class="title">soyez vu en ligne</h1>
-        </section>
-
-        <section id="vision">
-            <a href="#header" class="navigation-control previous">-</a>
-            <div class="section-container">
-                <h2 class="subtitle">voir plus loin</h2>
-                <div class="section-content">
-                    <div class="paragraph">
-                        <h3 class="paragraph-title">la santé du patient en premier lieu.</h3>
-                        <p class="paragraph-content">
-                            Opfront technologie se consacre à offrir un accompagnement total aux optométristes afin de garder le contrôle du marché de l'optique sur le Web.
-                        </p>
-                    </div>
-                    <div class="paragraph">
-                        <h3 class="paragraph-title">notre mission</h3>
-                        <p class="paragraph-content">
-                            Développer des outils technologiques pour supporter le développement commercial de cliniques d'optométrie indépendantes.
-                        </p>
-                    </div>
+    <section id="vision">
+        <!--<a href="#header" class="navigation-control previous">-</a>-->
+        <div class="section-container">
+            <h2 class="subtitle">voir plus loin</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <h3 class="paragraph-title">la santé du patient en premier lieu.</h3>
+                    <p class="paragraph-content">
+                        Opfront technologie se consacre à offrir un accompagnement total aux optométristes afin de
+                        garder le contrôle du marché de l'optique sur le Web.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-title">notre mission</h3>
+                    <p class="paragraph-content">
+                        Développer des outils technologiques pour supporter le développement commercial de cliniques
+                        d'optométrie indépendantes.
+                    </p>
+                </div>
+                <div class="start-now">
+                    <button class="btn get-started">commencer maintenant</button>
                 </div>
             </div>
-            <a href="#pros" class="navigation-control next">+</a>
-        </section>
+        </div>
+        <!--<a href="#pros" class="navigation-control next">+</a>-->
+    </section>
 
-        <section id="pros">
-            <a href="#vision" class="navigation-control previous">-</a>
-            <div class="section-container">
-                <h2 class="subtitle">avantages</h2>
-                <div class="section-content">
-                    <div class="paragraph">
-                        <h3 class="paragraph-title">une plateforme prête à vous accueillir.</h3>
-                        <p class="paragraph-content">
-                            Nous vous offrons plus qu'une simple vitrine virtuelle. <br />
-                            Grâce à la technologie Opfront, vous pourrez vous connecter directement avec votre inventaire en magasin.
-                        </p>
-                    </div>
-                    <div class="paragraph-image">
-                        <img class="preview img-large" src="dist/img/preview.png" alt="App preview">
-                    </div>
-                    <div class="paragraph">
-                        <h3 class="paragraph-title">Des outils technologiques qui représentent un réel avantage concurrentiel pour votre entreprise.</h3>
-                        <p class="paragraph-content">
-                            Cette vitrine virtuelle vous permettra de faciliter la prise de rendez-vous, d’augmenter vos ventes, de raffiner votre image de marque et de mieux gérer votre inventaire en magasin.
-                        </p>
-                    </div>
-                    <div class="paragraph">
-                        <p class="paragraph-content">
-                            Un éventail d'outils de grande qualité, professionnels, conviviaux et sécuritaires, mais surtout simples et faciles d'utilisation. Ainsi, vous pourrez vous concentrer sur ce qui est le plus important: vos patients.
-                        </p>
-                    </div>
-                    <div class="paragraph">
-                        <p class="paragraph-content">
-                            <a href="#contact" class="navigation-control">Contactez nous pour en savoir d'avantage. ></a>
-                        </p>
-                    </div>
+    <section id="about">
+        <!--<a href="#pros" class="navigation-control previous">-</a>-->
+        <div class="section-container">
+            <h2 class="subtitle">à propos</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Opfront propose aux optométristes indépendants des outils numériques visant l’atteinte de leur
+                        plein potentiel commercial grâce à la création de boutiques en ligne. La plateforme vous permet
+                        de présenter votre inventaire en ligne et vous offre une analyse adaptée du comportement de
+                        votre clientèle.
+                    </p>
+                </div>
+                <div class="start-now">
+                    <button class="btn get-started">commencer maintenant</button>
                 </div>
             </div>
-            <a href="#about" class="navigation-control next">+</a>
-        </section>
+        </div>
+        <!--<a href="#contact" class="navigation-control next">+</a>-->
+    </section>
 
-        <section id="about">
-            <a href="#pros" class="navigation-control previous">-</a>
-            <div class="section-container">
-                <h2 class="subtitle">à propos</h2>
-                <div class="section-content">
+    <section id="contact">
+        <!--<a href="#about" class="navigation-control previous">-</a>-->
+        <div class="section-container">
+            <h2 class="subtitle">contactez-nous</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Offrez une visibilité en ligne comme en boutique à votre clientèle.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <div class="paragraph-content address">
+                        <p>830, rue Saint-Joseph Est, suite 202</p>
+                        <p>Québec (Qc) G1K 3C9</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>581-701-1946</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>1855-702-1946</p>
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <form action="" id="contact-us-form">
+                        <div class="form-row">
+                            <div class="form-input half required">
+                                <input type="text" placeholder="prénom" class="teal-glow" required>
+                            </div>
+                            <div class="form-input half required">
+                                <input type="text" placeholder="nom" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input half">
+                                <input type="text" placeholder="téléphone" class="teal-glow">
+                            </div>
+                            <div class="form-input half required">
+                                <input type="text" placeholder="courriel" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input half">
+                                <input type="text" placeholder="compagnie" class="teal-glow">
+                            </div>
+                            <div class="form-input half">
+                                <input type="text" placeholder="site web" class="teal-glow">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input textarea">
+                                <textarea name="message" placeholder="message" class="no-glow"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input submit">
+                                <button class="btn" type="submit" form="contact-us-form" value="Submit">envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="paragraph thanks">
+                    <h3 class="paragraph-title">Merci!</h3>
+                    <p class="paragraph-content">
+                        Nous communiquerons avec vous le plus rapidement possible. N'hésitez pas à nous contacter pour
+                        d'autres besoins, nous serons ravis de répondre à vos questions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--<a href="#pros" class="navigation-control previous">-</a>-->
+    </section>
+
+    <section id="get-started" class="aside-section">
+        <a class="navigation-control previous">< retourner</a>
+        <div class="section-container">
+            <h2 class="subtitle">démarrer</h2>
+            <div class="section-content">
+                <div id="complete-solution" class="option">
                     <div class="paragraph">
+                        <h4 class="paragraph-title">solution intégrée</h4>
                         <p class="paragraph-content">
-                            Opfront propose aux optométristes indépendants des outils numériques visant l’atteinte de leur plein potentiel commercial grâce à la création de boutiques en ligne. La plateforme vous permet de présenter votre inventaire en ligne et vous offre une analyse adaptée du comportement de votre clientèle.
+                            Boutique en ligne et un site Web attrayant et convivial.
                         </p>
                     </div>
-                    <div class="paragraph-image">
-                        <img class="preview img-small" src="dist/img/graph.png" alt="Graph">
+                    <div class="choose">
+                        <button class="btn">choisir</button>
                     </div>
                 </div>
-            </div>
-            <a href="#contact" class="navigation-control next">+</a>
-        </section>
-
-        <section id="contact">
-            <a href="#about" class="navigation-control previous">-</a>
-            <div class="section-container">
-                <h2 class="subtitle">contact</h2>
-                <div class="section-content">
+                <div id="store-solution" class="option">
                     <div class="paragraph">
-                        <p class="paragraph-content">
-                            Offrez une visibilité en ligne comme en boutique à votre clientèle, contactez-nous.
-                        </p>
-                    </div>
-                    <div class="paragraph">
-                        <p class="paragraph-content">
-                            830, rue Saint-Joseph Est, suite 202 <br />
-                            Québec (Qc) G1K 3C9
-                        </p>
-                    </div>
-                    <div class="paragraph">
-                        <form action="" id="contact-us-form">
-                            <div class="form-row">
-                                <div class="form-input half">
-                                    <input type="text" placeholder="prénom">
-                                </div>
-                                <div class="form-input half">
-                                    <input type="text" placeholder="nom" class="teal-glow">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-input half">
-                                    <input type="text" placeholder="téléphone" class="no-glow">
-                                </div>
-                                <div class="form-input half">
-                                    <input type="text" placeholder="courriel" class="no-glow">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-input half">
-                                    <input type="text" placeholder="compagnie" class="no-glow">
-                                </div>
-                                <div class="form-input half">
-                                    <input type="text" placeholder="site web" class="no-glow">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-input textarea">
-                                    <textarea name="message" placeholder="message" class="no-glow"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-input submit">
-                                    <button class="btn" type="submit" form="contact-us-form" value="Submit">envoyer</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <a href="#pros" class="navigation-control previous">-</a>
-        </section>
-
-        <section id="thanks">
-            <div class="section-container">
-                <h2 class="subtitle">merci!</h2>
-                <div class="section-content">
-                    <div class="paragraph">
-                        <p class="paragraph-content">
-                            Nous communiquerons avec vous le plus rapidement possible. N'hésitez pas à nous contacter pour d'autres besoins, nous serons ravis de répondre à vos questions.
-                        </p>
-                    </div>
-                    <div class="paragraph back-btn">
-                        <div class="btn">< retour</div>
-                    </div>
-                        <img class="preview prism teal-prism" src="dist/img/teal-prism.png" alt="Teal prism">
-                        <img class="preview prism red-prism" src="dist/img/red-prism.png" alt="Red prism">
-                        <img class="preview prism black-prism" src="dist/img/black-prism.png" alt="Black prism">
-                </div>
-            </div>
-        </section>
-
-        <section id="get-started" class="aside-section">
-            <a class="navigation-control previous">< retourner</a>
-            <div class="section-container">
-                <h2 class="subtitle">démarrer</h2>
-                <div class="section-content">
-                    <div id="complete-solution" class="option">
-                        <div class="paragraph">
-                            <h4 class="paragraph-title">une solution intégrée</h4>
-                            <p class="paragraph-content">
-                                Nous vous offrons plus qu'une simple vitrine virtuelle.
-                            </p>
-                        </div>
-                    </div>
-                    <div id="store-solution" class="option">
-                        <div class="paragraph">
-                            <h4 class="paragraph-title">commerce en ligne</h4>
-                            <p class="paragraph-content">
-                                Nous vous offrons plus qu'une simple vitrine virtuelle.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="choose-solution" class="aside-section">
-            <a class="navigation-control previous">< retourner</a>
-            <div class="section-container">
-                <h2 class="subtitle">choisissez votre canevas</h2>
-                <div class="section-content">
-                    <div id="shop-option" class="option">
-                        <div class="paragraph-image">
-                            <img class="preview img-large" src="dist/img/preview.png" alt="App preview">
-                        </div>
-                        <div class="paragraph">
-                            <h4 class="paragraph-title">la boutique</h4>
-                            <p class="paragraph-content">
-                                Nous vous offrons plus qu'une simple vitrine virtuelle.
-                            </p>
-                        </div>
-                        <div class="paragraph">
-                            <div class="choose btn inverted">choisir</div>
-                        </div>
-                    </div>
-                    <div id="showcase-option" class="option">
-                        <div class="paragraph-image">
-                            <img class="preview img-large" src="dist/img/preview.png" alt="App preview">
-                        </div>
-                        <div class="paragraph">
-                            <h4 class="paragraph-title">la vitrine</h4>
-                            <p class="paragraph-content">
-                                Nous vous offrons plus qu'une simple vitrine virtuelle.
-                            </p>
-                        </div>
-                        <div class="paragraph">
-                            <div class="choose btn inverted">choisir</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="subscribe" class="aside-section">
-            <a class="navigation-control previous">< retourner</a>
-            <div class="section-container">
-                <h2 class="subtitle">inscrivez-vous</h2>
-                <div class="section-content">
-                    <div class="paragraph">
-                        <p class="paragraph-content">
-                            Lorem ipsum
-                        </p>
-                    </div>
-                    <div class="paragraph">
-                        <form action="" id="subscribe-form" class="inverted">
-                            <div class="form-row">
-                                <div class="form-input half">
-                                    <input type="text" placeholder="prénom">
-                                </div>
-                                <div class="form-input half">
-                                    <input type="text" placeholder="nom" class="teal-glow">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-input half">
-                                    <input type="text" placeholder="téléphone" class="no-glow">
-                                </div>
-                                <div class="form-input half">
-                                    <input type="text" placeholder="courriel" class="no-glow">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-input submit">
-                                    <button class="btn inverted" type="submit" form="subscribe-form" value="Submit">s'inscrire</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="webstore" class="aside-section">
-            <a class="navigation-control previous">< retourner</a>
-            <div class="section-container">
-                <h2 class="subtitle">commerce en ligne</h2>
-                <div class="section-content">
-                    <div class="paragraph">
+                        <h4 class="paragraph-title">commerce en ligne</h4>
                         <p class="paragraph-content">
                             Attachez notre solution de commerce en ligne à votre site Web.
                         </p>
                     </div>
-                    <div class="paragraph">
-                        <form action="" id="subscribe-store-form" class="inverted">
-                            <div class="form-row">
-                                <div class="form-input half">
-                                    <input type="text" placeholder="prénom">
-                                </div>
-                                <div class="form-input half">
-                                    <input type="text" placeholder="nom" class="teal-glow">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-input half">
-                                    <input type="text" placeholder="téléphone" class="no-glow">
-                                </div>
-                                <div class="form-input half">
-                                    <input type="text" placeholder="courriel" class="no-glow">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-input submit">
-                                    <button class="btn inverted" type="submit" form="subscribe-form" value="Submit">s'inscrire</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="choose">
+                        <button class="btn">choisir</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </div>
+    <section id="choose-solution" class="aside-section">
+        <a class="navigation-control previous">< retourner</a>
+        <div class="section-container">
+            <h2 class="subtitle">choisissez votre canevas</h2>
+            <div class="section-content">
+                <div id="shop-option" class="option">
+                    <div class="paragraph-image">
+                        <img class="preview img-large" src="dist/img/preview.jpg" alt="App preview">
+                    </div>
+                    <div class="paragraph">
+                        <h4 class="paragraph-title">la boutique</h4>
+                        <p class="paragraph-content">
+                            Nous vous offrons plus qu'une simple vitrine virtuelle.
+                        </p>
+                    </div>
+                    <div class="choose">
+                        <button class="btn">choisir</button>
+                    </div>
+                </div>
+                <div id="showcase-option" class="option">
+                    <div class="paragraph-image">
+                        <img class="preview img-large" src="dist/img/preview-fashion.jpg" alt="App preview">
+                    </div>
+                    <div class="paragraph">
+                        <h4 class="paragraph-title">la vitrine</h4>
+                        <p class="paragraph-content">
+                            Nous vous offrons plus qu'une simple vitrine virtuelle.
+                        </p>
+                    </div>
+                    <div class="choose">
+                        <button class="btn">choisir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="dist/index.js"></script>
+    <section id="subscribe" class="aside-section">
+        <a class="navigation-control previous">< retourner</a>
+        <div class="section-container">
+            <h2 class="subtitle">inscrivez-vous</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Lorem ipsum
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <form action="" id="subscribe-form" class="inverted">
+                        <div class="form-row">
+                            <div class="form-input half required">
+                                <input type="text" placeholder="prénom" class="teal-glow" required>
+                            </div>
+                            <div class="form-input half required">
+                                <input type="text" placeholder="nom" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input half required">
+                                <input type="text" placeholder="téléphone" class="teal-glow" required>
+                            </div>
+                            <div class="form-input half required">
+                                <input type="text" placeholder="courriel" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input half required">
+                                <input type="text" placeholder="nom de la clinique" class="teal-glow" required>
+                            </div>
+                            <div class="form-input half required">
+                                <input type="text" placeholder="site web" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input submit">
+                                <button class="btn" type="submit" form="subscribe-form" value="Submit">
+                                    s'inscrire
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="thanks" class="aside-section">
+        <a class="navigation-control previous">< retourner</a>
+        <div class="section-container">
+            <h2 class="subtitle">merci!</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Nous communiquerons avec vous le plus rapidement possible. N'hésitez pas à nous contacter pour
+                        d'autres besoins, nous serons ravis de répondre à vos questions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="dist/index.js"></script>
 </body>
 </html>

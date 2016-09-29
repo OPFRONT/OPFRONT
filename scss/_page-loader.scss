@@ -3,22 +3,9 @@
     height: 100%;
     width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     background-color: $opfront-white;
 
-    img {
-        width: 300px;
-        transition: ease 1s;
-        &.hidden {
-            opacity: 0;
-            z-index: -1;
-        }
-    }
-
-    transition: ease 1s;
+    transition: ease 0.5s;
 
     &.hidden {
         opacity: 0;
@@ -26,4 +13,39 @@
     }
 
     z-index: 1;
+
+    .base {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        color: $opfront-gray;
+    }
+    .loaded {
+        position: relative;
+        overflow: hidden;
+
+        height: 100%;
+
+        animation: loading 2s;
+        animation-timing-function: cubic-bezier(.2,.53,.72,-0.13);
+
+        h1 {
+            position: absolute;
+            @include viewport-unit(width, 100vw);
+            transform: translateY(-50%);
+            top: 50%;
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
