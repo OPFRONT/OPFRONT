@@ -1,14 +1,3 @@
-@mixin coloredCaret() {
-    -webkit-text-fill-color: transparent;
-    color: $opfront-teal;
-    text-shadow: 0px 0px 0px #000;
-    &::-webkit-input-placeholder {
-        color: #ccc;
-        text-shadow: none;
-        -webkit-text-fill-color: initial;
-    }
-}
-
 form {
     .form-row {
         height: $form-input-height;
@@ -45,8 +34,6 @@ form {
             border: 1px solid $opfront-gray;
             font-weight: normal;
             font-size: $buttons-font-size;
-
-            @include coloredCaret();
 
             &.no-glow {
                 &:focus {

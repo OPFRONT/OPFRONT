@@ -52,6 +52,8 @@ nav {
         .menu-items {
             position: absolute;
             top: $menu-button-size + 10px;
+            left: $menu-close-btn-width/2;
+            transform: translateX(-50%);
 
             background-color: $opfront-black;
 

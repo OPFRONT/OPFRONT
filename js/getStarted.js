@@ -3,13 +3,13 @@ $('.btn.get-started').click((e) => {
 });
 
 const closeGetStarted = (callback) => {
-    let openedAsideSections = $('#thanks.active, #get-started.active, #choose-solution.active, #subscribe.active, #webstore.active');
+    let openedAsideSections = $('#thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
 
     if(openedAsideSections.length > 0) {
-        openedAsideSections.addClass('closing');
-        openedAsideSections.removeClass('active');
+        $('#thanks.active, #choose-solution.active, #subscribe.active, #webstore.active').addClass('closing');
+        $('#get-started').removeClass('active');
         window.setTimeout(() => {
-            $('#thanks, #get-started, #choose-solution, #subscribe, #webstore').removeClass('closing');
+            $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('active').removeClass('closing');
         }, 1800);
 
         if(callback) {
