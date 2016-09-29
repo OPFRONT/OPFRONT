@@ -84,10 +84,13 @@ form {
 
 .thanks {
     margin-top: 175px;
+    margin-bottom: 0;
     font-style: italic;
     opacity: 0;
+    height: 0;
     transition: 1s ease;
     &.active {
+        height: 72px;
         opacity: 1;
     }
 }

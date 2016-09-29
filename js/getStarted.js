@@ -1,9 +1,3 @@
-// $('#thanks .back-btn .btn').click((e) => {
-//     $('#thanks').removeClass('active');
-//     $('.btn.get-started').attr('disabled', false);
-//     $('#complete-solution, #choose-solution, #subscribe, #webstore, #thanks, #get-started, .btn.get-started').removeClass('active');
-// });
-
 $('.btn.get-started').click((e) => {
     $('#get-started').addClass('active');
 });
@@ -26,11 +20,7 @@ const closeGetStarted = (callback) => {
     } else {
         callback();
     }
-
-
 };
-
-// TODO: hide get started section on menu item clic and on logo clic
 
 $('#get-started .navigation-control.previous').click((e) => {
     $('#get-started, .btn.get-started').removeClass('active');

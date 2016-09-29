@@ -1,24 +1,12 @@
-.page-content section.fixed {
-    position: fixed;
-}
-
 .parallax {
-    position: relative;
-    width: 100%;
-    @include viewport-unit(height, 100vh);
-    .stick {
-        position: absolute;
-    }
-    svg {
-        .cls-1 {
-            isolation: isolate;
-        }
+    #red-stick, #black-stick, #teal-stick {
+        position: fixed;
     }
 }
 
 #red-stick {
     top: 50%;
-    right: calc(6% + 175px);
+    right: 6%;
     width: 80px;
     .cls-2 {
         fill: #b00;
@@ -34,7 +22,7 @@
 }
 
 #teal-stick {
-    left: 11%;
+    left: calc(11% + #{$navbar-width});
     top: 15%;
     width: 40px;
     .cls-2 {
@@ -52,7 +40,7 @@
 
 #black-stick {
     top: 77%;
-    left: 5%;
+    left: calc(5% + #{$navbar-width});
     width: 100px;
     .cls-2 {
         fill: #464646;
@@ -67,15 +55,15 @@
 
 @media (max-width: 1300px) {
     #red-stick {
-        right: calc(2% + 175px);
+        right: 2%;
     }
 
     #teal-stick {
-        left: 5%;
+        left: calc(5% + #{$navbar-width});
     }
 
     #black-stick {
-        left: 0;
+        left: $navbar-width;
     }
 }
 

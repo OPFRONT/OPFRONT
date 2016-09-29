@@ -1,0 +1,28 @@
+.page-controls {
+    .previous, .next {
+        position: fixed;
+        left: calc(50% + #{$navbar-width/2});
+        transform: translate(-50%, 0);
+        z-index: 2;
+
+        padding: 5px 10px;
+        font-size: 40px;
+        font-weight: 300;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+
+    .previous {
+        top: 15px;
+    }
+    .next {
+        bottom: 15px;
+    }
+}

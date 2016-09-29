@@ -75,7 +75,7 @@ html {
 }
 
 *, body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Museo Sans', 'Lato', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -137,6 +137,76 @@ p {
   line-height: 24px;
   font-size: 14px;
   letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Museo Sans"), url("./font/MuseoSans-100.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: italic;
+  font-weight: 100;
+  src: local("Museo Sans"), url("./font/MuseoSans-100italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Museo Sans"), url("./font/MuseoSans-300.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Museo Sans"), url("./font/MuseoSans-300italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Museo Sans"), url("./font/MuseoSans-500.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: local("Museo Sans"), url("./font/MuseoSans-500italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Museo Sans"), url("./font/MuseoSans-700.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Museo Sans"), url("./font/MuseoSans-700italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Museo Sans"), url("./font/MuseoSans-900.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: italic;
+  font-weight: 900;
+  src: local("Museo Sans"), url("./font/MuseoSans-900italic.otf") format("opentype");
 }
 
 .page-content {
@@ -629,58 +699,17 @@ form.inverted input, form.inverted textarea {
 
 .thanks {
   margin-top: 175px;
+  margin-bottom: 0;
   font-style: italic;
   opacity: 0;
+  height: 0;
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
 
 .thanks.active {
+  height: 72px;
   opacity: 1;
-}
-
-#thanks {
-  position: fixed;
-  z-index: 1;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  top: 100%;
-  background-color: white;
-}
-
-#thanks.active {
-  top: 0;
-}
-
-#thanks .section-container {
-  position: relative;
-}
-
-#thanks .section-container .prism {
-  position: absolute;
-}
-
-#thanks .section-container .teal-prism {
-  top: -200px;
-  left: 25px;
-}
-
-#thanks .section-container .red-prism {
-  right: -200px;
-  top: 155px;
-}
-
-#thanks .section-container .black-prism {
-  left: -175px;
-  bottom: -200px;
-}
-
-#thanks .back-btn {
-  text-align: center;
-}
-
-#thanks .back-btn .btn {
-  display: inline-block;
 }
 
 .page-content section.aside-section .navigation-control {
@@ -867,63 +896,13 @@ form.inverted input, form.inverted textarea {
   line-height: 20px;
 }
 
-.page-content section.fixed {
+.parallax #red-stick, .parallax #black-stick, .parallax #teal-stick {
   position: fixed;
-}
-
-.parallax {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  .parallax {
-    height: 1024px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  .parallax {
-    height: 768px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
-  .parallax {
-    height: 480px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
-  .parallax {
-    height: 320px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
-  .parallax {
-    height: 568px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 568px) and (orientation: landscape) {
-  .parallax {
-    height: 320px;
-  }
-}
-
-.parallax .stick {
-  position: absolute;
-}
-
-.parallax svg .cls-1 {
-  isolation: isolate;
 }
 
 #red-stick {
   top: 50%;
-  right: calc(6% + 175px);
+  right: 6%;
   width: 80px;
 }
 
@@ -940,7 +919,7 @@ form.inverted input, form.inverted textarea {
 }
 
 #teal-stick {
-  left: 11%;
+  left: calc(11% + 230px);
   top: 15%;
   width: 40px;
 }
@@ -959,7 +938,7 @@ form.inverted input, form.inverted textarea {
 
 #black-stick {
   top: 77%;
-  left: 5%;
+  left: calc(5% + 230px);
   width: 100px;
 }
 
@@ -977,13 +956,13 @@ form.inverted input, form.inverted textarea {
 
 @media (max-width: 1300px) {
   #red-stick {
-    right: calc(2% + 175px);
+    right: 2%;
   }
   #teal-stick {
-    left: 5%;
+    left: calc(5% + 230px);
   }
   #black-stick {
-    left: 0;
+    left: 230px;
   }
 }
 
@@ -991,6 +970,34 @@ form.inverted input, form.inverted textarea {
   .parallax {
     display: none;
   }
+}
+
+.page-controls .previous, .page-controls .next {
+  position: fixed;
+  left: calc(50% + 115px);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 2;
+  padding: 5px 10px;
+  font-size: 40px;
+  font-weight: 300;
+  display: none;
+}
+
+.page-controls .previous:hover, .page-controls .next:hover {
+  cursor: pointer;
+}
+
+.page-controls .previous.active, .page-controls .next.active {
+  display: block;
+}
+
+.page-controls .previous {
+  top: 15px;
+}
+
+.page-controls .next {
+  bottom: 15px;
 }
 
 .icon .cls-1 {
