@@ -874,6 +874,8 @@ form.inverted input, form.inverted textarea {
   color: white;
   top: 100%;
   left: 230px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {

@@ -41,6 +41,7 @@
     @include blackSection();
     top: 100%;
     left: $navbar-width;
+    transition: $get-started-animation-duration;
 
     &.active {
         top: 0;
@@ -55,6 +56,7 @@
 #get-started {
     top: 0;
     left: 100%;
+
     &.active {
         left: $navbar-width;
     }
