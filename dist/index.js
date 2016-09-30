@@ -109,12 +109,8 @@ var Menu = function () {
     _createClass(Menu, [{
         key: '_bindMenuItemsClick',
         value: function _bindMenuItemsClick() {
-            $('.open-menu-btn').click(function () {
-                $('nav .menu').addClass('opened');
-            });
-
-            $('.close-menu-btn').click(function () {
-                $('nav .menu').removeClass('opened');
+            $('.menu-btn').click(function () {
+                $('nav .menu').toggleClass('opened');
             });
 
             $('nav .lang .en').click(function () {

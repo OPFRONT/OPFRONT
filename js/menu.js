@@ -11,14 +11,9 @@ class Menu {
     }
 
     _bindMenuItemsClick() {
-        $('.open-menu-btn').click(() => {
-            $('nav .menu').addClass('opened');
+        $('.menu-btn').click(() => {
+            $('nav .menu').toggleClass('opened');
         });
-
-        $('.close-menu-btn').click(() => {
-            $('nav .menu').removeClass('opened');
-        });
-
 
         $('nav .lang .en').click(() => {
             $('nav .lang').removeClass('fr');
