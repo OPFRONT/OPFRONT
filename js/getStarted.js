@@ -1,3 +1,5 @@
+const GET_STARTED_ANIMATION_DURATION = 600;
+
 $('.btn.get-started').click((e) => {
     $('#get-started').addClass('active');
 });
@@ -9,13 +11,16 @@ const closeGetStarted = (callback) => {
         $('#thanks.active, #choose-solution.active, #subscribe.active, #webstore.active').addClass('closing');
         $('#get-started').removeClass('active');
         window.setTimeout(() => {
-            $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('active').removeClass('closing');
-        }, 1800);
+            $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('active');
+        }, GET_STARTED_ANIMATION_DURATION);
+        window.setTimeout(() => {
+            $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('closing');
+        }, GET_STARTED_ANIMATION_DURATION * 3);
 
         if(callback) {
             window.setTimeout(() => {
                 callback();
-            }, 600);
+            }, GET_STARTED_ANIMATION_DURATION);
         }
     } else {
         callback();

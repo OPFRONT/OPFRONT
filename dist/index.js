@@ -25,6 +25,8 @@ $('input, textarea').focusout(function (e) {
         input.removeClass('filled');
     }
 });
+var GET_STARTED_ANIMATION_DURATION = 600;
+
 $('.btn.get-started').click(function (e) {
     $('#get-started').addClass('active');
 });
@@ -36,13 +38,16 @@ var closeGetStarted = function closeGetStarted(callback) {
         $('#thanks.active, #choose-solution.active, #subscribe.active, #webstore.active').addClass('closing');
         $('#get-started').removeClass('active');
         window.setTimeout(function () {
-            $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('active').removeClass('closing');
-        }, 1800);
+            $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('active');
+        }, GET_STARTED_ANIMATION_DURATION);
+        window.setTimeout(function () {
+            $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('closing');
+        }, GET_STARTED_ANIMATION_DURATION * 3);
 
         if (callback) {
             window.setTimeout(function () {
                 callback();
-            }, 600);
+            }, GET_STARTED_ANIMATION_DURATION);
         }
     } else {
         callback();
@@ -251,9 +256,16 @@ var Parallax = function () {
     return Parallax;
 }();
 
+// Bug: This doesn't work in Safari. Seems like there's a problem with the spread operator while transpiling.
+
+
 var SECTION_IDS = ['#header'].concat(_toConsumableArray($('nav .menu .menu-item').map(function (_, elem) {
     return $(elem).attr('href');
 })));
+// let SECTION_IDS = ['#header'];
+// $('nav .menu .menu-item').map((_, elem) => {
+//     SECTION_IDS.push($(elem).attr('href'))
+// });
 
 var menu = new Menu();
 var parallax = new Parallax();

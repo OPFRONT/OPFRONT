@@ -1,4 +1,9 @@
+// Bug: This doesn't work in Safari. Seems like there's a problem with the spread operator while transpiling.
 const SECTION_IDS = ['#header', ...$('nav .menu .menu-item').map((_, elem) => $(elem).attr('href'))];
+// let SECTION_IDS = ['#header'];
+// $('nav .menu .menu-item').map((_, elem) => {
+//     SECTION_IDS.push($(elem).attr('href'))
+// });
 
 const menu = new Menu();
 const parallax = new Parallax();

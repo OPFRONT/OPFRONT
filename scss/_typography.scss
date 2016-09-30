@@ -65,6 +65,8 @@ p {
     letter-spacing: 1px;
 }
 
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+
 @font-face {
     font-family: 'Museo Sans';
     font-style: normal;
@@ -113,16 +115,16 @@ p {
     font-weight: 700;
     src: local('Museo Sans'), url('./font/MuseoSans-700italic.otf') format('opentype');
 }
-@font-face {
-    font-family: 'Museo Sans';
-    font-style: normal;
-    font-weight: 900;
-    src: local('Museo Sans'), url('./font/MuseoSans-900.otf') format('opentype');
-}
-@font-face {
-    font-family: 'Museo Sans';
-    font-style: italic;
-    font-weight: 900;
-    src: local('Museo Sans'), url('./font/MuseoSans-900italic.otf') format('opentype');
-}
+//@font-face {
+//    font-family: 'Museo Sans';
+//    font-style: normal;
+//    font-weight: 900;
+//    src: local('Museo Sans'), url('./font/MuseoSans-900.otf') format('opentype');
+//}
+//@font-face {
+//    font-family: 'Museo Sans';
+//    font-style: italic;
+//    font-weight: 900;
+//    src: local('Museo Sans'), url('./font/MuseoSans-900italic.otf') format('opentype');
+//}
 

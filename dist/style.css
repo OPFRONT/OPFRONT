@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -194,20 +195,6 @@ p {
   font-style: italic;
   font-weight: 700;
   src: local("Museo Sans"), url("./font/MuseoSans-700italic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Museo Sans';
-  font-style: normal;
-  font-weight: 900;
-  src: local("Museo Sans"), url("./font/MuseoSans-900.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Museo Sans';
-  font-style: italic;
-  font-weight: 900;
-  src: local("Museo Sans"), url("./font/MuseoSans-900italic.otf") format("opentype");
 }
 
 .page-content {
@@ -772,8 +759,8 @@ form.inverted input, form.inverted textarea {
   width: 100vw;
   padding-right: 230px;
   position: fixed;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0s;
+  transition: 0s;
   background-color: black;
   color: white;
   top: 100%;
@@ -818,6 +805,8 @@ form.inverted input, form.inverted textarea {
 
 #get-started.active, #choose-solution.active, #subscribe.active, #webstore.active, #thanks.active {
   top: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 #get-started.closing, #choose-solution.closing, #subscribe.closing, #webstore.closing, #thanks.closing {
@@ -870,13 +859,7 @@ form.inverted input, form.inverted textarea {
   margin-top: 75px;
 }
 
-#subscribe form .form-row input, #subscribe form .form-row textarea {
-  -webkit-text-fill-color: white;
-}
-
 #subscribe form .form-row input.filled, #subscribe form .form-row textarea.filled {
-  -webkit-text-fill-color: white;
-  color: white;
   border-color: white;
 }
 
@@ -990,7 +973,7 @@ form.inverted input, form.inverted textarea {
   z-index: 2;
   padding: 5px 10px;
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 100;
   display: none;
 }
 

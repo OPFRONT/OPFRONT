@@ -1,6 +1,6 @@
 @mixin blackSection() {
     position: fixed;
-    transition: 0.6s;
+    transition: 0s;
     background-color: black;
     color: white;
 }
@@ -44,10 +44,11 @@
 
     &.active {
         top: 0;
+        transition: $get-started-animation-duration;
     }
 
     &.closing {
-        animation: closeGetStarted 1.8s;
+        animation: closeGetStarted $get-started-animation-duration * 3;
     }
 }
 
@@ -105,10 +106,7 @@
     }
     form .form-row {
         input, textarea {
-            -webkit-text-fill-color: white;
             &.filled {
-                -webkit-text-fill-color: white;
-                color: white;
                 border-color: white;
             }
         }
