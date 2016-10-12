@@ -18,89 +18,89 @@ nav {
     }
 
     .menu {
-        position: relative;
+//        position: relative;
 
         display: flex;
         justify-content: center;
-        margin-top: -150px;
+//        margin-top: -150px;
 
         cursor: pointer;
 
         transition: ease 1s;
 
-        .menu-btn {
-            width: 25px;
-            height: 20px;
-            position: relative;
-            transform: rotate(0deg);
-            transition: .5s ease-in-out;
-            cursor: pointer;
-            span {
-                display: block;
-                position: absolute;
-                height: 2px;
-                width: 100%;
-                background: $opfront-black;
-                opacity: 1;
-                left: 0;
-                transform: rotate(0deg);
-                transition: .25s ease-in-out;
-                transform-origin: left center;
-                &:nth-child(1) {
-                    top: 0px;
-                }
-                &:nth-child(2) {
-                    top: 9px;
-                }
-                &:nth-child(3) {
-                    top: 18px;
-                }
-            }
-        }
+  //     .menu-btn {
+  //         width: 25px;
+  //         height: 20px;
+  //         position: relative;
+  //         transform: rotate(0deg);
+  //         transition: .5s ease-in-out;
+  //         cursor: pointer;
+  //         span {
+  //             display: block;
+  //             position: absolute;
+  //             height: 2px;
+  //             width: 100%;
+  //             background: $opfront-black;
+  //             opacity: 1;
+  //             left: 0;
+  //             transform: rotate(0deg);
+  //             transition: .25s ease-in-out;
+  //             transform-origin: left center;
+  //             &:nth-child(1) {
+  //                 top: 0px;
+  //             }
+  //             &:nth-child(2) {
+  //                 top: 9px;
+  //             }
+  //             &:nth-child(3) {
+  //                 top: 18px;
+  //             }
+  //         }
+  //     }
 
-        &.opened {
-            .menu-btn {
-                span:nth-child(1) {
-                    transform: rotate(45deg);
-                    left: 4px;
-                }
-                span:nth-child(2) {
-                    width: 0%;
-                    opacity: 0;
-                }
-                span:nth-child(3) {
-                    transform: rotate(-45deg);
-                    left: 4px;
-                }
-            }
-
-            .menu-items {
-                height: 119px;
-            }
-        }
+ //       &.opened {
+ //           .menu-btn {
+ //               span:nth-child(1) {
+ //                   transform: rotate(45deg);
+ //                   left: 4px;
+ //               }
+ //               span:nth-child(2) {
+ //                   width: 0%;
+ //                   opacity: 0;
+ //               }
+ //               span:nth-child(3) {
+ //                   transform: rotate(-45deg);
+ //                   left: 4px;
+ //               }
+ //           }
+//
+ //           .menu-items {
+ //               height: 119px;
+ //           }
+ //       }
 
         .menu-items {
-            position: absolute;
-            top: $menu-button-size + 10px;
-            left: $menu-close-btn-width/2;
-            transform: translateX(-50%);
+//            position: absolute;
+//            top: $menu-button-size + 10px;
+//            left: $menu-close-btn-width/2;
+//            transform: translateX(-50%);
 
             background-color: $opfront-black;
 
             text-align: center;
 
-            height: 0;
-            overflow: hidden;
+//            height: 0;
+//            overflow: hidden;
             transition: ease 0.5s;
 
             .menu-item {
                 display: block;
                 padding: 8px;
                 width: $menu-item-width;
-                color: $opfront-white;
+                color: $opfront-black;
                 letter-spacing: 1px;
 
-                border-bottom: 1px solid $menu-border-color;
+//                border-bottom: 1px solid $menu-border-color;
 
                 transition: $default-transition-time;
 
