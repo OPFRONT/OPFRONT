@@ -25,11 +25,6 @@
         <img src="dist/img/opfront-logo.png" alt="Opfront logo">
     </a>
     <div class="menu opened">
-        <div class="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
         <ul class="menu-items">
             <a href="#pros" class="menu-item">avantages</a>
             <a href="#vision" class="menu-item">vision</a>
@@ -171,7 +166,7 @@
                     </div>
                 </div>
                 <div class="start-now">
-                    <button class="btn get-started">commencer maintenant</button>
+                    <button id="get-started-pros" class="btn get-started" track-click>commencer maintenant</button>
                 </div>
             </div>
         </div>
@@ -196,7 +191,7 @@
                     </p>
                 </div>
                 <div class="start-now">
-                    <button class="btn get-started">commencer maintenant</button>
+                    <button id="get-started-vision" class="btn get-started" track-click>commencer maintenant</button>
                 </div>
             </div>
         </div>
@@ -215,7 +210,7 @@
                     </p>
                 </div>
                 <div class="start-now">
-                    <button class="btn get-started">commencer maintenant</button>
+                    <button id="get-started-about" class="btn get-started" track-click>commencer maintenant</button>
                 </div>
             </div>
         </div>
@@ -239,29 +234,29 @@
                     </div>
                 </div>
                 <div class="paragraph">
-                    <form action="" id="contact-us-form">
+                    <form action="" id="contact-us-form" enctype="application/json">
                         <div class="form-row">
                             <div class="form-input half required">
-                                <input type="text" placeholder="prénom" class="teal-glow" required>
+                                <input name="firstname" type="text" placeholder="prénom" class="teal-glow" required>
                             </div>
                             <div class="form-input half required">
-                                <input type="text" placeholder="nom" class="teal-glow" required>
+                                <input name="lastname" type="text" placeholder="nom" class="teal-glow" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-input half">
-                                <input type="text" placeholder="téléphone" class="teal-glow">
+                                <input name="phone" type="text" placeholder="téléphone" class="teal-glow">
                             </div>
                             <div class="form-input half required">
-                                <input type="text" placeholder="courriel" class="teal-glow" required>
+                                <input name="email" type="text" placeholder="courriel" class="teal-glow" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-input half">
-                                <input type="text" placeholder="compagnie" class="teal-glow">
+                                <input name="company" type="text" placeholder="compagnie" class="teal-glow">
                             </div>
                             <div class="form-input half">
-                                <input type="text" placeholder="site web" class="teal-glow">
+                                <input name="website" type="text" placeholder="site web" class="teal-glow">
                             </div>
                         </div>
                         <div class="form-row">
@@ -334,7 +329,7 @@
                         </p>
                     </div>
                     <div class="choose">
-                        <button class="btn">choisir</button>
+                        <button id="select-template-1"class="btn" track-click>choisir</button>
                     </div>
                 </div>
                 <div id="showcase-option" class="option">
@@ -348,7 +343,7 @@
                         </p>
                     </div>
                     <div class="choose">
-                        <button class="btn">choisir</button>
+                        <button id="select-template-2" class="btn" track-click>choisir</button>
                     </div>
                 </div>
             </div>
@@ -421,6 +416,12 @@
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("uj3iT1aRa9dqOpIgm9dyrro1hpepGdur");
+  analytics.page()
+  }}();
+</script>
 <script src="dist/index.js"></script>
 </body>
 </html>

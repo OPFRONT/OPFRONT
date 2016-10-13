@@ -348,7 +348,7 @@ p {
 
 #header {
   color: white;
-  background-image: url(https://images.unsplash.com/photo-1471565661762-b9dfae862dbe?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+  background-image: url(https://images.unsplash.com/photo-1442810480970-6d3fc310e3eb?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=999&q=80&cs=tinysrgb);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -549,6 +549,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   font-size: 17px;
 }
 
@@ -557,89 +558,19 @@ nav img {
 }
 
 nav .menu {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -150px;
   cursor: pointer;
   -webkit-transition: ease 1s;
   transition: ease 1s;
 }
 
-nav .menu .menu-btn {
-  width: 25px;
-  height: 20px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-nav .menu .menu-btn span {
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: black;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
-}
-
-nav .menu .menu-btn span:nth-child(1) {
-  top: 0px;
-}
-
-nav .menu .menu-btn span:nth-child(2) {
-  top: 9px;
-}
-
-nav .menu .menu-btn span:nth-child(3) {
-  top: 18px;
-}
-
-nav .menu.opened .menu-btn span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  left: 4px;
-}
-
-nav .menu.opened .menu-btn span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-nav .menu.opened .menu-btn span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  left: 4px;
-}
-
-nav .menu.opened .menu-items {
-  height: 119px;
-}
-
 nav .menu .menu-items {
-  position: absolute;
-  top: 30px;
-  left: 12.5px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: black;
   text-align: center;
-  height: 0;
-  overflow: hidden;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
@@ -647,10 +578,10 @@ nav .menu .menu-items {
 nav .menu .menu-items .menu-item {
   display: block;
   padding: 8px;
-  width: 150px;
-  color: white;
+  margin: 10px 0;
+  width: 125px;
+  color: black;
   letter-spacing: 1px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -692,75 +623,6 @@ nav .lang.fr .en {
 
 nav .get-started {
   margin-bottom: 25px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-#nav-icon4 {
-  width: 60px;
-  height: 45px;
-  position: relative;
-  margin: 50px auto;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-#nav-icon4 span {
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background: #d3531a;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-
-#nav-icon4 span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4 span:nth-child(2) {
-  top: 18px;
-  -webkit-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4 span:nth-child(3) {
-  top: 36px;
-  -webkit-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: -3px;
-  left: 8px;
-}
-
-#nav-icon4.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-#nav-icon4.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 39px;
-  left: 8px;
 }
 
 form .form-row {
@@ -1101,7 +963,7 @@ form.inverted input, form.inverted textarea {
     left: calc(5% + 230px);
   }
   #black-stick {
-    left: 230px;
+    left: 240px;
   }
 }
 
