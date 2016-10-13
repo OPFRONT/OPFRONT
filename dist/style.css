@@ -324,11 +324,15 @@ p {
           justify-content: space-between;
 }
 
-.section-container .section-content .paragraph-icons .third {
-  width: 23%;
+.section-container .section-content .paragraph-icons img {
+  width: 100%;
 }
 
-.section-container .section-content .paragraph-icons .third .icon-title {
+.section-container .section-content .paragraph-icons .fourth {
+  width: 21%;
+}
+
+.section-container .section-content .paragraph-icons .fourth .icon-title {
   margin-top: 42.5px;
 }
 
