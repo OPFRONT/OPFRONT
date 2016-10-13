@@ -78,7 +78,7 @@ html {
 *, body {
   font-family: 'Museo Sans', 'Lato', sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,47 +86,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 86px;
+  font-size: 103px;
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 90px;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
-h4 {
-  font-size: 12px;
-}
-
-.title, h2.subtitle {
-  letter-spacing: 5px;
+.text-center, .title, .subtitle, .icon-title {
   text-align: center;
 }
 
-h2.subtitle {
+.title, .subtitle {
+  letter-spacing: 7px;
+}
+
+.subtitle {
   margin-bottom: 85px;
 }
 
-h3.subtitle {
-  margin: 50px 0;
-  text-align: left;
-  letter-spacing: 2px;
+.title-emphasis {
+  color: #27e7d9;
 }
 
-h3.icon-title {
-  font-weight: normal;
-  text-align: center;
+.tagline {
+  font-size: 50px;
+  margin-bottom: 40px;
+  width: 1000px;
+}
+
+.icon-title {
   letter-spacing: 1px;
-  line-height: 22px;
+  line-height: 28px;
 }
 
 a {
   text-decoration: none;
   color: black;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 a:hover {
@@ -136,9 +137,8 @@ a:hover {
 p {
   font-weight: normal;
   text-transform: none;
-  line-height: 24px;
-  font-size: 14px;
-  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
 }
 
 @font-face {
@@ -195,6 +195,20 @@ p {
   font-style: italic;
   font-weight: 700;
   src: local("Museo Sans"), url("./font/MuseoSans-700italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Museo Sans"), url("./font/MuseoSans-900.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: italic;
+  font-weight: 900;
+  src: local("Museo Sans"), url("./font/MuseoSans-900italic.otf") format("opentype");
 }
 
 .page-content {
@@ -276,7 +290,7 @@ p {
 }
 
 .section-container .section-content {
-  width: 700px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -288,7 +302,7 @@ p {
 .section-container .section-content .paragraph .paragraph-title {
   font-weight: bolder;
   letter-spacing: 2px;
-  line-height: 24px;
+  line-height: 28px;
 }
 
 .section-container .section-content .paragraph a {
@@ -336,9 +350,30 @@ p {
   margin-top: 42.5px;
 }
 
+#header {
+  color: white;
+  background-image: url(https://images.unsplash.com/photo-1450027179084-b3ff1fce4bb5?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#header .section-container {
+  z-index: 1;
+}
+
 .btn {
   text-align: center;
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 1px;
   cursor: pointer;
   padding: 8px 30px;
@@ -519,7 +554,7 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  font-size: 13px;
+  font-size: 17px;
 }
 
 nav img {
@@ -548,7 +583,7 @@ nav .menu .menu-items .menu-item {
   display: block;
   padding: 8px;
   margin: 10px 0;
-  width: 125px;
+  width: 150px;
   color: black;
   letter-spacing: 1px;
   -webkit-transition: 0.3s;
@@ -633,7 +668,7 @@ form .form-row input, form .form-row textarea {
   padding: 10px 20px;
   border: 1px solid #aeaeae;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 form .form-row input.no-glow:focus, form .form-row textarea.no-glow:focus {

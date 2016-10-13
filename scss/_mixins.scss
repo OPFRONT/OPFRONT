@@ -63,3 +63,24 @@
         }
     }
 }
+
+$adobe-letter-spacing-ratio: 7/90;
+@mixin letter-spacing-from-adobe($value) {
+    letter-spacing: #{$value * $adobe-letter-spacing-ratio}px;
+}
+
+@mixin black-section() {
+    position: fixed;
+    transition: 0s;
+    background-color: black;
+    color: white;
+}
+
+$bg:"https://images.unsplash.com/photo-1471015060382-6cbd8b4e34d0?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb",
+    "https://images.unsplash.com/photo-1450027179084-b3ff1fce4bb5?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb",
+    "https://images.unsplash.com/photo-1471565661762-b9dfae862dbe?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb",
+    "https://images.unsplash.com/photo-1442810480970-6d3fc310e3eb?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=999&q=80&cs=tinysrgb";
+
+@mixin random-bg-image() {
+    background-image: url(#{nth($bg, random(4))});
+}

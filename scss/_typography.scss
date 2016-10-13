@@ -1,7 +1,7 @@
 *, body {
     font-family: 'Museo Sans', 'Lato', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-size: $default-font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,49 +9,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 86px;
+    font-size: 103px;
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 90px;
 }
 
 h3 {
-    font-size: 14px;
-}
-
-h4 {
     font-size: $default-font-size;
 }
 
-.title {
-    letter-spacing: 5px;
+.text-center {
     text-align: center;
 }
 
-h2.subtitle {
+.title {
+    @include letter-spacing-from-adobe(90);
+    @extend .text-center;
+}
+
+.subtitle {
     @extend .title;
     margin-bottom: $layout-padding;
 }
 
-h3 {
-    &.subtitle {
-        margin: 50px 0;
-        text-align: left;
-        letter-spacing: 2px;
-    }
-    &.icon-title {
-        font-weight: normal;
-        text-align: center;
-        letter-spacing: 1px;
-        line-height: 22px;
-    }
+.title-emphasis {
+    color: $opfront-teal;
+}
+
+.tagline {
+    font-size: 50px;
+    margin-bottom: 40px;
+    width: 1000px;
+}
+
+.icon-title {
+    @extend .text-center;
+    letter-spacing: 1px;
+    line-height: $paragraph-line-height;
 }
 
 a {
     text-decoration: none;
     color: $opfront-black;
-    font-weight: 400;
+    font-weight: normal;
     &:hover {
         cursor: pointer;
     }
@@ -61,8 +63,7 @@ p {
     font-weight: normal;
     text-transform: none;
     line-height: $paragraph-line-height;
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: $default-font-size;
 }
 
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
@@ -115,16 +116,16 @@ p {
     font-weight: 700;
     src: local('Museo Sans'), url('./font/MuseoSans-700italic.otf') format('opentype');
 }
-//@font-face {
-//    font-family: 'Museo Sans';
-//    font-style: normal;
-//    font-weight: 900;
-//    src: local('Museo Sans'), url('./font/MuseoSans-900.otf') format('opentype');
-//}
-//@font-face {
-//    font-family: 'Museo Sans';
-//    font-style: italic;
-//    font-weight: 900;
-//    src: local('Museo Sans'), url('./font/MuseoSans-900italic.otf') format('opentype');
-//}
+@font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Museo Sans'), url('./font/MuseoSans-900.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Museo Sans'), url('./font/MuseoSans-900italic.otf') format('opentype');
+}
 
