@@ -90,7 +90,7 @@ var timeout = location.hostname === "localhost" || location.hostname === "127.0.
 
 window.setTimeout(function () {
     $('#page-loader').addClass('hidden');
-}, timeout);
+}, 0);
 
 var Menu = function () {
     function Menu() {
