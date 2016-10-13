@@ -543,6 +543,7 @@ nav .menu .menu-items {
 nav .menu .menu-items .menu-item {
   display: block;
   padding: 8px;
+  margin: 10px 0;
   width: 125px;
   color: black;
   letter-spacing: 1px;
