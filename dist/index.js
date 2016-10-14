@@ -7,32 +7,64 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var CONTACT_FORM_EVENT = 'Contact form sent';
+var SUBSCRIBE_FORM_EVENT = 'Subscribe form sent';
 
-var getFormValuesObject = function getFormValuesObject(formEl) {
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
+
+try {
+    var _loop = function _loop() {
+        var formEl = _step.value;
+
+        formEl.addEventListener('blur', function (_) {
+            if (formEl.value) formEl.classList.add('filled');else formEl.classList.remove('filled');
+        });
+    };
+
+    for (var _iterator = document.querySelectorAll('input,textarea,select')[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        _loop();
+    }
+} catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+} finally {
+    try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+        }
+    } finally {
+        if (_didIteratorError) {
+            throw _iteratorError;
+        }
+    }
+}
+
+var _getFormValuesObject = function _getFormValuesObject(formEl) {
     var formValuesEls = formEl.querySelectorAll('input,textarea,select');
-    var formValues = {};
 
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
+    var formValues = {};
+    var _iteratorNormalCompletion2 = true;
+    var _didIteratorError2 = false;
+    var _iteratorError2 = undefined;
 
     try {
-        for (var _iterator = formValuesEls[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var formValueEl = _step.value;
+        for (var _iterator2 = formValuesEls[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+            var formValueEl = _step2.value;
 
             formValues[formValueEl.name] = formValueEl.value;
         }
     } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
     } finally {
         try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
+            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                _iterator2.return();
             }
         } finally {
-            if (_didIteratorError) {
-                throw _iteratorError;
+            if (_didIteratorError2) {
+                throw _iteratorError2;
             }
         }
     }
@@ -40,11 +72,25 @@ var getFormValuesObject = function getFormValuesObject(formEl) {
     return formValues;
 };
 
-$('#subscribe-form').submit(function (e) {
-    $('#thanks').addClass('active');
-    e.preventDefault();
-});
+var _addUserAsLead = function _addUserAsLead(userInfo) {
+    var identifyPayload = {
+        firstName: userInfo.firstname,
+        lastName: userInfo.lastname,
+        email: userInfo.email,
+        phone: userInfo.phone,
+        createdAt: new Date().toISOString(),
+        company: {
+            name: userInfo.company,
+            website: userInfo.website
+        },
+        website: userInfo.website
+    };
 
+    //TODO find a better way to add leads, seems like its not working with freshsales
+    // analytics.identify(userInfo.email, identifyPayload)
+};
+
+//CONTACT
 document.getElementById('contact-us-form').addEventListener('submit', function (e) {
     var form = e.target;
 
@@ -52,44 +98,28 @@ document.getElementById('contact-us-form').addEventListener('submit', function (
     document.querySelector('#contact .thanks').classList.add('active');
     form.querySelector('.btn[type="submit"]').setAttribute('disabled', true);
 
-    var formValues = getFormValuesObject(e.target);
+    var formValues = _getFormValuesObject(e.target);
 
     var message = formValues.firstname + ' ' + formValues.lastname + ' (' + formValues.email + ') asks for contact on website.\n message: ' + formValues.message;
     sendMessageToSlack(message);
     analytics.track(CONTACT_FORM_EVENT, formValues);
 });
 
-var _iteratorNormalCompletion2 = true;
-var _didIteratorError2 = false;
-var _iteratorError2 = undefined;
+//SUBSCRIBE
+document.getElementById('subscribe-form').addEventListener('submit', function (e) {
+    var form = e.target;
 
-try {
-    var _loop = function _loop() {
-        var formEl = _step2.value;
+    e.preventDefault();
+    var formValues = _getFormValuesObject(form);
+    analytics.track(SUBSCRIBE_FORM_EVENT, formValues);
+    _addUserAsLead(formValues);
 
-        formEl.addEventListener('blur', function (_) {
-            if (formEl.value) formEl.classList.add('filled');else formEl.classList.remove('filled');
-        });
-    };
-
-    for (var _iterator2 = document.querySelectorAll('input,textarea,select')[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-        _loop();
-    }
-} catch (err) {
-    _didIteratorError2 = true;
-    _iteratorError2 = err;
-} finally {
-    try {
-        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-            _iterator2.return();
-        }
-    } finally {
-        if (_didIteratorError2) {
-            throw _iteratorError2;
-        }
-    }
-}
-
+    var message = formValues.firstname + ' ' + formValues.lastname + ' (' + formValues.email + ') just subscribed.';
+    for (var key in formValues) {
+        message += '\n ' + key + ' : ' + formValues[key];
+    }sendMessageToSlack(message);
+    document.getElementById('thanks').classList.add('active');
+});
 var GET_STARTED_ANIMATION_DURATION = 600;
 
 $('.btn.get-started').click(function (e) {
