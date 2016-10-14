@@ -1,0 +1,28 @@
+.visible-tablet {
+    display: none;
+}
+
+.visible-phone {
+    display: none;
+}
+
+@media #{$tablet-media-query} {
+    .hidden-tablet {
+        display: none;
+    }
+
+    .visible-tablet {
+        display: block;
+    }
+}
+
+
+@media #{$phone-media-query} {
+    .hidden-phone {
+        display: none;
+    }
+
+    .visible-phone {
+        display: block;
+    }
+}
