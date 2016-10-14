@@ -6,6 +6,13 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var isProdEnv = !(location.hostname == 'localhost' || location.hostname == '127.0.0.1');
+
+if (isProdEnv) {
+    var lang = navigator.language || navigator.browserLanguage;
+    if (lang != 'fr') location.replace(location.origin + '/en');
+}
+
 var CONTACT_FORM_EVENT = 'Contact form sent';
 var SUBSCRIBE_FORM_EVENT = 'Subscribe form sent';
 
@@ -120,6 +127,7 @@ document.getElementById('subscribe-form').addEventListener('submit', function (e
     }sendMessageToSlack(message);
     document.getElementById('thanks').classList.add('active');
 });
+
 var GET_STARTED_ANIMATION_DURATION = 600;
 
 $('.btn.get-started').click(function (e) {
