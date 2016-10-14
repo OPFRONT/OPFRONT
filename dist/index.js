@@ -120,6 +120,7 @@ document.getElementById('subscribe-form').addEventListener('submit', function (e
     }sendMessageToSlack(message);
     document.getElementById('thanks').classList.add('active');
 });
+
 var GET_STARTED_ANIMATION_DURATION = 600;
 
 $('.btn.get-started').click(function (e) {
