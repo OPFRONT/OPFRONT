@@ -12,7 +12,7 @@ class Menu {
 
     _bindMenuItemsClick() {
         $('.menu-btn').click(() => {
-            $('nav .menu').toggleClass('opened');
+            $('nav').toggleClass('opened');
         });
 
         $('nav .lang .en').click(() => {
@@ -40,6 +40,8 @@ class Menu {
                 scrollTop: sectionOffset
             }, 300);
         });
+
+        $('nav').removeClass('opened');
 
         e.preventDefault();
     }

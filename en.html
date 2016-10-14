@@ -12,22 +12,24 @@
 </head>
 <body>
 <header id="page-loader">
-    <div class="loader">
-        <h2 class="title">soyez vu en ligne</h2>
+    <div class="base">
+        <h1 class="title">soyez vu en ligne</h1>
+    </div>
+    <div class="loaded">
+        <h1 class="title">soyez vu en ligne</h1>
     </div>
 </header>
 
 <nav>
     <a href="#" class="nav-logo">
-        <img class="hidden-tablet" src="dist/img/opfront-logo.png" alt="Opfront logo">
-        <img class="visible-tablet" src="dist/img/opfront-logo-mobile.png" alt="Opfront logo">
+        <img src="dist/img/opfront-logo.png" alt="Opfront logo">
     </a>
     <div class="menu-btn visible-tablet">
         <span></span>
         <span></span>
         <span></span>
     </div>
-    <div class="menu">
+    <div class="menu opened">
         <ul class="menu-items">
             <a href="#pros" class="menu-item">avantages</a>
             <a href="#vision" class="menu-item">vision</a>
@@ -35,7 +37,7 @@
             <a href="#contact" class="menu-item">contact</a>
         </ul>
     </div>
-    <div class="lang fr">
+    <div class="lang en">
         <a href="website.html" class="fr">fr</a>
         <div class="separator">-</div>
         <a href="en.html" class="en">en</a>
@@ -78,20 +80,8 @@
 
     <section id="header">
         <div class="section-container">
-            <h1 class="title tagline">
-                votre clinique<span class="hidden-tablet">.</span>
-                <div class="linebreak visible-tablet"></div>
-                vos services<span class="hidden-tablet">.</span>
-                <div class="linebreak visible-tablet"></div>
-                votre inventaire<span class="hidden-tablet">.</span>
-                <div class="linebreak visible-tablet"></div>
-                <span class="title-emphasis"> en ligne<span class="hidden-tablet">.</span></span>
-            </h1>
+            <h2 class="title tagline">bientôt disponible en anglais</h2>
             <div class="section-content">
-                <p class="text-center">
-                    Vendez en ligne grâce à nos solutions Web directement connectées à votre inventaire en magasin et
-                    spécialement conçues pour les cliniques d’optométrie indépendantes.
-                </p>
                 <div class="start-now">
                     <button class="btn get-started">commencer maintenant</button>
                 </div>
@@ -265,7 +255,7 @@
             <div class="section-content">
                 <div class="paragraph">
                     <p class="paragraph-content">
-                        Exposez vos services et votre inventaire physique dans une boutique en ligne conviviale.
+                        Exposez vos services et votre inventaire physique dans une boutique en ligne conviviale. 
                     </p>
                 </div>
                 <div class="paragraph">
@@ -325,36 +315,10 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript">
-    !function() {
-        var analytics = window.analytics = window.analytics || [];
-        if(!analytics.initialize)if(analytics.invoked)window.console && console.error && console.error("Segment snippet included twice."); else {
-            analytics.invoked = !0;
-            analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"];
-            analytics.factory = function(t) {
-                return function() {
-                    var e = Array.prototype.slice.call(arguments);
-                    e.unshift(t);
-                    analytics.push(e);
-                    return analytics
-                }
-            };
-            for(var t = 0; t < analytics.methods.length; t++) {
-                var e = analytics.methods[t];
-                analytics[e] = analytics.factory(e)
-            }
-            analytics.load = function(t) {
-                var e = document.createElement("script");
-                e.type = "text/javascript";
-                e.async = !0;
-                e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
-                var n = document.getElementsByTagName("script")[0];
-                n.parentNode.insertBefore(e, n)
-            };
-            analytics.SNIPPET_VERSION = "3.1.0";
-            analytics.load("uj3iT1aRa9dqOpIgm9dyrro1hpepGdur");
-            analytics.page()
-        }
-    }();
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("uj3iT1aRa9dqOpIgm9dyrro1hpepGdur");
+  analytics.page()
+  }}();
 </script>
 <script src="dist/index.js"></script>
 </body>

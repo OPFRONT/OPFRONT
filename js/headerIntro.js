@@ -2,4 +2,4 @@ const timeout = location.hostname === "localhost" || location.hostname === "127.
 
 window.setTimeout(() => {
     $('#page-loader').addClass('hidden');
-}, 0);
+}, timeout);

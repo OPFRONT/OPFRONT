@@ -1,11 +1,16 @@
 // RESPONSIVE
 
-$breakpoints: (
-    'phone': 450px,
-    'tablet': 768px,
-    'desktop': 1024px,
-) !default;
+$phone: 480px;
+$phone-horizontal: 767px;
+$tablet: 1024px;
+$mobile-menu: 1250px;
+$desktop: 1100px;
 
+$phone-media-query: 'only screen and (max-device-width: ' $phone '), only screen and (max-device-width: ' $phone-horizontal ') and (-webkit-min-device-pixel-ratio: 2)';
+$tablet-media-query: 'only screen and (max-device-width : ' $tablet '), only screen and (max-width : ' $mobile-menu ')';
+
+$tablet-padding: 30px;
+$mobile-padding: $tablet-padding/2;
 
 // COLORS
 
@@ -38,6 +43,10 @@ $menu-button-size: 20px;
 $menu-item-width: $navbar-inner-width;
 $menu-close-btn-width: 25px;
 
+$navbar-mobile-inner-width: 50px;
+$navbar-mobile-padding: 15px;
+$navbar-mobile-width: $navbar-mobile-inner-width + $navbar-mobile-padding*2;
+
 
 // FONT SIZE
 $default-font-size: 18px;
@@ -46,7 +55,7 @@ $nav-font-size: $buttons-font-size;
 
 
 // FORM
-$form-layout-padding: 4px;
+$form-layout-padding: 10px;
 $form-input-height: 42px;
 $form-textarea-height: 150px;
 

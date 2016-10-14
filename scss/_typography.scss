@@ -1,71 +1,3 @@
-*, body {
-    font-family: 'Museo Sans', 'Lato', sans-serif;
-    text-transform: uppercase;
-    font-size: $default-font-size;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-}
-
-h1 {
-    font-size: 103px;
-}
-
-h2 {
-    font-size: 90px;
-}
-
-h3 {
-    font-size: $default-font-size;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.title {
-    @include letter-spacing-from-adobe(90);
-    @extend .text-center;
-}
-
-.subtitle {
-    @extend .title;
-    margin-bottom: $layout-padding;
-}
-
-.title-emphasis {
-    color: $opfront-teal;
-}
-
-.tagline {
-    font-size: 50px;
-    margin-bottom: 40px;
-    width: 1000px;
-}
-
-.icon-title {
-    @extend .text-center;
-    letter-spacing: 1px;
-    line-height: $paragraph-line-height;
-}
-
-a {
-    text-decoration: none;
-    color: $opfront-black;
-    font-weight: normal;
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-p {
-    font-weight: normal;
-    text-transform: none;
-    line-height: $paragraph-line-height;
-    font-size: $default-font-size;
-}
-
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
 
 @font-face {
@@ -129,3 +61,113 @@ p {
     src: local('Museo Sans'), url('./font/MuseoSans-900italic.otf') format('opentype');
 }
 
+*, body {
+    font-family: 'Museo Sans', 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 90px;
+}
+
+h3 {
+    font-size: $default-font-size;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    @include letter-spacing-from-adobe(90);
+    @extend .text-center;
+}
+
+.subtitle {
+    @extend .title;
+    margin-bottom: $layout-padding;
+}
+
+.title-emphasis {
+    color: $opfront-teal;
+}
+
+.tagline {
+    margin-bottom: 40px;
+    width: 1000px;
+}
+
+.icon-title {
+    @extend .text-center;
+    letter-spacing: 1px;
+    line-height: $paragraph-line-height;
+}
+
+a {
+    text-decoration: none;
+    color: $opfront-black;
+    font-weight: normal;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+p {
+    font-weight: normal;
+    text-transform: none;
+    line-height: $paragraph-line-height;
+    font-size: $default-font-size;
+}
+
+@media #{$tablet-media-query} {
+    .tagline {
+        width: calc(100% - #{$tablet-padding*2});
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+}
+
+@media #{$phone-media-query} {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .subtitle {
+        width: calc(100% - 30px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tagline {
+        width: calc(100% - #{$mobile-padding*2});
+    }
+}

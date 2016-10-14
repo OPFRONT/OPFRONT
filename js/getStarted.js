@@ -5,7 +5,7 @@ $('.btn.get-started').click((e) => {
 });
 
 const closeGetStarted = (callback) => {
-    let openedAsideSections = $('#thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
+    let openedAsideSections = $('#get-started.active, #thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
 
     if(openedAsideSections.length > 0) {
         $('#thanks.active, #choose-solution.active, #subscribe.active, #webstore.active').addClass('closing');
@@ -23,7 +23,9 @@ const closeGetStarted = (callback) => {
             }, GET_STARTED_ANIMATION_DURATION);
         }
     } else {
-        callback();
+        if(callback) {
+            callback();
+        }
     }
 };
 
