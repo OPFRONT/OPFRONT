@@ -12,40 +12,40 @@
         z-index: -1;
     }
 
-    z-index: 3;
+    z-index: 5;
 
-    img {
-        width: 300px;
-        transition: ease 1s;
-        &.hidden {
-            opacity: 0;
-            z-index: -1;
-        }
-    }
-
-    .base {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .loader {
+        position: relative;
         height: 100%;
         width: 100%;
-        position: fixed;
+
         color: $opfront-gray;
-    }
-    .loaded {
-        position: relative;
-        overflow: hidden;
 
-        height: 100%;
-
-        animation: loading 2s;
-        animation-timing-function: cubic-bezier(.2,.53,.72,-0.13);
-
-        h1 {
+        h2.title {
             position: absolute;
-            @include viewport-unit(width, 100vw);
-            transform: translateY(-50%);
             top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 974px;
+
+            &:after {
+                content: 'soyez vu en ligne';
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                white-space: nowrap;
+                overflow: hidden;
+
+                font-size: 90px;
+                @include letter-spacing-from-adobe(90);
+                color: $opfront-black;
+
+                width: 100%;
+
+                animation: loading 2s;
+                animation-timing-function: cubic-bezier(1,.25,.63,1.04);
+            }
         }
     }
 }
@@ -54,7 +54,39 @@
     0% {
         width: 0;
     }
+    15% {
+        width: 0;
+    }
     100% {
         width: 100%;
+    }
+}
+
+
+@media #{$tablet-media-query} {
+    #page-loader {
+        .loader {
+            h2.title {
+                width: 690px;
+                font-size: 60px;
+                &:after {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$phone-media-query} {
+    #page-loader {
+        .loader {
+            h2.title {
+                width: 290px;
+                font-size: 18px;
+                &:after {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }

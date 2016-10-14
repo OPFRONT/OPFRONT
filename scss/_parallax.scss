@@ -53,21 +53,21 @@
     }
 }
 
-@media (max-width: 1300px) {
+@media only screen and (max-width: $mobile-menu) {
     #red-stick {
         right: 2%;
     }
 
     #teal-stick {
-        left: calc(5% + #{$navbar-width});
+        left: calc(5% + #{$navbar-mobile-width});
     }
 
     #black-stick {
-        left: $navbar-width + 10px;
+        left: $navbar-mobile-width + 10px;
     }
 }
 
-@media (max-width: 1075px) {
+@media only screen and (max-width: $desktop) {
     .parallax {
         display: none;
     }

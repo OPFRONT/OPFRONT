@@ -6,8 +6,6 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// import * as slacker from './slacker';
-
 var CONTACT_FORM_EVENT = 'Contact form sent';
 
 var getFormValuesObject = function getFormValuesObject(formEl) {
@@ -99,7 +97,7 @@ $('.btn.get-started').click(function (e) {
 });
 
 var closeGetStarted = function closeGetStarted(callback) {
-    var openedAsideSections = $('#thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
+    var openedAsideSections = $('#get-started.active, #thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
 
     if (openedAsideSections.length > 0) {
         $('#thanks.active, #choose-solution.active, #subscribe.active, #webstore.active').addClass('closing');
@@ -117,7 +115,9 @@ var closeGetStarted = function closeGetStarted(callback) {
             }, GET_STARTED_ANIMATION_DURATION);
         }
     } else {
-        callback();
+        if (callback) {
+            callback();
+        }
     }
 };
 
@@ -177,7 +177,7 @@ var Menu = function () {
         key: '_bindMenuItemsClick',
         value: function _bindMenuItemsClick() {
             $('.menu-btn').click(function () {
-                $('nav .menu').toggleClass('opened');
+                $('nav').toggleClass('opened');
             });
 
             $('nav .lang .en').click(function () {
@@ -207,6 +207,8 @@ var Menu = function () {
                     scrollTop: sectionOffset
                 }, 300);
             });
+
+            $('nav').removeClass('opened');
 
             e.preventDefault();
         }

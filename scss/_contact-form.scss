@@ -37,12 +37,12 @@ form {
 
             &.no-glow {
                 &:focus {
-                    outline:none !important;
+                    outline: none !important;
                 }
             }
             &.teal-glow {
                 &:focus {
-                    outline:none !important;
+                    outline: none !important;
                     border: 2px solid $opfront-teal;
                     box-shadow: 0 1px 1px rgba(110, 255, 246, 0.075) inset, 0 0 8px rgba(110, 255, 246, 0.6);
                 }
@@ -65,6 +65,9 @@ form {
             border: 1px solid white;
             background-color: black;
             color: white;
+            &.filled {
+                border-color: white;
+            }
         }
     }
 }
@@ -79,5 +82,21 @@ form {
     &.active {
         height: 72px;
         opacity: 1;
+    }
+}
+
+@media #{$tablet-media-query} {
+
+}
+
+@media #{$phone-media-query} {
+    form {
+        .form-row {
+            margin-bottom: 0;
+            .form-input.half {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
     }
 }

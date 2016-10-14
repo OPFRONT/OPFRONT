@@ -1,10 +1,3 @@
-@mixin blackSection() {
-    position: fixed;
-    transition: 0s;
-    background-color: black;
-    color: white;
-}
-
 .page-content section.aside-section {
     z-index: 3;
     .navigation-control {
@@ -34,11 +27,30 @@
     }
 }
 
+@keyframes closeGetStartedMobile {
+    0% {
+        left: $navbar-mobile-width;
+        top: 0;
+    }
+    33% {
+        left: 100%;
+        top: 0;
+    }
+    67% {
+        left: 100%;
+        top: 100%;
+    }
+    100% {
+        left: $navbar-mobile-width;
+        top: 100%;
+    }
+}
+
 #get-started, #choose-solution, #subscribe, #webstore, #thanks {
     @include viewport-unit(width, 100vw);
     padding-right: $navbar-width;
 
-    @include blackSection();
+    @include black-section();
     top: 100%;
     left: $navbar-width;
     transition: $get-started-animation-duration;
@@ -143,4 +155,30 @@
             line-height: $get-started-options-line-height;
         }
     }
+}
+
+@media #{$tablet-media-query} {
+    .page-content section.aside-section {
+        .navigation-control {
+            transform: translateX(calc(-50% - #{$navbar-mobile-width / 2}));
+        }
+    }
+    #get-started, #choose-solution, #subscribe, #webstore, #thanks {
+        padding-right: $navbar-mobile-width;
+        left: $navbar-mobile-width;
+        &.closing {
+            animation: closeGetStartedMobile $get-started-animation-duration * 3;
+        }
+    }
+
+    #get-started {
+        left: 100%;
+        &.active {
+            left: $navbar-mobile-width;
+        }
+    }
+}
+
+@media #{$phone-media-query} {
+
 }
