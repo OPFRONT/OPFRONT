@@ -93,7 +93,7 @@
                     spécialement conçues pour les cliniques d’optométrie indépendantes.
                 </p>
                 <div class="start-now">
-                    <button class="btn get-started">commencer maintenant</button>
+                    <button id="get-started-head" class="btn get-started" track-click>commencer maintenant</button>
                 </div>
             </div>
         </div>
@@ -106,13 +106,32 @@
                 <div class="paragraph">
                     <h3 class="paragraph-title">une plateforme prête à vous accueillir.</h3>
                     <p class="paragraph-content">
-                        Nous vous offrons plus qu'une simple vitrine virtuelle. Grâce à la technologie Opfront, vous
-                        pourrez vous connecter directement avec votre inventaire en
-                        magasin.
+                        Nous vous offrons plus qu'une simple vitrine virtuelle. Choisissez parmis nos canevas attrayant
+                        spécialement conçus pour les optométristes et nous vous accompagnerons pour y intégrer votre
+                        image de marque, vos services et vos produits.
                     </p>
                 </div>
                 <div class="paragraph-image">
                     <img class="preview img-large" src="dist/img/preview.jpg" alt="App preview">
+                </div>
+                <div class="start-now">
+                    <button id="get-started-templates" class="btn get-started" track-click>commencer maintenant</button>
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-title">Opfront s'intègre avec votre système de gestion de clinique</h3>
+                    <p class="paragraph-content">
+                        Grâce à la technologie Opfront, vous pourrez connecter votre inventaire en ligne avec votre
+                        inventaire en clinique et de garder le tout synchronisé sans misère.
+                    </p>
+                    <div class="paragraph-image text-center">
+                        <img class="img-medium " src="dist/img/ehr-integration.jpg" alt="ehr software integrations">
+                        <p class="image-caption">Vous utilisez un autre système ? <a href="#contact">contactez-nous</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="start-now">
+                    <button id="get-started-integrations" class="btn get-started" track-click>commencer maintenant
+                    </button>
                 </div>
                 <div class="paragraph">
                     <h3 class="paragraph-title">Des outils technologiques qui représentent un réel avantage
@@ -142,7 +161,7 @@
                     </div>
                 </div>
                 <div class="start-now">
-                    <button id="get-started-pros" class="btn get-started" track-click>commencer maintenant</button>
+                    <button id="get-started-features" class="btn get-started" track-click>commencer maintenant</button>
                 </div>
             </div>
         </div>
@@ -288,7 +307,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-input half required">
-                                <input name="company" type="text" placeholder="nom de la clinique" class="teal-glow" required>
+                                <input name="company" type="text" placeholder="nom de la clinique" class="teal-glow"
+                                       required>
                             </div>
                             <div class="form-input half required">
                                 <input name="website" type="text" placeholder="site web" class="teal-glow" required>
@@ -296,7 +316,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-input required">
-                                <input name="ehr_software" type="text" placeholder="logiciel de gestion clinique" class="teal-glow" required>
+                                <input name="ehr_software" type="text" placeholder="logiciel de gestion clinique"
+                                       class="teal-glow" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -330,24 +351,24 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript">
-    !function() {
+    !function () {
         var analytics = window.analytics = window.analytics || [];
-        if(!analytics.initialize)if(analytics.invoked)window.console && console.error && console.error("Segment snippet included twice."); else {
+        if (!analytics.initialize)if (analytics.invoked)window.console && console.error && console.error("Segment snippet included twice."); else {
             analytics.invoked = !0;
             analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"];
-            analytics.factory = function(t) {
-                return function() {
+            analytics.factory = function (t) {
+                return function () {
                     var e = Array.prototype.slice.call(arguments);
                     e.unshift(t);
                     analytics.push(e);
                     return analytics
                 }
             };
-            for(var t = 0; t < analytics.methods.length; t++) {
+            for (var t = 0; t < analytics.methods.length; t++) {
                 var e = analytics.methods[t];
                 analytics[e] = analytics.factory(e)
             }
-            analytics.load = function(t) {
+            analytics.load = function (t) {
                 var e = document.createElement("script");
                 e.type = "text/javascript";
                 e.async = !0;
