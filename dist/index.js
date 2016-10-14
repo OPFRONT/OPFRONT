@@ -7,13 +7,16 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var EN_PATH_NAME = 'en.html';
+var FORCE_LANG_QUERY_PARAM = 'fl';
+var FR_LANG = 'fr';
 
 var isProdEnv = !(location.hostname == 'localhost' || location.hostname == '127.0.0.1');
 var alreadyOnEnglishVersion = location.pathname.indexOf(EN_PATH_NAME) !== -1;
+var isLangForced = location.search.indexOf(FORCE_LANG_QUERY_PARAM) !== -1;
 
-if (isProdEnv && !alreadyOnEnglishVersion) {
+if (isProdEnv && !alreadyOnEnglishVersion && !isLangForced) {
     var userLang = navigator.language || navigator.browserLanguage;
-    if (userLang != 'fr') location.replace(location.origin + '/' + EN_PATH_NAME);
+    if (userLang != FR_LANG) location.replace(location.origin + '/' + EN_PATH_NAME);
 }
 
 var CONTACT_FORM_EVENT = 'Contact form sent';
