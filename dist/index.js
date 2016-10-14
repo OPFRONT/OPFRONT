@@ -6,9 +6,12 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var lang = navigator.language || navigator.browserLanguage;
+var isDevEnV = !(location.hostname == 'localhost' || location.hostname == '127.0.0.1');
 
-if (lang != 'fr') window.location.replace(window.location.origin + '/en');
+if (isDevEnV) {
+    var lang = navigator.language || navigator.browserLanguage;
+    if (lang != 'fr') location.replace(location.origin + '/en');
+}
 
 var CONTACT_FORM_EVENT = 'Contact form sent';
 
