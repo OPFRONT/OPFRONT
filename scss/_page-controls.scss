@@ -26,3 +26,15 @@
         bottom: 15px;
     }
 }
+
+@media #{$tablet-media-query} {
+    .page-controls {
+        .previous, .next {
+            left: calc(50% + #{$navbar-mobile-width/2});
+        }
+    }
+}
+
+@media #{$phone-media-query} {
+
+}

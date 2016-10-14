@@ -44,5 +44,14 @@
 .start-now {
     width:100%;
     text-align: center;
-    margin-top: $layout-padding;
+    margin: $layout-padding 0;
+}
+
+@media #{$phone-media-query} {
+    .btn {
+        font-size: 15px;
+    }
+    .start-now .btn {
+        width: 200px;
+    }
 }
