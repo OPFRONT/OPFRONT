@@ -462,7 +462,7 @@ p {
             flex-direction: column;
   }
   .section-container .section-content .paragraph-icons .fourth {
-    width: 100%;
+    width: 50%;
     margin: 0 auto 50px auto;
   }
   .section-container .section-content .paragraph-icons .fourth .icon-title {
@@ -472,7 +472,7 @@ p {
 
 #header {
   color: white;
-  background-image: url("https://images.unsplash.com/photo-1450027179084-b3ff1fce4bb5?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb");
+  background-image: url("https://images.unsplash.com/photo-1471015060382-6cbd8b4e34d0?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
