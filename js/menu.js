@@ -16,13 +16,15 @@ class Menu {
         });
 
         $('nav .lang .en').click(() => {
-            $('nav .lang').removeClass('fr');
-            $('nav .lang').addClass('en');
+            $('nav .lang').removeClass(FR_LANG);
+            $('nav .lang').addClass(EN_LANG);
+            Cookies.set(LANG_COOKIE, EN_LANG);
         });
 
         $('nav .lang .fr').click(() => {
-            $('nav .lang').removeClass('en');
-            $('nav .lang').addClass('fr');
+            $('nav .lang').removeClass(EN_LANG);
+            $('nav .lang').addClass(FR_LANG);
+            Cookies.set(LANG_COOKIE, FR_LANG);
         });
     }
 

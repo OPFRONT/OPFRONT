@@ -112,7 +112,7 @@ html {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 100;
-  src: local("Museo Sans"), url("./font/MuseoSans-100italic.otf") format("opentype");
+  src: local("Museo Sans"), url("./font/MuseoSans-100Italic.otf") format("opentype");
 }
 
 @font-face {
@@ -126,7 +126,7 @@ html {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 300;
-  src: local("Museo Sans"), url("./font/MuseoSans-300italic.otf") format("opentype");
+  src: local("Museo Sans"), url("./font/MuseoSans-300Italic.otf") format("opentype");
 }
 
 @font-face {
@@ -140,7 +140,7 @@ html {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 500;
-  src: local("Museo Sans"), url("./font/MuseoSans-500italic.otf") format("opentype");
+  src: local("Museo Sans"), url("./font/MuseoSans-500Italic.otf") format("opentype");
 }
 
 @font-face {
@@ -154,7 +154,7 @@ html {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 700;
-  src: local("Museo Sans"), url("./font/MuseoSans-700italic.otf") format("opentype");
+  src: local("Museo Sans"), url("./font/MuseoSans-700Italic.otf") format("opentype");
 }
 
 @font-face {
@@ -168,7 +168,7 @@ html {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 900;
-  src: local("Museo Sans"), url("./font/MuseoSans-900italic.otf") format("opentype");
+  src: local("Museo Sans"), url("./font/MuseoSans-900Italic.otf") format("opentype");
 }
 
 *, body {
@@ -227,6 +227,10 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+a.classic-link:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -472,7 +476,7 @@ p {
 
 #header {
   color: white;
-  background-image: url("https://images.unsplash.com/photo-1471565661762-b9dfae862dbe?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb");
+  background-image: url("https://images.unsplash.com/photo-1442810480970-6d3fc310e3eb?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=999&q=80&cs=tinysrgb");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

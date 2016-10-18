@@ -11,6 +11,9 @@
     <link rel="icon" type="image/jpeg" href="dist/img/favicon.jpg">
 </head>
 <body>
+<style>
+
+</style>
 <nav>
     <a href="#" class="nav-logo">
         <img class="hidden-tablet" src="dist/img/opfront-logo.png" alt="Opfront logo">
@@ -29,7 +32,7 @@
             <a href="#contact" class="menu-item">contact</a>
         </ul>
     </div>
-    <div class="lang en">
+    <div class="lang en hidden">
         <a href="website.html" class="fr">fr</a>
         <div class="separator">-</div>
         <a href="en.html" class="en">en</a>
@@ -82,13 +85,21 @@
                 <span class="title-emphasis"> online<span class="hidden-tablet">.</span></span>
             </h1>
             <div class="section-content">
-                <p class="text-center">Available in english soon. Meanwhile, check our french website <a style="color: white; font-style: italic" href="website.html?fl">here</a></p>
+                <p class="text-center">Available in english soon. Meanwhile, check our french website <a id="redirect-fr" class="classic-link" style="color: white; font-style: italic;" href="website.html?fl">here</a></p>
             </div>
         </div>
     </section>
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    // TODO This is temporary, remove it as soon as we have an english version
+    $( document ).ready(function() {
+        $('#redirect-fr').click(function() {
+            Cookies.set('of-lang', 'fr');
+        })
+    });
+</script>
 <script type="text/javascript">
     !function() {
         var analytics = window.analytics = window.analytics || [];
