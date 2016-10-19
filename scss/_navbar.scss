@@ -125,7 +125,7 @@ nav {
         }
 
         .menu-items, .lang {
-            margin-right: $menu-item-width + $navbar-mobile-width;
+            margin-left: -230px;
         }
 
         &.opened {
