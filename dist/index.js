@@ -183,6 +183,9 @@ if (langCookie) {
     _redirectIfNecessary(langCookie);
 } else {
     var userLang = navigator.language || navigator.browserLanguage;
+    if (userLang.indexOf(EN_LANG) !== -1) {
+        userLang = EN_LANG;
+    }
     _redirectIfNecessary(userLang);
 }
 
