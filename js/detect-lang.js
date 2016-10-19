@@ -23,6 +23,9 @@ const langCookie = Cookies.get(LANG_COOKIE);
 if(langCookie) {
     _redirectIfNecessary(langCookie);
 } else {
-    const userLang = navigator.language || navigator.browserLanguage;
+    let userLang = navigator.language || navigator.browserLanguage;
+    if(userLang.indexOf(EN_LANG) !== -1) {
+        userLang = EN_LANG;
+    }
     _redirectIfNecessary(userLang);
 }
