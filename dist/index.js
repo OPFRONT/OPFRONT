@@ -140,7 +140,7 @@ $('.btn.get-started').click(function (e) {
     $('#get-started').addClass('active');
 });
 
-var closeGetStarted = function closeGetStarted(callback) {
+var closeGetStarted = function closeGetStarted() {
     var openedAsideSections = $('#get-started.active, #thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
 
     if (openedAsideSections.length > 0) {
@@ -153,16 +153,9 @@ var closeGetStarted = function closeGetStarted(callback) {
             $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('closing');
         }, GET_STARTED_ANIMATION_DURATION * 3);
 
-        if (callback) {
-            window.setTimeout(function () {
-                callback();
-            }, GET_STARTED_ANIMATION_DURATION);
-        }
-    } else {
-        if (callback) {
-            callback();
-        }
+        return true;
     }
+    return false;
 };
 
 $('#get-started .navigation-control.previous').click(function (e) {
@@ -246,13 +239,16 @@ var Menu = function () {
             var sectionId = $(e.currentTarget).attr('href');
             var sectionOffset = getSectionOffset(sectionId);
 
-            closeGetStarted(function () {
-                $('html, body').stop().animate({
-                    scrollTop: sectionOffset
-                }, 300);
-            });
+            var getStartedWasOpened = closeGetStarted();
+            var menuIsOpened = $('nav.opened');
 
             $('nav').removeClass('opened');
+
+            window.setTimeout(function () {
+                $('html, body').stop().animate({
+                    scrollTop: sectionOffset
+                }, 500);
+            }, getStartedWasOpened || menuIsOpened ? GET_STARTED_ANIMATION_DURATION : 0);
 
             e.preventDefault();
         }

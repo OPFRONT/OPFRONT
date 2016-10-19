@@ -472,7 +472,7 @@ p {
 
 #header {
   color: white;
-  background-image: url("https://images.unsplash.com/photo-1471565661762-b9dfae862dbe?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb");
+  background-image: url("https://images.unsplash.com/photo-1442810480970-6d3fc310e3eb?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=999&q=80&cs=tinysrgb");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -780,8 +780,8 @@ nav .get-started {
   nav {
     width: 80px;
     padding: 15px;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
     border: none;
   }
   nav img {

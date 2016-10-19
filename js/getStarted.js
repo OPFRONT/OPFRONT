@@ -4,7 +4,7 @@ $('.btn.get-started').click((e) => {
     $('#get-started').addClass('active');
 });
 
-const closeGetStarted = (callback) => {
+const closeGetStarted = () => {
     let openedAsideSections = $('#get-started.active, #thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
 
     if(openedAsideSections.length > 0) {
@@ -17,16 +17,9 @@ const closeGetStarted = (callback) => {
             $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('closing');
         }, GET_STARTED_ANIMATION_DURATION * 3);
 
-        if(callback) {
-            window.setTimeout(() => {
-                callback();
-            }, GET_STARTED_ANIMATION_DURATION);
-        }
-    } else {
-        if(callback) {
-            callback();
-        }
+        return true;
     }
+    return false;
 };
 
 $('#get-started .navigation-control.previous').click((e) => {
