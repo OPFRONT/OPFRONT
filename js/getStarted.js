@@ -4,6 +4,7 @@ $('.btn.get-started').click((e) => {
     $('#get-started').addClass('active');
 });
 
+// TODO this whole process of closing windows before others should use promises. Need to be refactored.
 const closeGetStarted = () => {
     let openedAsideSections = $('#get-started.active, #thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
 

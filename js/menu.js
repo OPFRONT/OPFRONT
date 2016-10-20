@@ -45,7 +45,7 @@ class Menu {
         window.setTimeout(() => {
             $('html, body').stop().animate({
                 scrollTop: sectionOffset
-            }, 500);
+            }, GET_STARTED_ANIMATION_DURATION);
         }, getStartedWasOpened || menuIsOpened ? GET_STARTED_ANIMATION_DURATION : 0);
 
         e.preventDefault();

@@ -312,6 +312,7 @@ $('.btn.get-started').click(function (e) {
     $('#get-started').addClass('active');
 });
 
+// TODO this whole process of closing windows before others should use promises. Need to be refactored.
 var closeGetStarted = function closeGetStarted() {
     var openedAsideSections = $('#get-started.active, #thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
 
@@ -421,7 +422,7 @@ var Menu = function () {
             window.setTimeout(function () {
                 $('html, body').stop().animate({
                     scrollTop: sectionOffset
-                }, 500);
+                }, GET_STARTED_ANIMATION_DURATION);
             }, getStartedWasOpened || menuIsOpened ? GET_STARTED_ANIMATION_DURATION : 0);
 
             e.preventDefault();
