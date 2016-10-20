@@ -236,6 +236,7 @@ var _getFormValuesObject = function _getFormValuesObject(formEl) {
             var formValueEl = _step2.value;
 
             formValues[formValueEl.name] = formValueEl.value;
+            formValueEl.value = "";
         }
     } catch (err) {
         _didIteratorError2 = true;
@@ -268,6 +269,7 @@ var _addUserAsLead = function _addUserAsLead(userInfo) {
         },
         website: userInfo.website
     };
+    console.log(identifyPayload);
 
     //TODO find a better way to add leads, seems like its not working with freshsales
     // analytics.identify(userInfo.email, identifyPayload)
@@ -310,7 +312,8 @@ $('.btn.get-started').click(function (e) {
     $('#get-started').addClass('active');
 });
 
-var closeGetStarted = function closeGetStarted(callback) {
+// TODO this whole process of closing windows before others should use promises. Need to be refactored.
+var closeGetStarted = function closeGetStarted() {
     var openedAsideSections = $('#get-started.active, #thanks.active, #choose-solution.active, #subscribe.active, #webstore.active');
 
     if (openedAsideSections.length > 0) {
@@ -323,16 +326,9 @@ var closeGetStarted = function closeGetStarted(callback) {
             $('#thanks, #choose-solution, #subscribe, #webstore').removeClass('closing');
         }, GET_STARTED_ANIMATION_DURATION * 3);
 
-        if (callback) {
-            window.setTimeout(function () {
-                callback();
-            }, GET_STARTED_ANIMATION_DURATION);
-        }
-    } else {
-        if (callback) {
-            callback();
-        }
+        return true;
     }
+    return false;
 };
 
 $('#get-started .navigation-control.previous').click(function (e) {
@@ -370,7 +366,7 @@ $('#thanks .navigation-control.previous').click(function (e) {
 var timeout = location.hostname === "localhost" || location.hostname === "127.0.0.1" ? 0 : 2000;
 
 window.setTimeout(function () {
-    $('#page-loader').addClass('hidden');
+    $('#page-loader').addClass('fadeOut');
 }, timeout);
 
 var Menu = function () {
@@ -418,13 +414,16 @@ var Menu = function () {
             var sectionId = $(e.currentTarget).attr('href');
             var sectionOffset = getSectionOffset(sectionId);
 
-            closeGetStarted(function () {
-                $('html, body').stop().animate({
-                    scrollTop: sectionOffset
-                }, 300);
-            });
+            var getStartedWasOpened = closeGetStarted();
+            var menuIsOpened = $('nav.opened');
 
             $('nav').removeClass('opened');
+
+            window.setTimeout(function () {
+                $('html, body').stop().animate({
+                    scrollTop: sectionOffset
+                }, GET_STARTED_ANIMATION_DURATION);
+            }, getStartedWasOpened || menuIsOpened ? GET_STARTED_ANIMATION_DURATION : 0);
 
             e.preventDefault();
         }
@@ -505,6 +504,8 @@ var Parallax = function () {
     }, {
         key: 'onScroll',
         value: function onScroll(offset) {
+            // TODO fade in once they scroll past header section
+
             var scrollPercentage = offset / this._getContentHeight();
 
             var _iteratorNormalCompletion3 = true;

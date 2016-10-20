@@ -35,7 +35,7 @@
     margin: 100px 0;
 
     .section-content {
-        width: 900px;
+        width: $content-width-desktop;
         margin-left: auto;
         margin-right: auto;
 
@@ -45,13 +45,7 @@
             .paragraph-title {
                 font-weight: bolder;
                 letter-spacing: 2px;
-                //margin-bottom: 6px;
                 line-height: $paragraph-line-height;
-            }
-
-            a {
-                text-transform: none;
-                font-style: italic;
             }
         }
 
@@ -95,6 +89,7 @@
                 width: 20%;
                 .icon-title {
                     margin-top: $layout-padding/2;
+                    letter-spacing: 0;
                 }
                 // Hack to have icon titles displayed on 2 lines, they are actually too large for paragraph-image
                 &:nth-child(2) .icon-title {
@@ -114,6 +109,14 @@
     height: 20px;
 }
 
+@media #{$small-desktop-media-query} {
+    .section-container {
+        .section-content {
+            width: $content-width-small-desktop;
+        }
+    }
+}
+
 @media #{$tablet-media-query} {
     .page-content {
         width: calc(100% - #{$navbar-mobile-width});
@@ -121,15 +124,37 @@
     }
 
     .section-container .section-content {
-        width: calc(100% - #{$tablet-padding*2});
+        width: 600px;
+        max-width: calc(100% - #{$tablet-padding*2});
+        .paragraph-icons {
+            .fourth {
+                .icon-title {
+                    font-size: 15px;
+                    margin-top: $layout-padding/4;
+                }
+            }
+        }
     }
 }
 
 @media #{$phone-media-query} {
+    .page-content {
+        section:not(#header) {
+            min-height: 0;
+            .section-container {
+                .section-content {
+                    .start-now:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
     .section-container {
-        margin: 60px 0;
         .section-content {
             width: calc(100% - #{$mobile-padding*2});
+            max-width: 450px;
         }
     }
 
@@ -140,8 +165,18 @@
                 .fourth {
                     width: 50%;
                     margin: 0 auto 50px auto;
-                    .icon-title {
-                        margin-top: $layout-padding/4;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .paragraph-image {
+                img {
+                    &.img-medium {
+                        width: 90%;
+                    }
+                    &.img-small {
+                        width: 70%;
                     }
                 }
             }

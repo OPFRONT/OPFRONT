@@ -36,5 +36,8 @@
 }
 
 @media #{$phone-media-query} {
+    .page-controls {
+        display: none;
+    }
 
 }

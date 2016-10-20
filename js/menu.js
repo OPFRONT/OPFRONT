@@ -37,13 +37,16 @@ class Menu {
         const sectionId = $(e.currentTarget).attr('href');
         const sectionOffset = getSectionOffset(sectionId);
 
-        closeGetStarted(() => {
-            $('html, body').stop().animate({
-                scrollTop: sectionOffset
-            }, 300);
-        });
+        const getStartedWasOpened = closeGetStarted();
+        const menuIsOpened = $('nav.opened');
 
         $('nav').removeClass('opened');
+
+        window.setTimeout(() => {
+            $('html, body').stop().animate({
+                scrollTop: sectionOffset
+            }, GET_STARTED_ANIMATION_DURATION);
+        }, getStartedWasOpened || menuIsOpened ? GET_STARTED_ANIMATION_DURATION : 0);
 
         e.preventDefault();
     }

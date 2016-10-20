@@ -84,56 +84,56 @@
     }
 }
 
-#choose-solution {
-    .subtitle {
-        font-size: 50px;
-    }
-
-    .choose {
-        margin-top: 75px;
-    }
-
-    .section-container {
-        .section-content {
-            width: 700px;
-        }
-
-        .option {
-            width: calc(50% - #{$choose-solution-options-padding / 2});
-        }
-        .paragraph-image {
-            margin-top: 0;
-            margin-bottom: 25px;
-        }
-
-        .btn.choose {
-            float: right;
-        }
-    }
-}
-
-#subscribe {
-    .section-container {
-        .btn[type="submit"] {
-            margin-top: 75px;
-        }
-    }
-    form .form-row {
-        input, textarea {
-            &.filled {
-                border-color: white;
-            }
-        }
-    }
-}
-
-#webstore {
-    .section-container {
-        .btn.subscribe {
-            float: right;
-        }
-    }
-}
+//#choose-solution {
+//    .subtitle {
+//        font-size: 50px;
+//    }
+//
+//    .choose {
+//        margin-top: 75px;
+//    }
+//
+//    .section-container {
+//        .section-content {
+//            width: 700px;
+//        }
+//
+//        .option {
+//            width: calc(50% - #{$choose-solution-options-padding / 2});
+//        }
+//        .paragraph-image {
+//            margin-top: 0;
+//            margin-bottom: 25px;
+//        }
+//
+//        .btn.choose {
+//            float: right;
+//        }
+//    }
+//}
+//
+//#subscribe {
+//    .section-container {
+//        .btn[type="submit"] {
+//            margin-top: 75px;
+//        }
+//    }
+//    form .form-row {
+//        input, textarea {
+//            &.filled {
+//                border-color: white;
+//            }
+//        }
+//    }
+//}
+//
+//#webstore {
+//    .section-container {
+//        .btn.subscribe {
+//            float: right;
+//        }
+//    }
+//}
 
 .section-container {
     .option {
@@ -180,5 +180,44 @@
 }
 
 @media #{$phone-media-query} {
+    .section-container {
+        margin-bottom: 0;
+    }
 
+    #get-started {
+        bottom: 0;
+        overflow-y: scroll;
+        .section-container {
+            height: 100%;
+            .title {
+                margin-top: 100px;
+            }
+        }
+    }
+
+    #thanks {
+        height: 100%;
+    }
+    form .form-row .form-input.submit {
+        margin-bottom: 50px;
+    }
+
+    // This fixes bug on mobile where thanks message overlaps form and submit btn is under it so we can't click it.
+    #contact .section-content {
+        .paragraph:nth-child(3) {
+            min-height: 535px;
+        }
+        .thanks {
+            margin-top: 0;
+            .paragraph-content {
+                padding-bottom: $layout-padding/2;
+            }
+        }
+    }
+}
+
+@media only screen and (max-device-width: #{$small-phone}) {
+    form .form-row input {
+        font-size: 15px;
+    }
 }

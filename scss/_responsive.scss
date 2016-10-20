@@ -6,6 +6,10 @@
     display: none;
 }
 
+.visible-phone-inline {
+    display: none;
+}
+
 @media #{$tablet-media-query} {
     .hidden-tablet {
         display: none;
@@ -24,5 +28,9 @@
 
     .visible-phone {
         display: block;
+    }
+
+    .visible-phone-inline {
+        display: inline;
     }
 }
