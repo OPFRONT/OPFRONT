@@ -236,6 +236,7 @@ var _getFormValuesObject = function _getFormValuesObject(formEl) {
             var formValueEl = _step2.value;
 
             formValues[formValueEl.name] = formValueEl.value;
+            formValueEl.value = "";
         }
     } catch (err) {
         _didIteratorError2 = true;
@@ -268,6 +269,7 @@ var _addUserAsLead = function _addUserAsLead(userInfo) {
         },
         website: userInfo.website
     };
+    console.log(identifyPayload);
 
     //TODO find a better way to add leads, seems like its not working with freshsales
     // analytics.identify(userInfo.email, identifyPayload)
@@ -363,7 +365,7 @@ $('#thanks .navigation-control.previous').click(function (e) {
 var timeout = location.hostname === "localhost" || location.hostname === "127.0.0.1" ? 0 : 2000;
 
 window.setTimeout(function () {
-    $('#page-loader').addClass('hidden');
+    $('#page-loader').addClass('fadeOut');
 }, timeout);
 
 var Menu = function () {
@@ -501,6 +503,8 @@ var Parallax = function () {
     }, {
         key: 'onScroll',
         value: function onScroll(offset) {
+            // TODO fade in once they scroll past header section
+
             var scrollPercentage = offset / this._getContentHeight();
 
             var _iteratorNormalCompletion3 = true;

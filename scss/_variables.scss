@@ -1,13 +1,18 @@
 // RESPONSIVE
 
+$small-phone: 360px;
 $phone: 480px;
 $phone-horizontal: 767px;
+$parallax-responsive-point: 1000px;
 $tablet: 1024px;
-$mobile-menu: 1250px;
 $desktop: 1100px;
+$mobile-menu: 1250px;
+$macbook13-resolution-width: 1440px;
 
+$phone-media-query-horizontal: 'only screen and (max-device-width: ' $phone-horizontal ') and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)';
 $phone-media-query: 'only screen and (max-device-width: ' $phone '), only screen and (max-device-width: ' $phone-horizontal ') and (-webkit-min-device-pixel-ratio: 2)';
 $tablet-media-query: 'only screen and (max-device-width : ' $tablet '), only screen and (max-width : ' $mobile-menu ')';
+$small-desktop-media-query: 'only screen and (max-width : ' $macbook13-resolution-width ')';
 
 $tablet-padding: 30px;
 $mobile-padding: $tablet-padding/2;
@@ -29,6 +34,8 @@ $layout-padding: 85px;
 
 $paragraph-line-height: 28px;
 
+$content-width-desktop: 900px;
+$content-width-small-desktop: 700px;
 
 // GLOBAL
 $default-transition-time: 0.3s;

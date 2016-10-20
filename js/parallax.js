@@ -23,6 +23,8 @@ class Parallax {
     };
 
     onScroll(offset) {
+        // TODO fade in once they scroll past header section
+
         const scrollPercentage = offset / this._getContentHeight();
 
         for (let prism of this.prisms) {

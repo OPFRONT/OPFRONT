@@ -63,7 +63,7 @@ nav {
 
             .menu-item {
                 display: block;
-                padding: 8px;
+                padding: 10px;
                 margin: 10px 0;
                 width: $menu-item-width;
                 color: $opfront-black;
@@ -95,6 +95,7 @@ nav {
         }
         .en, .fr {
             cursor: pointer;
+            font-weight: 900;
         }
 
         &.en .fr {
@@ -113,7 +114,7 @@ nav {
 @media #{$tablet-media-query} {
     nav {
         width: $navbar-mobile-width;
-        padding: $navbar-mobile-padding;
+        padding: $navbar-mobile-padding*5 $navbar-mobile-padding $navbar-mobile-padding $navbar-mobile-padding;
         transition: 0.6s ease;
         border: none;
 
@@ -124,14 +125,18 @@ nav {
             width: $navbar-mobile-inner-width;
         }
 
-        .menu-items, .lang {
+        .menu-items {
             margin-left: -230px;
+        }
+
+        .lang {
+            margin-left: -105px;
         }
 
         &.opened {
             width: 100%;
             .menu-items, .lang {
-                margin-right: 0;
+                margin-left: 0;
             }
 
             .menu-btn {
@@ -154,4 +159,17 @@ nav {
 
 @media #{$phone-media-query} {
 
+}
+
+@media #{$phone-media-query-horizontal} {
+    nav {
+        .lang {
+            margin-bottom: 0;
+        }
+        &.opened {
+            .menu-btn {
+                margin-top: -70px;
+            }
+        }
+    }
 }

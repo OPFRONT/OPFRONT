@@ -14,6 +14,7 @@ const _getFormValuesObject = (formEl) => {
     let formValues = {};
     for (let formValueEl of formValuesEls) {
         formValues[formValueEl.name] = formValueEl.value;
+        formValueEl.value = "";
     }
 
     return formValues
@@ -32,6 +33,7 @@ const _addUserAsLead = (userInfo) => {
         },
         website: userInfo.website
     };
+    console.log(identifyPayload);
 
     //TODO find a better way to add leads, seems like its not working with freshsales
     // analytics.identify(userInfo.email, identifyPayload)

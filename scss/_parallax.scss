@@ -6,7 +6,7 @@
 
 #red-stick {
     top: 50%;
-    right: 6%;
+    right: 4%;
     width: 80px;
     .cls-2 {
         fill: #b00;
@@ -22,7 +22,7 @@
 }
 
 #teal-stick {
-    left: calc(11% + #{$navbar-width});
+    left: calc(7% + #{$navbar-width});
     top: 15%;
     width: 40px;
     .cls-2 {
@@ -40,7 +40,7 @@
 
 #black-stick {
     top: 77%;
-    left: calc(5% + #{$navbar-width});
+    left: calc(3% + #{$navbar-width});
     width: 100px;
     .cls-2 {
         fill: #464646;
@@ -55,19 +55,19 @@
 
 @media only screen and (max-width: $mobile-menu) {
     #red-stick {
-        right: 2%;
+        right: 6%;
     }
 
     #teal-stick {
-        left: calc(5% + #{$navbar-mobile-width});
+        left: calc(12% + #{$navbar-mobile-width});
     }
 
     #black-stick {
-        left: $navbar-mobile-width + 10px;
+        left: $navbar-mobile-width + 40px;
     }
 }
 
-@media only screen and (max-width: $desktop) {
+@media only screen and (max-width: $parallax-responsive-point) {
     .parallax {
         display: none;
     }
