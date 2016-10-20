@@ -171,7 +171,7 @@ var originUrl = '' + location.origin + locationPath;
 
 var _redirectIfNecessary = function _redirectIfNecessary(lang) {
     var currentLang = location.pathname.indexOf(PATH_NAMES[EN_LANG]) !== -1 ? EN_LANG : FR_LANG;
-    var newLang = PATH_NAMES[lang] ? lang : EN_LANG;
+    var newLang = PATH_NAMES[lang] !== undefined ? lang : EN_LANG;
 
     if (newLang !== currentLang) {
         location.replace(originUrl + '/' + PATH_NAMES[newLang]);
