@@ -4,28 +4,384 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Opfront</title>
+    <title>Opfront | solutions de commerce en ligne intégrées pour optométristes indépendants</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="dist/style.css">
     <link rel="icon" type="image/jpeg" href="dist/img/favicon.jpg">
 </head>
 <body>
-<header id="page-loader" style="display: flex;justify-content: center;align-items: center;">
-    <div class="center">
-        <img src="dist/img/opfront-logo.png" alt="Opfront logo">
-        <h1 style=" font-size: 14px;
-                    text-transform: none;
-                    letter-spacing: 2px;
-                    margin: 0 30px;
-                    line-height: 20px;
-                    color: #999;">
-            Solutions en ligne intégrées pour optométristes indépendants. Disponible bientôt.
-            <br/>
-            Integrated online solutions for independents optometrists. Coming soon.
-        </h1>
+<header id="page-loader">
+    <div class="loader">
+        <h2 class="title">soyez vu en ligne</h2>
     </div>
 </header>
 
+<nav>
+    <a href="#" class="nav-logo">
+        <img class="hidden-tablet" src="dist/img/opfront-logo.png" alt="Opfront logo">
+        <img class="visible-tablet" src="dist/img/opfront-logo-mobile.png" alt="Opfront logo">
+    </a>
+    <div class="menu-btn visible-tablet">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu">
+        <ul class="menu-items">
+            <a href="#pros" class="menu-item">avantages</a>
+            <a href="#vision" class="menu-item">vision</a>
+            <a href="#about" class="menu-item">à propos</a>
+            <a href="#contact" class="menu-item">contact</a>
+        </ul>
+    </div>
+    <div class="lang fr">
+        <a href="index.html" class="fr">fr</a>
+        <div class="separator">-</div>
+        <a href="en.html" class="en">en</a>
+    </div>
+</nav>
+
+<div class="page-content">
+    <div class="parallax">
+        <svg id="red-stick" class="stick" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 120.31 143.2">
+            <g class="cls-1">
+                <polygon class="cls-2" points="41.96 143.2 37.38 114.23 115.72 5.4 120.31 34.37 41.96 143.2"/>
+                <polygon class="cls-3" points="78.34 0 115.72 5.4 37.38 114.23 0 108.83 78.34 0"/>
+                <polygon class="cls-4" points="0 108.83 37.38 114.23 41.96 143.2 4.59 137.8 0 108.83"/>
+            </g>
+        </svg>
+        <svg id="black-stick" class="stick" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 134.14 178.97">
+            <g class="cls-1">
+                <polygon class="cls-2" points="45.48 0 134.13 153.14 111.13 156.37 22.48 3.23 45.48 0"/>
+                <polygon class="cls-3"
+                         points="134.13 153.14 111.66 175.74 88.65 178.97 111.13 156.37 134.13 153.14"/>
+                <polygon class="cls-4" points="111.13 156.37 88.65 178.97 0 25.83 22.48 3.23 111.13 156.37"/>
+            </g>
+        </svg>
+        <svg id="teal-stick" class="stick" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 51.4 109.67">
+            <g class="cls-1">
+                <polygon class="cls-2" points="32.59 0 51.4 11.67 34.07 94.33 15.26 82.65 32.59 0"/>
+                <polygon class="cls-3" points="34.07 94.33 18.8 109.67 0 98 15.26 82.65 34.07 94.33"/>
+                <polygon class="cls-4" points="15.26 82.65 0 98 17.33 15.35 32.59 0 15.26 82.65"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="page-controls">
+        <span class="navigation-control previous">&mdash;</span>
+        <span class="navigation-control next active">+</span>
+    </div>
+
+    <section id="header">
+        <div class="section-container">
+            <h1 class="title tagline">
+                votre clinique<span class="hidden-phone">.</span>
+                <div class="linebreak visible-tablet"></div>
+                vos services<span class="hidden-phone">.</span>
+                <div class="linebreak visible-tablet"></div>
+                votre inventaire<span class="hidden-phone">.</span>
+                <div class="linebreak visible-tablet"></div>
+                <span class="title-emphasis"> en ligne<span class="hidden-phone">.</span></span>
+            </h1>
+            <div class="section-content">
+                <p class="text-center">
+                    Vendez en ligne grâce à nos solutions Web directement connectées à votre inventaire en magasin et
+                    spécialement conçues pour les cliniques d’optométrie indépendantes.
+                </p>
+                <div class="start-now">
+                    <button id="get-started-head" class="btn get-started" track-click>commencer maintenant</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pros">
+        <div class="section-container">
+            <h2 class="subtitle">avantages</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <h3 class="paragraph-title">une plateforme prête à vous accueillir.</h3>
+                    <p class="paragraph-content">
+                        Nous vous offrons plus qu'une simple vitrine virtuelle. Choisissez parmis nos canevas attrayant
+                        spécialement conçus pour les optométristes et nous vous accompagnerons pour y intégrer votre
+                        image de marque, vos services et vos produits.
+                    </p>
+                </div>
+                <div class="paragraph-image">
+                    <img class="preview img-large" src="dist/img/preview.jpg" alt="App preview">
+                </div>
+                <div class="start-now">
+                    <button id="get-started-templates" class="btn get-started" track-click>commencer maintenant</button>
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-title">Opfront s'intègre avec votre système de gestion de clinique</h3>
+                    <p class="paragraph-content">
+                        Grâce à la technologie Opfront, vous pourrez connecter votre inventaire en ligne avec votre
+                        inventaire en clinique et de garder le tout synchronisé sans misère.
+                    </p>
+                </div>
+                <div class="paragraph-image text-center">
+                    <img class="img-medium" src="dist/img/ehr-integration.jpg" alt="ehr software integrations">
+                    <p class="image-caption">Vous utilisez un autre système ? <span class="visible-phone-inline"><br/></span><a class="classic-link" href="#contact">contactez-nous</a>
+                    </p>
+                </div>
+                <div class="start-now">
+                    <button id="get-started-integrations" class="btn get-started" track-click>commencer maintenant
+                    </button>
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-title">Des outils technologiques qui représentent un réel avantage
+                        concurrentiel pour votre entreprise.</h3>
+                    <p class="paragraph-content">
+                        Un éventail d'outils de grande qualité, professionnels, conviviaux et sécuritaires, mais surtout
+                        simples et faciles d'utilisation. Ainsi, vous pourrez vous concentrer sur ce qui est le plus
+                        important: vos patients.
+                    </p>
+                </div>
+                <div class="paragraph-icons">
+                    <div class="fourth">
+                        <img src="dist/img/icon-products.png">
+                        <h3 class="icon-title">affichez vos produits</h3>
+                    </div>
+                    <div class="fourth">
+                        <img src="dist/img/icon-branding.png">
+                        <h3 class="icon-title">raffinez votre image de marque</h3>
+                    </div>
+                    <div class="fourth">
+                        <img src="dist/img/icon-clients.png">
+                        <h3 class="icon-title">gardez contact avec votre clientèle</h3>
+                    </div>
+                    <div class="fourth">
+                        <img src="dist/img/icon-sales.png">
+                        <h3 class="icon-title">augmentez vos ventes</h3>
+                    </div>
+                </div>
+                <div class="start-now">
+                    <button id="get-started-features" class="btn get-started" track-click>commencer maintenant</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision">
+        <div class="section-container">
+            <h2 class="subtitle">voir plus loin</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <h3 class="paragraph-title">la santé du patient en premier lieu.</h3>
+                    <p class="paragraph-content">
+                        Opfront technologie se consacre à offrir un accompagnement total aux optométristes afin de
+                        garder le contrôle du marché de l'optique sur le Web.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-title">notre mission</h3>
+                    <p class="paragraph-content">
+                        Développer des outils technologiques pour supporter le développement commercial de cliniques
+                        d'optométrie indépendantes.
+                    </p>
+                </div>
+                <div class="start-now">
+                    <button id="get-started-vision" class="btn get-started" track-click>commencer maintenant</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-container">
+            <h2 class="subtitle">à propos</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Opfront propose aux optométristes indépendants des outils numériques visant l’atteinte de leur
+                        plein potentiel commercial grâce à la création de boutiques en ligne. La plateforme vous permet
+                        de présenter votre inventaire en ligne et vous offre une analyse adaptée du comportement de
+                        votre clientèle.
+                    </p>
+                </div>
+                <div class="start-now">
+                    <button id="get-started-about" class="btn get-started" track-click>commencer maintenant</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-container">
+            <h2 class="subtitle">contactez-nous</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Offrez une visibilité en ligne comme en boutique à votre clientèle.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <div class="paragraph-content address">
+                        <p>830, rue Saint-Joseph Est, suite 202</p>
+                        <p>Québec (Qc) G1K 3C9</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>581-701-1946</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>1855-702-1946</p>
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <form action="" id="contact-us-form" enctype="application/json">
+                        <div class="form-row">
+                            <div class="form-input half required">
+                                <input name="firstname" type="text" placeholder="prénom" class="teal-glow" required>
+                            </div>
+                            <div class="form-input half required">
+                                <input name="lastname" type="text" placeholder="nom" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input half">
+                                <input name="phone" type="text" placeholder="téléphone" class="teal-glow">
+                            </div>
+                            <div class="form-input half required">
+                                <input name="email" type="text" placeholder="courriel" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input half">
+                                <input name="company" type="text" placeholder="compagnie" class="teal-glow">
+                            </div>
+                            <div class="form-input half">
+                                <input name="website" type="text" placeholder="site web" class="teal-glow">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input textarea">
+                                <textarea name="message" placeholder="message" class="no-glow"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input submit">
+                                <button class="btn" type="submit" form="contact-us-form" value="Submit">envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="paragraph thanks">
+                    <h3 class="paragraph-title">Merci!</h3>
+                    <p class="paragraph-content">
+                        Nous communiquerons avec vous le plus rapidement possible. N'hésitez pas à nous contacter pour
+                        d'autres besoins, nous serons ravis de répondre à vos questions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-started" class="aside-section">
+        <a class="navigation-control previous">< retourner</a>
+        <div class="section-container">
+            <h2 class="title tagline">Démarrez votre boutique en ligne</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Exposez vos services et votre inventaire physique dans une boutique en ligne conviviale.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <form action="" id="subscribe-form" class="inverted">
+                        <div class="form-row">
+                            <div class="form-input half required">
+                                <input name="firstname" type="text" placeholder="prénom" class="teal-glow" required>
+                            </div>
+                            <div class="form-input half required">
+                                <input name="lastname" type="text" placeholder="nom" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input half required">
+                                <input name="phone" type="text" placeholder="téléphone" class="teal-glow" required>
+                            </div>
+                            <div class="form-input half required">
+                                <input name="email" type="text" placeholder="courriel" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input half required">
+                                <input name="company" type="text" placeholder="nom de la clinique" class="teal-glow"
+                                       required>
+                            </div>
+                            <div class="form-input half required">
+                                <input name="website" type="text" placeholder="site web" class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input required">
+                                <input name="ehr_software" type="text" placeholder="logiciel de gestion clinique"
+                                       class="teal-glow" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input submit">
+                                <button class="btn" type="submit" form="subscribe-form" value="Submit">
+                                    s'inscrire
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="thanks" class="aside-section">
+        <a class="navigation-control previous">< retourner</a>
+        <div class="section-container">
+            <h2 class="subtitle">merci!</h2>
+            <div class="section-content">
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Nous communiquerons avec vous le plus rapidement possible. N'hésitez pas à nous contacter pour
+                        d'autres besoins, nous serons ravis de répondre à vos questions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+    !function () {
+        var analytics = window.analytics = window.analytics || [];
+        if (!analytics.initialize)if (analytics.invoked)window.console && console.error && console.error("Segment snippet included twice."); else {
+            analytics.invoked = !0;
+            analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"];
+            analytics.factory = function (t) {
+                return function () {
+                    var e = Array.prototype.slice.call(arguments);
+                    e.unshift(t);
+                    analytics.push(e);
+                    return analytics
+                }
+            };
+            for (var t = 0; t < analytics.methods.length; t++) {
+                var e = analytics.methods[t];
+                analytics[e] = analytics.factory(e)
+            }
+            analytics.load = function (t) {
+                var e = document.createElement("script");
+                e.type = "text/javascript";
+                e.async = !0;
+                e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                var n = document.getElementsByTagName("script")[0];
+                n.parentNode.insertBefore(e, n)
+            };
+            analytics.SNIPPET_VERSION = "3.1.0";
+            analytics.load("uj3iT1aRa9dqOpIgm9dyrro1hpepGdur");
+            analytics.page()
+        }
+    }();
+</script>
+<script src="dist/index.js"></script>
 </body>
 </html>
