@@ -27,10 +27,23 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 977px;
+            overflow-x: visible;
+            white-space: nowrap;
+
+            &.fr {
+                width: 970px;
+                &:after {
+                    content: 'soyez vu en ligne';
+                }
+            }
+            &.en {
+                width: 805px;
+                &:after {
+                    content: 'be seen online';
+                }
+            }
 
             &:after {
-                content: 'soyez vu en ligne';
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -68,7 +81,10 @@
     #page-loader {
         .loader {
             h2.title {
-                width: 691px;
+                width: 685px;
+                &.en {
+                    width: 565px;
+                }
                 font-size: 60px;
                 &:after {
                     font-size: 60px;
@@ -82,7 +98,10 @@
     #page-loader {
         .loader {
             h2.title {
-                width: 291px;
+                width: 285px;
+                &.en {
+                    width: 235px;
+                }
                 font-size: 18px;
                 &:after {
                     font-size: 18px;
