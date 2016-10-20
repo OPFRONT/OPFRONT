@@ -92,6 +92,10 @@
                     letter-spacing: 0;
                 }
                 // Hack to have icon titles displayed on 2 lines, they are actually too large for paragraph-image
+                &:nth-child(1) .icon-title {
+                    margin-left: -10px;
+                    margin-right: -10px;
+                }
                 &:nth-child(2) .icon-title {
                     margin-left: -15px;
                     margin-right: -15px;
