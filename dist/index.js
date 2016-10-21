@@ -181,11 +181,14 @@ window.setTimeout(function () {
     $('#page-loader').addClass('fadeOut');
 }, timeout);
 
-var BG_IMAGE_FILENAMES = ['OP_Image01.jpg', 'OP_Image02.jpg', 'OP_Image03.jpg', 'OP_Image04.jpg'];
+var BG_IMAGE_FILENAMES = ['OP_Image01', 'OP_Image02', 'OP_Image03', 'OP_Image04'];
+
+var TABLET_MAX_WIDTH = 1024;
+var isMobile = window.innerWidth <= TABLET_MAX_WIDTH;
 
 var setRandomBackgroundImage = function setRandomBackgroundImage() {
     var randomImage = BG_IMAGE_FILENAMES[Math.floor(Math.random() * BG_IMAGE_FILENAMES.length)];
-    var randomImageCSSString = 'background-image: url(' + originUrl + '/dist/img/' + randomImage + ')';
+    var randomImageCSSString = 'background-image: url(' + originUrl + '/dist/img/' + randomImage + (isMobile ? "small" : "") + '.jpg)';
 
     document.getElementById('header').setAttribute('style', randomImageCSSString);
 };
