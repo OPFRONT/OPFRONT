@@ -205,8 +205,6 @@ var Menu = function () {
 
         this._bindMenuItemsClick();
         this.menuItems.click(this.handleMenuItemClick);
-
-        $('.nav-logo').click(closeGetStarted);
     }
 
     _createClass(Menu, [{
@@ -226,6 +224,12 @@ var Menu = function () {
                 $('nav .lang').removeClass(EN_LANG);
                 $('nav .lang').addClass(FR_LANG);
                 Cookies.set(LANG_COOKIE, FR_LANG);
+            });
+
+            $('nav .nav-logo').click(function () {
+                closeGetStarted();
+                $('nav').removeClass('opened');
+                $(window).scrollTop();
             });
         }
     }, {
@@ -297,6 +301,8 @@ var PageControls = function () {
             offset < getFirstSectionOffset() ? this.previousPageControl.removeClass('active') : this.previousPageControl.addClass('active');
 
             offset >= getLastSectionOffset() ? this.nextPageControl.removeClass('active') : this.nextPageControl.addClass('active');
+
+            offset > $('.page-controls .next').height() ? this.nextPageControl.removeClass('white') : this.nextPageControl.addClass('white');
         }
     }]);
 

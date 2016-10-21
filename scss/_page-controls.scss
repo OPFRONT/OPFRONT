@@ -24,6 +24,11 @@
     }
     .next {
         bottom: 15px;
+
+        transition: color ease 0.5s;
+        &.white {
+            color: white;
+        }
     }
 }
 

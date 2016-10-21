@@ -112,70 +112,70 @@ html {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 100;
-  src: local("Museo Sans"), url("./font/MuseoSans-100.otf") format("opentype");
+  src: url("./font/MuseoSans-100.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 100;
-  src: local("Museo Sans"), url("./font/MuseoSans-100Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-100Italic.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 300;
-  src: local("Museo Sans"), url("./font/MuseoSans-300.otf") format("opentype");
+  src: url("./font/MuseoSans-300.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 300;
-  src: local("Museo Sans"), url("./font/MuseoSans-300Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-300Italic.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 500;
-  src: local("Museo Sans"), url("./font/MuseoSans-500.otf") format("opentype");
+  src: url("./font/MuseoSans-500.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 500;
-  src: local("Museo Sans"), url("./font/MuseoSans-500Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-500Italic.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 700;
-  src: local("Museo Sans"), url("./font/MuseoSans-700.otf") format("opentype");
+  src: url("./font/MuseoSans-700.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 700;
-  src: local("Museo Sans"), url("./font/MuseoSans-700Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-700Italic.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 900;
-  src: local("Museo Sans"), url("./font/MuseoSans-900.otf") format("opentype");
+  src: url("./font/MuseoSans-900.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 900;
-  src: local("Museo Sans"), url("./font/MuseoSans-900Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-900Italic.otf") format("opentype");
 }
 
 *, body {
@@ -641,14 +641,23 @@ p {
           transform: translate(-50%, -50%);
   overflow-x: visible;
   white-space: nowrap;
-}
-
-#page-loader .loader h2.title.fr, #page-loader .loader h2.fr.subtitle {
   width: 970px;
 }
 
-#page-loader .loader h2.title.fr:after, #page-loader .loader h2.fr.subtitle:after {
+#page-loader .loader h2.title:after, #page-loader .loader h2.subtitle:after {
   content: 'soyez vu en ligne';
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 7px;
+  color: black;
+  width: 100%;
+  -webkit-animation: loading 2s;
+          animation: loading 2s;
+  -webkit-animation-timing-function: cubic-bezier(1, 0.25, 0.63, 1.04);
+          animation-timing-function: cubic-bezier(1, 0.25, 0.63, 1.04);
 }
 
 #page-loader .loader h2.title.en, #page-loader .loader h2.en.subtitle {
@@ -657,22 +666,6 @@ p {
 
 #page-loader .loader h2.title.en:after, #page-loader .loader h2.en.subtitle:after {
   content: 'be seen online';
-}
-
-#page-loader .loader h2.title:after, #page-loader .loader h2.subtitle:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 90px;
-  letter-spacing: 7px;
-  color: black;
-  width: 100%;
-  -webkit-animation: loading 2s;
-          animation: loading 2s;
-  -webkit-animation-timing-function: cubic-bezier(1, 0.25, 0.63, 1.04);
-          animation-timing-function: cubic-bezier(1, 0.25, 0.63, 1.04);
 }
 
 @-webkit-keyframes loading {
@@ -1359,6 +1352,12 @@ form.inverted input.filled, form.inverted textarea.filled {
 
 .page-controls .next {
   bottom: 15px;
+  -webkit-transition: color ease 0.5s;
+  transition: color ease 0.5s;
+}
+
+.page-controls .next.white {
+  color: white;
 }
 
 @media only screen and (max-device-width: 1024px), only screen and (max-width: 1250px) {

@@ -30,21 +30,10 @@
             transform: translate(-50%, -50%);
             overflow-x: visible;
             white-space: nowrap;
-
-            &.fr {
-                width: 970px;
-                &:after {
-                    content: 'soyez vu en ligne';
-                }
-            }
-            &.en {
-                width: 805px;
-                &:after {
-                    content: 'be seen online';
-                }
-            }
+            width: 970px;
 
             &:after {
+                content: 'soyez vu en ligne';
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -52,7 +41,7 @@
                 white-space: nowrap;
                 overflow: hidden;
 
-                font-size: 90px;
+                //font-size: 60px;
                 @include letter-spacing-from-adobe(90);
                 color: $opfront-black;
 
@@ -60,6 +49,13 @@
 
                 animation: loading 2s;
                 animation-timing-function: cubic-bezier(1,.25,.63,1.04);
+            }
+
+            &.en {
+                width: 805px;
+                &:after {
+                    content: 'be seen online';
+                }
             }
         }
     }
