@@ -38,7 +38,7 @@ class Menu {
         const sectionOffset = getSectionOffset(sectionId);
 
         const getStartedWasOpened = closeGetStarted();
-        const menuIsOpened = $('nav.opened');
+        const menuIsOpened = $('nav.opened').length > 0;
 
         $('nav').removeClass('opened');
 
