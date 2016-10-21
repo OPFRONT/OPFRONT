@@ -6,4 +6,6 @@ const trackClick = e => {
     if (elemId) analytics.track(`Clicked on ${elemId}`)
 };
 
-for (let el of elementsToTrack) el.addEventListener('click', trackClick);
+for(let i = 0; i < elementsToTrack.length; i++) {
+    elementsToTrack[i].addEventListener('click', trackClick);
+}

@@ -23,7 +23,7 @@ gulp.task('js', () => {
     return gulp.src(JS_FOLDER + '*.js')
         .pipe(concat('index.js'))
         .pipe(babel({
-            presets: ['es2015-script', 'babel-preset-stage-0']
+            presets: ['es2015-script']
         }))
         .pipe(gulp.dest(DIST_FOLDER));
 });
