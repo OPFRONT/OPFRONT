@@ -320,43 +320,19 @@ var Parallax = function () {
             initialPosition: $('#red-stick').css('top'),
             move: -200
         }];
+        this._documentHeight = document.height !== undefined ? document.height : document.body.offsetHeight;
     }
 
     _createClass(Parallax, [{
-        key: '_getContentHeight',
-        value: function _getContentHeight() {
-            return parseInt($('.page-content').height(), 10);
-        }
-    }, {
         key: 'onScroll',
         value: function onScroll(offset) {
             // TODO fade in once they scroll past header section
 
-            var scrollPercentage = offset / this._getContentHeight();
+            var scrollPercentage = offset / this._documentHeight;
 
-            var _iteratorNormalCompletion = true;
-            var _didIteratorError = false;
-            var _iteratorError = undefined;
-
-            try {
-                for (var _iterator = this.prisms[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                    var prism = _step.value;
-
-                    prism.ele.css('top', 'calc(' + prism.initialPosition + ' + ' + scrollPercentage * prism.move + 'px)');
-                }
-            } catch (err) {
-                _didIteratorError = true;
-                _iteratorError = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion && _iterator.return) {
-                        _iterator.return();
-                    }
-                } finally {
-                    if (_didIteratorError) {
-                        throw _iteratorError;
-                    }
-                }
+            for (var _i2 = 0; _i2 < this.prisms.length; _i2++) {
+                var prism = this.prisms[_i2];
+                prism.ele.css('top', 'calc(' + prism.initialPosition + ' + ' + scrollPercentage * prism.move + 'px)');
             }
         }
     }]);
@@ -436,6 +412,6 @@ var trackClick = function trackClick(e) {
     if (elemId) analytics.track('Clicked on ' + elemId);
 };
 
-for (var _i2 = 0; _i2 < elementsToTrack.length; _i2++) {
-    elementsToTrack[_i2].addEventListener('click', trackClick);
+for (var _i3 = 0; _i3 < elementsToTrack.length; _i3++) {
+    elementsToTrack[_i3].addEventListener('click', trackClick);
 }
