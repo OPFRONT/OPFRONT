@@ -194,7 +194,7 @@ h1 {
 }
 
 h2 {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
 }
 
@@ -1395,9 +1395,9 @@ form.inverted input.filled, form.inverted textarea.filled {
   stroke-width: 3px;
 }
 
-.address .fa-phone {
-  color: #27e7d9;
+.address .phone {
   margin-right: 5px;
+  height: 14px;
 }
 
 .hidden {
