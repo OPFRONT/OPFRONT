@@ -15,20 +15,18 @@ class Parallax {
                 initialPosition: $('#red-stick').css('top'),
                 move: -200
             }
-        ]
+        ];
+        this._documentHeight = document.height !== undefined ? document.height : document.body.offsetHeight;
     }
-
-    _getContentHeight() {
-        return parseInt($('.page-content').height(), 10);
-    };
 
     onScroll(offset) {
         // TODO fade in once they scroll past header section
 
-        const scrollPercentage = offset / this._getContentHeight();
+        const scrollPercentage = offset / this._documentHeight;
 
-        for (let prism of this.prisms) {
-            prism.ele.css('top', `calc(${prism.initialPosition} + ${scrollPercentage * prism.move}px)`)
+        for(let i = 0; i < this.prisms.length; i++) {
+            const prism = this.prisms[i];
+            prism.ele.css('top', `calc(${prism.initialPosition} + ${scrollPercentage * prism.move}px)`);
         }
     }
 }

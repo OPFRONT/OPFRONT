@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 const SASS_FOLDER = './scss/';
 const JS_FOLDER = './js/';
@@ -25,6 +26,16 @@ gulp.task('js', () => {
         .pipe(babel({
             presets: ['es2015-script']
         }))
+        .pipe(gulp.dest(DIST_FOLDER));
+});
+
+gulp.task('js-prod', () => {
+    return gulp.src(JS_FOLDER + '*.js')
+        .pipe(concat('index.min.js'))
+        .pipe(babel({
+            presets: ['es2015-script']
+        }))
+        .pipe(uglify())
         .pipe(gulp.dest(DIST_FOLDER));
 });
 

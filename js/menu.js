@@ -6,8 +6,6 @@ class Menu {
 
         this._bindMenuItemsClick();
         this.menuItems.click(this.handleMenuItemClick);
-
-        $('.nav-logo').click(closeGetStarted);
     }
 
     _bindMenuItemsClick() {
@@ -25,6 +23,12 @@ class Menu {
             $('nav .lang').removeClass(EN_LANG);
             $('nav .lang').addClass(FR_LANG);
             Cookies.set(LANG_COOKIE, FR_LANG);
+        });
+
+        $('nav .nav-logo').click(() => {
+            closeGetStarted();
+            $('nav').removeClass('opened');
+            $(window).scrollTop();
         });
     }
 

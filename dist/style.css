@@ -112,70 +112,70 @@ html {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 100;
-  src: local("Museo Sans"), url("./font/MuseoSans-100.otf") format("opentype");
+  src: url("./font/MuseoSans-100.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 100;
-  src: local("Museo Sans"), url("./font/MuseoSans-100Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-100Italic.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 300;
-  src: local("Museo Sans"), url("./font/MuseoSans-300.otf") format("opentype");
+  src: url("./font/MuseoSans-300.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 300;
-  src: local("Museo Sans"), url("./font/MuseoSans-300Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-300Italic.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 500;
-  src: local("Museo Sans"), url("./font/MuseoSans-500.otf") format("opentype");
+  src: url("./font/MuseoSans-500.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 500;
-  src: local("Museo Sans"), url("./font/MuseoSans-500Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-500Italic.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 700;
-  src: local("Museo Sans"), url("./font/MuseoSans-700.otf") format("opentype");
+  src: url("./font/MuseoSans-700.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 700;
-  src: local("Museo Sans"), url("./font/MuseoSans-700Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-700Italic.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: normal;
   font-weight: 900;
-  src: local("Museo Sans"), url("./font/MuseoSans-900.otf") format("opentype");
+  src: url("./font/MuseoSans-900.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Museo Sans';
   font-style: italic;
   font-weight: 900;
-  src: local("Museo Sans"), url("./font/MuseoSans-900Italic.otf") format("opentype");
+  src: url("./font/MuseoSans-900Italic.otf") format("opentype");
 }
 
 *, body {
@@ -194,7 +194,7 @@ h1 {
 }
 
 h2 {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
 }
 
@@ -547,16 +547,6 @@ p {
   background-position: center;
 }
 
-#header:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 #header .section-container {
   z-index: 1;
 }
@@ -651,14 +641,23 @@ p {
           transform: translate(-50%, -50%);
   overflow-x: visible;
   white-space: nowrap;
-}
-
-#page-loader .loader h2.title.fr, #page-loader .loader h2.fr.subtitle {
   width: 970px;
 }
 
-#page-loader .loader h2.title.fr:after, #page-loader .loader h2.fr.subtitle:after {
+#page-loader .loader h2.title:after, #page-loader .loader h2.subtitle:after {
   content: 'soyez vu en ligne';
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 7px;
+  color: black;
+  width: 100%;
+  -webkit-animation: loading 2s;
+          animation: loading 2s;
+  -webkit-animation-timing-function: cubic-bezier(1, 0.25, 0.63, 1.04);
+          animation-timing-function: cubic-bezier(1, 0.25, 0.63, 1.04);
 }
 
 #page-loader .loader h2.title.en, #page-loader .loader h2.en.subtitle {
@@ -667,22 +666,6 @@ p {
 
 #page-loader .loader h2.title.en:after, #page-loader .loader h2.en.subtitle:after {
   content: 'be seen online';
-}
-
-#page-loader .loader h2.title:after, #page-loader .loader h2.subtitle:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 90px;
-  letter-spacing: 7px;
-  color: black;
-  width: 100%;
-  -webkit-animation: loading 2s;
-          animation: loading 2s;
-  -webkit-animation-timing-function: cubic-bezier(1, 0.25, 0.63, 1.04);
-          animation-timing-function: cubic-bezier(1, 0.25, 0.63, 1.04);
 }
 
 @-webkit-keyframes loading {
@@ -1369,6 +1352,12 @@ form.inverted input.filled, form.inverted textarea.filled {
 
 .page-controls .next {
   bottom: 15px;
+  -webkit-transition: color ease 0.5s;
+  transition: color ease 0.5s;
+}
+
+.page-controls .next.white {
+  color: white;
 }
 
 @media only screen and (max-device-width: 1024px), only screen and (max-width: 1250px) {
@@ -1405,9 +1394,9 @@ form.inverted input.filled, form.inverted textarea.filled {
   stroke-width: 3px;
 }
 
-.address .fa-phone {
-  color: #27e7d9;
+.address .phone {
   margin-right: 5px;
+  height: 14px;
 }
 
 .hidden {

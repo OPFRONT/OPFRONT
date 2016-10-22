@@ -2,160 +2,9 @@ var _this = this;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/*!
- * JavaScript Cookie v2.1.3
- * https://github.com/js-cookie/js-cookie
- *
- * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
- * Released under the MIT license
- */
-;(function (factory) {
-    var registeredInModuleLoader = false;
-    if (typeof define === 'function' && define.amd) {
-        define(factory);
-        registeredInModuleLoader = true;
-    }
-    if ((typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object') {
-        module.exports = factory();
-        registeredInModuleLoader = true;
-    }
-    if (!registeredInModuleLoader) {
-        var OldCookies = window.Cookies;
-        var api = window.Cookies = factory();
-        api.noConflict = function () {
-            window.Cookies = OldCookies;
-            return api;
-        };
-    }
-})(function () {
-    function extend() {
-        var i = 0;
-        var result = {};
-        for (; i < arguments.length; i++) {
-            var attributes = arguments[i];
-            for (var key in attributes) {
-                result[key] = attributes[key];
-            }
-        }
-        return result;
-    }
-
-    function init(converter) {
-        function api(key, value, attributes) {
-            var result;
-            if (typeof document === 'undefined') {
-                return;
-            }
-
-            // Write
-
-            if (arguments.length > 1) {
-                attributes = extend({
-                    path: '/'
-                }, api.defaults, attributes);
-
-                if (typeof attributes.expires === 'number') {
-                    var expires = new Date();
-                    expires.setMilliseconds(expires.getMilliseconds() + attributes.expires * 864e+5);
-                    attributes.expires = expires;
-                }
-
-                try {
-                    result = JSON.stringify(value);
-                    if (/^[\{\[]/.test(result)) {
-                        value = result;
-                    }
-                } catch (e) {}
-
-                if (!converter.write) {
-                    value = encodeURIComponent(String(value)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
-                } else {
-                    value = converter.write(value, key);
-                }
-
-                key = encodeURIComponent(String(key));
-                key = key.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent);
-                key = key.replace(/[\(\)]/g, escape);
-
-                return document.cookie = [key, '=', value, attributes.expires ? '; expires=' + attributes.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
-                attributes.path ? '; path=' + attributes.path : '', attributes.domain ? '; domain=' + attributes.domain : '', attributes.secure ? '; secure' : ''].join('');
-            }
-
-            // Read
-
-            if (!key) {
-                result = {};
-            }
-
-            // To prevent the for loop in the first place assign an empty array
-            // in case there are no cookies at all. Also prevents odd result when
-            // calling "get()"
-            var cookies = document.cookie ? document.cookie.split('; ') : [];
-            var rdecode = /(%[0-9A-Z]{2})+/g;
-            var i = 0;
-
-            for (; i < cookies.length; i++) {
-                var parts = cookies[i].split('=');
-                var cookie = parts.slice(1).join('=');
-
-                if (cookie.charAt(0) === '"') {
-                    cookie = cookie.slice(1, -1);
-                }
-
-                try {
-                    var name = parts[0].replace(rdecode, decodeURIComponent);
-                    cookie = converter.read ? converter.read(cookie, name) : converter(cookie, name) || cookie.replace(rdecode, decodeURIComponent);
-
-                    if (this.json) {
-                        try {
-                            cookie = JSON.parse(cookie);
-                        } catch (e) {}
-                    }
-
-                    if (key === name) {
-                        result = cookie;
-                        break;
-                    }
-
-                    if (!key) {
-                        result[name] = cookie;
-                    }
-                } catch (e) {}
-            }
-
-            return result;
-        }
-
-        api.set = api;
-        api.get = function (key) {
-            return api.call(api, key);
-        };
-        api.getJSON = function () {
-            return api.apply({
-                json: true
-            }, [].slice.call(arguments));
-        };
-        api.defaults = {};
-
-        api.remove = function (key, attributes) {
-            api(key, '', extend(attributes, {
-                expires: -1
-            }));
-        };
-
-        api.withConverter = init;
-
-        return api;
-    }
-
-    return init(function () {});
-});
 
 var PATH_NAMES = {
     en: 'en.html',
@@ -193,65 +42,27 @@ if (langCookie) {
 var CONTACT_FORM_EVENT = 'Contact form sent';
 var SUBSCRIBE_FORM_EVENT = 'Subscribe form sent';
 
-var _iteratorNormalCompletion = true;
-var _didIteratorError = false;
-var _iteratorError = undefined;
+var inputs = document.querySelectorAll('input,textarea,select');
 
-try {
-    var _loop = function _loop() {
-        var formEl = _step.value;
+var _loop = function _loop(i) {
+    var formEl = inputs[i];
+    formEl.addEventListener('blur', function (_) {
+        if (formEl.value) formEl.classList.add('filled');else formEl.classList.remove('filled');
+    });
+};
 
-        formEl.addEventListener('blur', function (_) {
-            if (formEl.value) formEl.classList.add('filled');else formEl.classList.remove('filled');
-        });
-    };
-
-    for (var _iterator = document.querySelectorAll('input,textarea,select')[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        _loop();
-    }
-} catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-} finally {
-    try {
-        if (!_iteratorNormalCompletion && _iterator.return) {
-            _iterator.return();
-        }
-    } finally {
-        if (_didIteratorError) {
-            throw _iteratorError;
-        }
-    }
+for (var i = 0; i < inputs.length; i++) {
+    _loop(i);
 }
 
 var _getFormValuesObject = function _getFormValuesObject(formEl) {
     var formValuesEls = formEl.querySelectorAll('input,textarea,select');
 
     var formValues = {};
-    var _iteratorNormalCompletion2 = true;
-    var _didIteratorError2 = false;
-    var _iteratorError2 = undefined;
-
-    try {
-        for (var _iterator2 = formValuesEls[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-            var formValueEl = _step2.value;
-
-            formValues[formValueEl.name] = formValueEl.value;
-            formValueEl.value = "";
-        }
-    } catch (err) {
-        _didIteratorError2 = true;
-        _iteratorError2 = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                _iterator2.return();
-            }
-        } finally {
-            if (_didIteratorError2) {
-                throw _iteratorError2;
-            }
-        }
+    for (var _i = 0; _i < formValuesEls.length; _i++) {
+        var formValueEl = formValuesEls[_i];
+        formValues[formValueEl.name] = formValueEl.value;
+        formValueEl.value = "";
     }
 
     return formValues;
@@ -370,11 +181,14 @@ window.setTimeout(function () {
     $('#page-loader').addClass('fadeOut');
 }, timeout);
 
-var BG_IMAGE_IDS = ['1471015060382-6cbd8b4e34d0', '1450027179084-b3ff1fce4bb5', '1471565661762-b9dfae862dbe', '1442810480970-6d3fc310e3eb'];
+var BG_IMAGE_FILENAMES = ['OP_Image01', 'OP_Image02', 'OP_Image03', 'OP_Image04'];
+
+var TABLET_MAX_WIDTH = 1024;
+var isMobile = window.innerWidth <= TABLET_MAX_WIDTH;
 
 var setRandomBackgroundImage = function setRandomBackgroundImage() {
-    var randomImageId = BG_IMAGE_IDS[Math.floor(Math.random() * BG_IMAGE_IDS.length)];
-    var randomImageCSSString = 'background-image: url(https://images.unsplash.com/photo-' + randomImageId + '?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb)';
+    var randomImage = BG_IMAGE_FILENAMES[Math.floor(Math.random() * BG_IMAGE_FILENAMES.length)];
+    var randomImageCSSString = 'background-image: url(' + originUrl + '/dist/img/' + randomImage + (isMobile ? "small" : "") + '.jpg)';
 
     document.getElementById('header').setAttribute('style', randomImageCSSString);
 };
@@ -391,8 +205,6 @@ var Menu = function () {
 
         this._bindMenuItemsClick();
         this.menuItems.click(this.handleMenuItemClick);
-
-        $('.nav-logo').click(closeGetStarted);
     }
 
     _createClass(Menu, [{
@@ -412,6 +224,12 @@ var Menu = function () {
                 $('nav .lang').removeClass(EN_LANG);
                 $('nav .lang').addClass(FR_LANG);
                 Cookies.set(LANG_COOKIE, FR_LANG);
+            });
+
+            $('nav .nav-logo').click(function () {
+                closeGetStarted();
+                $('nav').removeClass('opened');
+                $(window).scrollTop();
             });
         }
     }, {
@@ -483,6 +301,8 @@ var PageControls = function () {
             offset < getFirstSectionOffset() ? this.previousPageControl.removeClass('active') : this.previousPageControl.addClass('active');
 
             offset >= getLastSectionOffset() ? this.nextPageControl.removeClass('active') : this.nextPageControl.addClass('active');
+
+            offset > $('.page-controls .next').height() ? this.nextPageControl.removeClass('white') : this.nextPageControl.addClass('white');
         }
     }]);
 
@@ -506,43 +326,19 @@ var Parallax = function () {
             initialPosition: $('#red-stick').css('top'),
             move: -200
         }];
+        this._documentHeight = document.height !== undefined ? document.height : document.body.offsetHeight;
     }
 
     _createClass(Parallax, [{
-        key: '_getContentHeight',
-        value: function _getContentHeight() {
-            return parseInt($('.page-content').height(), 10);
-        }
-    }, {
         key: 'onScroll',
         value: function onScroll(offset) {
             // TODO fade in once they scroll past header section
 
-            var scrollPercentage = offset / this._getContentHeight();
+            var scrollPercentage = offset / this._documentHeight;
 
-            var _iteratorNormalCompletion3 = true;
-            var _didIteratorError3 = false;
-            var _iteratorError3 = undefined;
-
-            try {
-                for (var _iterator3 = this.prisms[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                    var prism = _step3.value;
-
-                    prism.ele.css('top', 'calc(' + prism.initialPosition + ' + ' + scrollPercentage * prism.move + 'px)');
-                }
-            } catch (err) {
-                _didIteratorError3 = true;
-                _iteratorError3 = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                        _iterator3.return();
-                    }
-                } finally {
-                    if (_didIteratorError3) {
-                        throw _iteratorError3;
-                    }
-                }
+            for (var _i2 = 0; _i2 < this.prisms.length; _i2++) {
+                var prism = this.prisms[_i2];
+                prism.ele.css('top', 'calc(' + prism.initialPosition + ' + ' + scrollPercentage * prism.move + 'px)');
             }
         }
     }]);
@@ -622,26 +418,6 @@ var trackClick = function trackClick(e) {
     if (elemId) analytics.track('Clicked on ' + elemId);
 };
 
-var _iteratorNormalCompletion4 = true;
-var _didIteratorError4 = false;
-var _iteratorError4 = undefined;
-
-try {
-    for (var _iterator4 = elementsToTrack[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-        var el = _step4.value;
-        el.addEventListener('click', trackClick);
-    }
-} catch (err) {
-    _didIteratorError4 = true;
-    _iteratorError4 = err;
-} finally {
-    try {
-        if (!_iteratorNormalCompletion4 && _iterator4.return) {
-            _iterator4.return();
-        }
-    } finally {
-        if (_didIteratorError4) {
-            throw _iteratorError4;
-        }
-    }
+for (var _i3 = 0; _i3 < elementsToTrack.length; _i3++) {
+    elementsToTrack[_i3].addEventListener('click', trackClick);
 }

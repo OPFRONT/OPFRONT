@@ -5,16 +5,18 @@
 	background-repeat: no-repeat;
 	background-position: center;
 
-	&:before {
-		content: "";
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		height: 100%;
+	// black image alpha filter, when we do not have pre-monochromed images
 
-		background-color: rgba(0, 0, 0, 0.7);
-	}
+	//&:before {
+	//	content: "";
+	//	position: absolute;
+	//	left: 0;
+	//	right: 0;
+	//	top: 0;
+	//	height: 100%;
+    //
+	//	background-color: rgba(0, 0, 0, 0.7);
+	//}
 	.section-container {
 		z-index: 1;
 	}

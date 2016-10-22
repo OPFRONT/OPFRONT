@@ -26,5 +26,9 @@ class PageControls {
         offset >= getLastSectionOffset() ?
             this.nextPageControl.removeClass('active') :
             this.nextPageControl.addClass('active');
+
+        offset > $('.page-controls .next').height() ?
+            this.nextPageControl.removeClass('white') :
+            this.nextPageControl.addClass('white');
     }
 }

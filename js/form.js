@@ -1,7 +1,9 @@
 const CONTACT_FORM_EVENT = 'Contact form sent';
 const SUBSCRIBE_FORM_EVENT = 'Subscribe form sent';
 
-for (let formEl of document.querySelectorAll('input,textarea,select')) {
+const inputs = document.querySelectorAll('input,textarea,select');
+for(let i = 0; i< inputs.length; i++) {
+    const formEl = inputs[i];
     formEl.addEventListener('blur', _ => {
         if (formEl.value) formEl.classList.add('filled');
         else formEl.classList.remove('filled')
@@ -12,7 +14,8 @@ const _getFormValuesObject = (formEl) => {
     const formValuesEls = formEl.querySelectorAll('input,textarea,select');
 
     let formValues = {};
-    for (let formValueEl of formValuesEls) {
+    for(let i = 0; i < formValuesEls.length; i++) {
+        const formValueEl = formValuesEls[i];
         formValues[formValueEl.name] = formValueEl.value;
         formValueEl.value = "";
     }
