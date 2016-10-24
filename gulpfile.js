@@ -35,7 +35,8 @@ gulp.task('js-prod', () => {
         .pipe(babel({
             presets: ['es2015-script']
         }))
-        .pipe(uglify())
+        .pipe(uglify()
+        )
         .pipe(gulp.dest(DIST_FOLDER));
 });
 
