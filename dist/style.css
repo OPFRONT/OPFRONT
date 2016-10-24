@@ -190,11 +190,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 50px;
+  line-height: 55px;
   font-weight: 700;
 }
 
 h2 {
   font-size: 60px;
+  line-height: 65px;
   font-weight: 700;
 }
 
@@ -641,7 +643,7 @@ p {
           transform: translate(-50%, -50%);
   overflow-x: visible;
   white-space: nowrap;
-  width: 970px;
+  width: 685px;
 }
 
 #page-loader .loader h2.title:after, #page-loader .loader h2.subtitle:after {
@@ -661,7 +663,7 @@ p {
 }
 
 #page-loader .loader h2.title.en, #page-loader .loader h2.en.subtitle {
-  width: 805px;
+  width: 565px;
 }
 
 #page-loader .loader h2.title.en:after, #page-loader .loader h2.en.subtitle:after {
@@ -689,19 +691,6 @@ p {
   }
   100% {
     width: 100%;
-  }
-}
-
-@media only screen and (max-device-width: 1024px), only screen and (max-width: 1250px) {
-  #page-loader .loader h2.title, #page-loader .loader h2.subtitle {
-    width: 685px;
-    font-size: 60px;
-  }
-  #page-loader .loader h2.title.en, #page-loader .loader h2.en.subtitle {
-    width: 565px;
-  }
-  #page-loader .loader h2.title:after, #page-loader .loader h2.subtitle:after {
-    font-size: 60px;
   }
 }
 
