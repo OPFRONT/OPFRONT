@@ -30,7 +30,7 @@
             transform: translate(-50%, -50%);
             overflow-x: visible;
             white-space: nowrap;
-            width: 970px;
+            width: 685px;
 
             &:after {
                 content: 'soyez vu en ligne';
@@ -41,7 +41,6 @@
                 white-space: nowrap;
                 overflow: hidden;
 
-                //font-size: 60px;
                 @include letter-spacing-from-adobe(90);
                 color: $opfront-black;
 
@@ -52,7 +51,7 @@
             }
 
             &.en {
-                width: 805px;
+                width: 565px;
                 &:after {
                     content: 'be seen online';
                 }
@@ -75,20 +74,7 @@
 
 
 @media #{$tablet-media-query} {
-    #page-loader {
-        .loader {
-            h2.title {
-                width: 685px;
-                &.en {
-                    width: 565px;
-                }
-                font-size: 60px;
-                &:after {
-                    font-size: 60px;
-                }
-            }
-        }
-    }
+
 }
 
 @media #{$phone-media-query} {
@@ -96,10 +82,10 @@
         .loader {
             h2.title {
                 width: 285px;
+                font-size: 18px;
                 &.en {
                     width: 235px;
                 }
-                font-size: 18px;
                 &:after {
                     font-size: 18px;
                 }
