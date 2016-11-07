@@ -10,7 +10,7 @@ build:
           echo "npm version $(npm -v) running"
 
     - hgen/gulp:
-         tasks: sass js-deploy
+         tasks: sass js-prod
 
 deploy:
    steps:
