@@ -46,9 +46,9 @@ gulp.task('watch', ['js', 'sass'], () => {
     gulp.watch(JS_FOLDER + '**/*.js', ['js']);
 });
 
-gulp.task('deployDirectory', () => {
-    return gulp.src([DIST_FOLDER, './index.html', './en.html'])
-        .pipe(gulp.dest(DEPLOY_FOLDER))
+gulp.task('deploy', ['sass', 'js-prod'], () => {
+    gulp.src(`${DIST_FOLDER}/**`)
+        .pipe(gulp.dest(`${DEPLOY_FOLDER}/dist`));
+    gulp.src(['./index.html', './en.html'])
+        .pipe(gulp.dest(DEPLOY_FOLDER));
 });
-
-gulp.task('deploy', ['sass', 'js-prod', 'deployDirectory']);
