@@ -1,0 +1,5 @@
+{{ range .Params.paragraphs }}
+    {{ partial "paragraph.html" . }}
+{{ end }}
+
+{{ partial "startNowButton.html" "get-started-about" }}

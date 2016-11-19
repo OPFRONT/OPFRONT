@@ -1,0 +1,14 @@
+- id: menu-features
+  translation: "features"
+
+- id: menu-vision
+  translation: "vision"
+
+- id: menu-about
+  translation: "about"
+
+- id: menu-contact
+  translation: "contact"
+
+- id: btn-start-now
+  translation: "get started now"

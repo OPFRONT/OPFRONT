@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "meta.html" . }}
+
+    <title>{{ .Site.Title }}</title>
+
+    {{ partial "headIncludes.html" . }}
+
+</head>
+<body>
+
+{{ partial "pageLoader.html" . }}
+
+{{ partial "navbar.html" . }}
+
+<div class="page-content">
+
+    {{ partial "parallax.html" . }}
+
+    {{ partial "pageControls.html" . }}
+
+    {{ range where .Data.Pages "Section" "header" }}
+        {{ .Render "header" }}
+    {{ end }}
+
+    {{ range where .Data.Pages.ByWeight "Section" "sections" }}
+        {{ .Render "section" }}
+    {{ end }}
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+{{ partial "analytics.html" . }}
+<script src="{{ .Site.BaseURL }}/cookie.js"></script>
+
+{{ if in (printf "%v" $.Site.BaseURL) "localhost" }}
+    <script src="{{ .Site.BaseURL }}/index.js"></script>
+{{ else }}
+    <script src="{{ .Site.BaseURL }}/index.min.js"></script>
+{{ end }}
+
+</body>
+</html>

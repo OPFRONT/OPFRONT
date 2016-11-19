@@ -1,0 +1,25 @@
+<nav>
+    <a href="#" class="nav-logo">
+        <img class="hidden-tablet" src="{{ .Site.BaseURL }}/img/opfront-logo.png" alt="Opfront logo">
+        <img class="visible-tablet" src="{{ .Site.BaseURL }}/img/opfront-logo-mobile.png" alt="Opfront logo">
+    </a>
+
+    <div class="menu-btn visible-tablet">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu">
+        <ul class="menu-items">
+            {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="menu-item">{{ i18n .Identifier }}</a>
+            {{ end }}
+        </ul>
+    </div>
+    <div class="lang {{.Lang}}">
+        <a href="/" class="fr">fr</a>
+        <div class="separator">-</div>
+        <a href="/en" class="en">en</a>
+    </div>
+</nav>

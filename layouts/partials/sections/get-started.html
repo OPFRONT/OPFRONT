@@ -1,0 +1,19 @@
+{{ partial "paragraph.html" .Params.subtitle }}
+
+<div class="paragraph">
+    <form action="" id="subscribe-form" class="inverted">
+        {{ range .Params.form.subscribe }}
+            {{ if eq .type "submit" }}
+                <div class="form-input submit">
+                    <button class="btn" type="submit" form="subscribe-form" value="Submit">{{ .placeholder }}</button>
+                </div>
+            {{ else }}
+                <div class="form-input{{ with .half }} half{{ end }}{{ with .required }} required{{ end }}">
+                    <input name="{{ .name }}" type="{{ .type }}" placeholder="{{ .placeholder }}" class="teal-glow"
+                           {{ with .required }}required{{ end }}>
+                </div>
+            {{ end }}
+        {{ end }}
+        <div style="clear: both;"></div>
+    </form>
+</div>

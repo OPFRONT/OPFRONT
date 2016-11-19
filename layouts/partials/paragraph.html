@@ -1,0 +1,11 @@
+<div class="paragraph {{ if .class }}{{ .class }}{{ end }}">
+
+    {{ if .title }}
+        <h3 class="paragraph-title">{{ .title }}</h3>
+    {{ end }}
+
+    {{ if .content }}
+        <p class="paragraph-content">{{ .content }}</p>
+    {{ end }}
+
+</div>
