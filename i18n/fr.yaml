@@ -12,3 +12,6 @@
 
 - id: btn-start-now
   translation: "commencer maintenant"
+
+- id: page-loader
+  translation: "soyez vu en ligne"

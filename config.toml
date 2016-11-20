@@ -32,7 +32,7 @@ DefaultContentLanguage = "fr"
 
 #----------------------
 # MENU
-#----------------------#
+#----------------------
 
 [[menu.main]]
     name = "avantages"

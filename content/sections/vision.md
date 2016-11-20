@@ -4,7 +4,7 @@ title = "voir plus loin"
 draft = false
 weight = 2
 
-type = "lol"
+type = "vision"
 
 [[paragraphs]]
 title = "La santé du patient d'abord"
@@ -21,5 +21,3 @@ content = """
    """
 
 +++
-
-halllo

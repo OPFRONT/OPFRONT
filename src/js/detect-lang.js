@@ -1,5 +1,5 @@
 const PATH_NAMES = {
-    en: 'en.html',
+    en: 'en',
     fr: ''
 };
 const FR_LANG = 'fr';
@@ -11,12 +11,12 @@ const locationPath = location.pathname.substring(0, location.pathname.lastIndexO
 const originUrl = `${location.origin}${locationPath}`;
 
 const _redirectIfNecessary = (lang) => {
-    // const currentLang = location.pathname.indexOf(PATH_NAMES[EN_LANG]) !== -1 ? EN_LANG : FR_LANG;
-    // const newLang = PATH_NAMES[lang] !== undefined ? lang : EN_LANG;
-    //
-    // if(newLang !== currentLang) {
-    //     location.replace(`${originUrl}/${PATH_NAMES[newLang]}`)
-    // }
+    const currentLang = location.pathname.indexOf(EN_LANG) !== -1 ? EN_LANG : FR_LANG;
+    const newLang = PATH_NAMES[lang] !== undefined ? lang : EN_LANG;
+
+    if(newLang !== currentLang) {
+        location.replace(`${originUrl}/${PATH_NAMES[newLang]}`)
+    }
 };
 
 const langCookie = Cookies.get(LANG_COOKIE);

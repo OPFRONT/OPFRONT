@@ -7,7 +7,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var PATH_NAMES = {
-    en: 'en.html',
+    en: 'en',
     fr: ''
 };
 var FR_LANG = 'fr';
@@ -19,12 +19,12 @@ var locationPath = location.pathname.substring(0, location.pathname.lastIndexOf(
 var originUrl = '' + location.origin + locationPath;
 
 var _redirectIfNecessary = function _redirectIfNecessary(lang) {
-    // const currentLang = location.pathname.indexOf(PATH_NAMES[EN_LANG]) !== -1 ? EN_LANG : FR_LANG;
-    // const newLang = PATH_NAMES[lang] !== undefined ? lang : EN_LANG;
-    //
-    // if(newLang !== currentLang) {
-    //     location.replace(`${originUrl}/${PATH_NAMES[newLang]}`)
-    // }
+    var currentLang = location.pathname.indexOf(EN_LANG) !== -1 ? EN_LANG : FR_LANG;
+    var newLang = PATH_NAMES[lang] !== undefined ? lang : EN_LANG;
+
+    if (newLang !== currentLang) {
+        location.replace(originUrl + '/' + PATH_NAMES[newLang]);
+    }
 };
 
 var langCookie = Cookies.get(LANG_COOKIE);
