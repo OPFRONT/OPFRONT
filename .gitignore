@@ -4,4 +4,4 @@ node_modules
 static/index.js
 static/index.min.js
 static/style.css
-public/
+public/*
