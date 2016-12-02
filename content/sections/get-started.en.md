@@ -65,6 +65,6 @@ required = true
 [[form.subscribe]]
 type = "submit"
 name = "send"
-placeholder = "subscribe"
+placeholder = "Request a demo"
 
 +++
