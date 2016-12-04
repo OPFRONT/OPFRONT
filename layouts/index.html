@@ -28,7 +28,9 @@
         {{ .Render "section" }}
     {{ end }}
 
-    {{ partial "footer.html" . }}
+    {{ range where .Data.Pages "Section" "footer" }}
+      {{ .Render "footer" }}
+    {{ end }}
 
 </div>
 
