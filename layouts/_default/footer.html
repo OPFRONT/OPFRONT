@@ -1,0 +1,55 @@
+<section id="footer">
+
+	<div class="newsletter">
+		<div class="section-container" style="margin: 0;">
+      	<div id="mc_embed_signup" class="section-content">
+					<form action="{{ .Params.mailchimp }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+	      		<div class="inline">
+	        		<p>{{ .Params.newsletter }}</p>
+	        	</div>
+
+	        	<div class="inline">
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="" required>
+						  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c40666a9e35639e313e69839f_795a94f3ff" tabindex="-1" value=""></div>
+	          </div>
+
+						<div class="inline">
+							<button class="btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">{{ .Params.subscribe }}</button>
+						</div>
+					</form>
+      	</div>
+  	</div>
+	</div>
+
+	<div class="sitemap">
+		<div class="section-container">
+    	<div class="section-content" style="overflow: auto;">
+				<div class="inline">
+					<ul>
+						{{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ i18n .Identifier }}</a></li>
+            {{ end }}
+					</ul>
+				</div>
+
+				<div class="social-media inline">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/Opfront/" target="_blank">
+								<i class="fa fa-2x fa-facebook-square"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.linkedin.com/company/opfront" target="_blank">
+								<i class="fa fa-2x fa-linkedin-square"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+    	</div>
+	  </div>
+	</div>
+</section>
