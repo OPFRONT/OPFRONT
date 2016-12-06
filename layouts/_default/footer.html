@@ -1,29 +1,29 @@
 <footer>
-  <div class="subfooter newsletter">
-    <div id="mc_embed_signup" class="subfooter-content">
-      <span>{{ .Params.newsletter }}</span>
-      <form action="{{ .Params.mailchimp }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="" required>
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c40666a9e35639e313e69839f_795a94f3ff" tabindex="-1" value=""></div>
-        <button class="btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">{{ .Params.subscribe }}</button>
-      </form>
-    </div>
-  </div>
-  <div class="subfooter social">
-    <div class="subfooter-content">
-      <div class="sitemap">
-        {{ range .Site.Menus.main }}
-          <a href="{{ .URL }}">{{ i18n .Identifier }}</a>
-        {{ end }}
-      </div>
-      <div class="social-icon">
-        <a href="https://www.facebook.com/Opfront/" target="_blank">
-          <i class="fa fa-2x fa-facebook-square"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/opfront" target="_blank">
-          <i class="fa fa-2x fa-linkedin-square"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+	<div class="subfooter newsletter">
+		<div id="mc_embed_signup" class="subfooter-content">
+			<span>{{ .Params.newsletter }}</span>
+			<form action="{{ .Params.mailchimp }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="" required>
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c40666a9e35639e313e69839f_795a94f3ff" tabindex="-1" value=""></div>
+				<button class="btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">{{ .Params.subscribe }}</button>
+			</form>
+		</div>
+	</div>
+	<div class="subfooter social">
+		<div class="subfooter-content">
+			<div class="sitemap">
+				{{ range .Site.Menus.main }}
+				  <a href="{{ .URL }}">{{ i18n .Identifier }}</a> 
+				{{ end }}
+			</div>
+			<div class="social-icon">
+				<a href="https://www.facebook.com/Opfront/" target="_blank">
+					<i class="fa fa-2x fa-facebook-square"></i>
+				</a>
+				<a href="https://www.linkedin.com/company/opfront" target="_blank">
+					<i class="fa fa-2x fa-linkedin-square"></i>
+				</a>
+			</div>
+		</div>
+	</div>
 </footer>
