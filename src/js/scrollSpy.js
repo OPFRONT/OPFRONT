@@ -5,6 +5,7 @@ const SECTION_IDS = ['#header', ...$('nav .menu .menu-item').map((_, elem) => $(
 //     SECTION_IDS.push($(elem).attr('href'))
 // });
 
+const footer = new Footer();
 const menu = new Menu();
 const parallax = new Parallax();
 const pageControls = new PageControls();
