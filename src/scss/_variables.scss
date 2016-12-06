@@ -25,6 +25,7 @@ $opfront-black: black;
 $opfront-white: white;
 $opfont-white-alpha: rgba(255,255,255,0.2);
 $opfront-gray: rgb(174, 174, 174);
+$opfront-dark-gray: #222222;
 
 $menu-border-color: $opfont-white-alpha;
 
@@ -59,12 +60,14 @@ $navbar-mobile-width: $navbar-mobile-inner-width + $navbar-mobile-padding*2;
 $default-font-size: 18px;
 $buttons-font-size: 17px;
 $nav-font-size: $buttons-font-size;
+$sitemap-font-size: 14px;
 
 
 // FORM
 $form-layout-padding: 10px;
 $form-input-height: 42px;
 $form-textarea-height: 150px;
+$input-border-grey: 2px solid #4A4A4A;
 
 
 // GET STARTED
@@ -72,3 +75,7 @@ $get-started-options-padding: 25px;
 $choose-solution-options-padding: 200px;
 $get-started-options-line-height: 20px;
 $get-started-animation-duration: 0.6s;
+
+// FOOTER
+
+$subfooter-height: 250px;
