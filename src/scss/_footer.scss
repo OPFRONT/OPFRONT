@@ -104,30 +104,34 @@ footer {
 }
 
 @media #{$phone-media-query} {
+  footer {
+    padding-top: 60px;
+
     .subfooter {
-        .subfooter-content {
-            width: calc(100% - #{$mobile-padding*2});
-            max-width: 450px;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
+      .subfooter-content {
+        width: calc(100% - #{$mobile-padding*2});
+        max-width: 450px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
-            .sitemap {
-                flex-direction: column;
+        .sitemap {
+          flex-direction: column;
 
-                a {
-                    padding-bottom: 10px;
-                    padding-right: 0;
-                }
-            }
-
-            .social-icon {
-                justify-content: center;
-            }
+          a {
+            padding-bottom: 10px;
+            padding-right: 0;
+          }
         }
+
+        .social-icon {
+          justify-content: center;
+        }
+      }
     }
 
     input {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
+  }
 }
