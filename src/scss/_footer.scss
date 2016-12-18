@@ -105,8 +105,8 @@ footer {
 
 @media #{$phone-media-query} {
   footer {
-    padding-top: 60px;
-
+    position: relative;
+    
     .subfooter {
       .subfooter-content {
         width: calc(100% - #{$mobile-padding*2});
