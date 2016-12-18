@@ -10,7 +10,7 @@ clinic = "your clinic"
 services = "your services"
 inventory = "your inventory"
 online = "online"
-support = "Recommended by"
+support = "recommended by"
 
 +++
 
