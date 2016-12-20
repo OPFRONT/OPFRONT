@@ -8,14 +8,12 @@ const SECTION_IDS = ['#header', ...$('nav .menu .menu-item').map((_, elem) => $(
 const footer = new Footer();
 const menu = new Menu();
 const parallax = new Parallax();
-const pageControls = new PageControls();
 
 $(window).scroll(() => {
     const scrollOffset = $(this).scrollTop();
 
     menu.onScroll(scrollOffset);
     parallax.onScroll(scrollOffset);
-    pageControls.onScroll(scrollOffset);
 });
 
 const getSectionOffset = (sectionId) => {
