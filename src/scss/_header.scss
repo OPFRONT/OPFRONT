@@ -33,6 +33,11 @@
     flex-direction: column;
     justify-content: center;
 
+    .partner {
+        display: flex;
+        justify-content: center;
+    }
+
     h4 {
         font-size: $sitemap-font-size;
     }
@@ -44,11 +49,10 @@
     }
 
     .support-img {
-        display: flex;
-        justify-content: center;
+        margin: $boobs;
 
         img {
-            width: 300px;
+            max-height: 38px;
         }
     }
 }
@@ -72,8 +76,9 @@
         margin-top: 0;
 
         .support-img {
+            margin: $boobs/2;
             img {
-                width: 200px;
+                max-height: 20px;
             }
         }
     }
