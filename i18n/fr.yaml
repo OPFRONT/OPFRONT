@@ -45,3 +45,6 @@
 
 - id: mailchimp
   translation: "//opfront.us14.list-manage.com/subscribe/post?u=c40666a9e35639e313e69839f&amp;id=795a94f3ff"
+
+- id: subscribe
+  translation: "s'inscrire"
