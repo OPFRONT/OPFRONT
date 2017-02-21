@@ -15,3 +15,33 @@
 
 - id: page-loader
   translation: "be seen online"
+
+- id: head-clinic
+  translation: "your clinic"
+
+- id: head-services
+  translation: "your services"
+
+- id: head-inventory
+  translation: "your inventory"
+
+- id: head-online
+  translation: "online"
+
+- id: head-support
+  translation: "recommended by"
+
+- id: headline
+  translation: "Sell online with our integrated e-commerce solution crafted for independent optometrists."
+
+- id: newsletter-subscribe
+  translation: "subscribe"
+
+- id: newsletter
+  translation: "sign up to our newsletter"
+
+- id: newsletter-placeholder
+  translation: "email"
+
+- id: mailchimp
+  translation: "//opfront.us14.list-manage.com/subscribe/post?u=c40666a9e35639e313e69839f&amp;id=657f3802e5"
