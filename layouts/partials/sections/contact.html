@@ -1,0 +1,38 @@
+{{ partial "paragraph.html" .Params.subtitle }}
+
+<div class="paragraph">
+    <div class="paragraph-content address">
+        {{ range .Params.address }}
+        <p>
+            {{ if eq .type "phone" }}
+            <img class="phone" src="{{ .Site.BaseURL }}/img/phone.png" alt="Phone icon">
+            {{ end }}
+            {{ .text }}
+        </p>
+        {{ end }}
+    </div>
+</div>
+
+<div class="paragraph">
+    <form action="" id="contact-us-form" enctype="application/json">
+        {{ range .Params.form.contact }}
+            {{ if eq .type "textarea" }}
+                <div class="form-input textarea">
+                    <textarea name="{{ .name }}" placeholder="{{ .placeholder }}" class="no-glow"></textarea>
+                </div>
+            {{ else if  eq .type "submit" }}
+                <div class="form-input submit">
+                    <button class="btn" type="submit" form="contact-us-form" value="Submit">{{ .placeholder }}</button>
+                </div>
+            {{ else }}
+                <div class="form-input half {{ with .required }}required{{ end }}">
+                    <input name="{{ .name }}" type="{{ .type }}" placeholder="{{ .placeholder }}" class="teal-glow"
+                           {{ with .required }}required{{ end }}>
+                </div>
+            {{ end }}
+        {{ end }}
+        <div style="clear: both;"></div>
+    </form>
+</div>
+
+{{ partial "paragraph.html" .Params.thanks }}

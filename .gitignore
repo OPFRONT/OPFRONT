@@ -1,6 +1,9 @@
 .idea
 node_modules
 .DS_Store
-dist/index.js
-dist/index.min.js
-dist/style.css
+static/index.js
+static/index.min.js
+static/style.css
+public/*
+.sass-cache/
+

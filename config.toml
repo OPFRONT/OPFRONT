@@ -1,0 +1,59 @@
+#----------------------
+# BASIC CONFIGURATION
+#----------------------
+
+baseurl = "http://opfront.ca"
+title = "Opfront"
+
+
+#----------------------
+# LANGUAGE
+#----------------------
+
+#DefaultContentLanguage = "en"
+# languageCode = "en-us"
+DefaultContentLanguage = "fr"
+
+[Languages]
+    [Languages.fr]
+        weight = 1
+        languageName = "Français"
+        title = "Opfront | solutions de commerce en ligne intégrées pour optométristes indépendants"
+        copyright = "Tout est à moi"
+        linkedin = "lien-francais"
+
+    [Languages.en]
+        weight = 2
+        languageName = "English"
+        title = "Opfront | integrated e-commerce solution for independent optometrists"
+        copyright = "everything's mine"
+        linkedin = "english-link"
+
+
+#----------------------
+# MENU
+#----------------------
+
+[[menu.main]]
+    name = "avantages"
+    identifier = "menu-features"
+    url = "#pros"
+    weight = 1
+
+[[menu.main]]
+    name = "vision"
+    identifier = "menu-vision"
+    url = "#vision"
+    weight = 2
+
+[[menu.main]]
+    name = "about"
+    identifier = "menu-about"
+    url = "#about"
+    weight = 3
+
+[[menu.main]]
+    name = "contact"
+    identifier = "menu-contact"
+    url = "#contact"
+    weight = 4

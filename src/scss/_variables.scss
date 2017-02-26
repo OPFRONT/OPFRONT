@@ -1,0 +1,82 @@
+// RESPONSIVE
+
+$small-phone: 360px;
+$phone: 480px;
+$phone-horizontal: 767px;
+$parallax-responsive-point: 1000px;
+$tablet: 1024px;
+$desktop: 1100px;
+$mobile-menu: 1250px;
+$macbook13-resolution-width: 1440px;
+
+$phone-media-query-horizontal: 'only screen and (max-device-width: ' $phone-horizontal ') and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)';
+$phone-media-query: 'only screen and (max-device-width: ' $phone '), only screen and (max-device-width: ' $phone-horizontal ') and (-webkit-min-device-pixel-ratio: 2)';
+$tablet-media-query: 'only screen and (max-device-width : ' $tablet '), only screen and (max-width : ' $mobile-menu ')';
+$small-desktop-media-query: 'only screen and (max-width : ' $macbook13-resolution-width ')';
+
+$tablet-padding: 30px;
+$mobile-padding: $tablet-padding/2;
+
+// COLORS
+
+$opfront-teal: rgb(39, 231, 217);
+$opfront-red: rgb(251, 0, 12);
+$opfront-black: black;
+$opfront-white: white;
+$opfont-white-alpha: rgba(255,255,255,0.2);
+$opfront-gray: rgb(174, 174, 174);
+$opfront-dark-gray: #222222;
+
+$menu-border-color: $opfont-white-alpha;
+$input-border-grey: #4A4A4A;
+
+// LAYOUT
+$boobs: 25px;
+$layout-padding: 85px;
+
+$paragraph-line-height: 28px;
+
+$content-width-desktop: 900px;
+$content-width-small-desktop: 700px;
+
+// GLOBAL
+$default-transition-time: 0.3s;
+
+
+// NAVBAR
+
+$navbar-inner-width: 150px;
+$navbar-padding: 40px;
+$navbar-width: $navbar-inner-width + $navbar-padding*2;
+$menu-button-size: 20px;
+$menu-item-width: $navbar-inner-width;
+$menu-close-btn-width: 25px;
+
+$navbar-mobile-inner-width: 50px;
+$navbar-mobile-padding: 15px;
+$navbar-mobile-width: $navbar-mobile-inner-width + $navbar-mobile-padding*2;
+
+
+// FONT SIZE
+$default-font-size: 18px;
+$buttons-font-size: 17px;
+$nav-font-size: $buttons-font-size;
+$sitemap-font-size: 14px;
+
+
+// FORM
+$form-layout-padding: 10px;
+$form-input-height: 42px;
+$form-textarea-height: 150px;
+$input-footer-border: 2px solid $input-border-grey;
+
+
+// GET STARTED
+$get-started-options-padding: 25px;
+$choose-solution-options-padding: 200px;
+$get-started-options-line-height: 20px;
+$get-started-animation-duration: 0.6s;
+
+// FOOTER
+
+$subfooter-height: 250px;

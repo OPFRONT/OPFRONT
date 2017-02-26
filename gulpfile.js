@@ -5,10 +5,9 @@ const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
-const SASS_FOLDER = './scss/';
-const JS_FOLDER = './js/';
-const DIST_FOLDER = './dist';
-const DEPLOY_FOLDER = './deploy';
+const SASS_FOLDER = './src/scss/';
+const JS_FOLDER = './src/js/';
+const DIST_FOLDER = './static';
 
 gulp.task('sass', () => {
     return gulp
@@ -21,7 +20,7 @@ gulp.task('sass', () => {
         .pipe(gulp.dest(DIST_FOLDER));
 });
 
-gulp.task('js', () => {
+gulp.task('js-dev', () => {
     return gulp.src(JS_FOLDER + '*.js')
         .pipe(concat('index.js'))
         .pipe(babel({
@@ -30,25 +29,17 @@ gulp.task('js', () => {
         .pipe(gulp.dest(DIST_FOLDER));
 });
 
-gulp.task('js-prod', () => {
+gulp.task('js', () => {
     return gulp.src(JS_FOLDER + '*.js')
         .pipe(concat('index.min.js'))
         .pipe(babel({
             presets: ['es2015-script']
         }))
-        .pipe(uglify()
-        )
+        .pipe(uglify())
         .pipe(gulp.dest(DIST_FOLDER));
 });
 
-gulp.task('watch', ['js', 'sass'], () => {
+gulp.task('watch', ['js-dev', 'js', 'sass'], () => {
     gulp.watch(SASS_FOLDER + '**/*.scss', ['sass']);
     gulp.watch(JS_FOLDER + '**/*.js', ['js']);
-});
-
-gulp.task('deploy', ['sass', 'js-prod'], () => {
-    gulp.src(`${DIST_FOLDER}/**`)
-        .pipe(gulp.dest(`${DEPLOY_FOLDER}/dist`));
-    gulp.src(['./index.html', './en.html'])
-        .pipe(gulp.dest(DEPLOY_FOLDER));
 });

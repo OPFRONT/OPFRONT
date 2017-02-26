@@ -1,0 +1,34 @@
+{{ partial "paragraph.html" (index .Params.paragraphs 0) }}
+
+<div class="paragraph-image">
+    <img class="preview img-large" src="{{ .Site.BaseURL }}/img/preview_{{ .Lang }}.jpg" alt="App preview">
+</div>
+
+{{ partial "startNowButton.html" "get-started-templates" }}
+
+{{ partial "paragraph.html" (index .Params.paragraphs 1) }}
+
+
+<div class="paragraph-image text-center">
+    <img class="img-medium" src="{{ .Site.BaseURL }}/img/ehr-integration.png" alt="ehr software integrations">
+    <p class="image-caption">
+        {{ .Params.using_another_system }}&nbsp;?
+        <span class="visible-phone-inline"><br/></span>
+        <a class="classic-link" href="#contact">{{ .Params.contact_us }}</a>
+    </p>
+</div>
+
+{{ partial "startNowButton.html" "get-started-integrations" }}
+
+{{ partial "paragraph.html" (index .Params.paragraphs 2) }}
+
+<div class="paragraph-icons">
+    {{ range .Params.icons }}
+        <div class="fourth">
+            <img src="{{ .Site.BaseURL }}/img/icon-{{ .name }}.png">
+            <h3 class="icon-title">{{ safeHTML .label }}</h3>
+        </div>
+    {{ end }}
+</div>
+
+{{ partial "startNowButton.html" "get-started-features" }}

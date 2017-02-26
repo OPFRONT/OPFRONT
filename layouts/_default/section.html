@@ -1,0 +1,14 @@
+{{ if .IsPage }}
+    <section id='{{ .Type }}' {{ if .Params.class }}class="{{ .Params.class }}"{{ end }}>
+        {{ range .Params.navigation_control }}
+            <a class="navigation-control {{ .direction }}">{{ safeHTML .text }}</a>
+        {{ end }}
+
+        <div class="section-container">
+            <h2 class="subtitle">{{ .Title }}</h2>
+            <div class="section-content">
+                {{ partial ( printf "%s/%s.html" .Section .Type ) . }}
+            </div>
+        </div>
+    </section>
+{{end}}
