@@ -7,7 +7,7 @@ footer {
         background-color: transparent;
         color: inherit;
         outline: none;
-        max-width: 200px;
+        max-width: 225px;
         border: $input-footer-border;
         text-transform: none;
 
@@ -34,7 +34,9 @@ footer {
     }
 
     .subfooter-content {
-        width: $content-width-desktop;
+        width: 100%;
+        margin-left: $boobs*2;
+        margin-right: $boobs*2;
         height: 100%;
         color: inherit;
         display: flex;
@@ -69,13 +71,7 @@ footer {
         }
     }
 }
-@media #{$small-desktop-media-query} {
-    .subfooter {
-        .subfooter-content {
-            width: $content-width-small-desktop;
-        }
-    }
-}
+
 // MOBILE
 @media #{$tablet-media-query} {
     footer {
@@ -85,7 +81,7 @@ footer {
 
     .subfooter {
         .subfooter-content {
-            width: 600px;
+            width: 100%;
             max-width: calc(100% - #{$tablet-padding*2});
             flex-direction: column;
             justify-content: center;
