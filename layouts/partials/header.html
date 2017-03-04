@@ -1,24 +1,24 @@
 <section id="header">
     <div class="section-container">
         <h1 class="title tagline">
-            {{ .Params.clinic }}<span class="hidden-phone">.</span>
+            {{ i18n "head-clinic" }}<span class="hidden-phone">.</span>
             <div class="linebreak visible-tablet"></div>
-            {{ .Params.services }}<span class="hidden-phone">.</span>
+            {{ i18n "head-services" }}<span class="hidden-phone">.</span>
             <div class="linebreak visible-tablet"></div>
-            {{ .Params.inventory }}<span class="hidden-phone">.</span>
+            {{ i18n "head-inventory" }}<span class="hidden-phone">.</span>
             <div class="linebreak visible-tablet"></div>
             <span class="title-emphasis">
-                {{ .Params.online }}<span class="hidden-phone">.</span>
+                {{ i18n "head-online" }}<span class="hidden-phone">.</span>
             </span>
         </h1>
         <div class="section-content">
-            {{ .Content }}
+            <p>{{ i18n "headline" }}</p>
             {{ partial "startNowButton.html" "get-started-head" }}
         </div>
     </div>
     <div class="support">
         <div>
-            <h4 class="support-title">{{ .Params.support }}</h4>
+            <h4 class="support-title">{{ i18n "head-support" }}</h4>
         </div>
         <div class="partner">
             <div class="support-img">

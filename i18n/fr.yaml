@@ -15,3 +15,36 @@
 
 - id: page-loader
   translation: "soyez vu en ligne"
+
+- id: head-clinic
+  translation: "votre clinique"
+
+- id: head-services
+  translation: "vos services"
+
+- id: head-inventory
+  translation: "votre inventaire"
+
+- id: head-online
+  translation: "en ligne"
+
+- id: head-support
+  translation: "recommandé par"
+
+- id: headline
+  translation: "Vendez en ligne grâce à nos solutions Web directement connectées à votre inventaire en magasin et spécialement conçues pour les cliniques d’optométrie indépendantes."
+
+- id: newsletter-subscribe
+  translation: "S'inscrire"
+
+- id: newsletter
+  translation: "Inscrivez-vous à l'infolettre"
+
+- id: newsletter-placeholder
+  translation: "adresse courriel"
+
+- id: mailchimp
+  translation: "//opfront.us14.list-manage.com/subscribe/post?u=c40666a9e35639e313e69839f&amp;id=795a94f3ff"
+
+- id: subscribe
+  translation: "s'inscrire"
