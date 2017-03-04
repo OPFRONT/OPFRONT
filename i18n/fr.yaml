@@ -48,3 +48,18 @@
 
 - id: subscribe
   translation: "s'inscrire"
+
+- id: phone
+  translation: "1-855-702-1946"
+
+- id: address
+  translation: "830, rue Saint-Joseph Est"
+
+- id: suite
+  translation: "suite 202"
+
+- id: city
+  translation: "Québec (Qc) G1K 3C9"
+
+- id: contact-subtitle
+  translation: "Visitez-nous au centre-ville de Québec."

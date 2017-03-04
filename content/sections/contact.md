@@ -6,26 +6,12 @@ weight = 4
 
 type = "contact"
 
-[subtitle]
-content = "Visitez-nous au centre-ville de Québec."
-
-[[address]]
-text = "830, rue Saint-Joseph Est, suite 202"
-weight = 1
-
-[[address]]
-text = "Québec (Qc) G1K 3C9"
-weight = 2
-
-[[address]]
-type = "phone"
-text = "581-701-1946"
-weight = 3
-
-[[address]]
-type = "phone"
-text = "1-855-702-1946"
-weight = 4
+[thanks]
+title = "Thank you!"
+class = "thanks"
+content = """
+    Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais. Vous pouvez aussi nous rejoindre de 9h à 17h au 1-855-702-1946!
+    """
 
 [[form.contact]]
 type = "text"

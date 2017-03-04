@@ -35,13 +35,40 @@ footer {
 
     .subfooter-content {
         width: 100%;
-        margin-left: $boobs*2;
-        margin-right: $boobs*2;
+        margin-left: $layout-padding;
+        margin-right: $layout-padding;
         height: 100%;
         color: inherit;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: $sitemap-font-size;
+            }
+
+            .greeting {
+                color: $opfront-teal;
+            }
+
+            .social-icon {
+                margin-top: $boobs;
+
+                a {
+                    color: inherit;
+                    padding-right: 10px;
+                    transition: ease 0.5s;
+
+                    &:hover {
+                        color: $opfront-teal;
+                    }
+                }
+            }
+        }
 
         .sitemap {
             display: flex;
@@ -50,18 +77,6 @@ footer {
                 color: inherit;
                 padding-right: 20px;
                 font-size: $sitemap-font-size;
-                transition: ease 0.5s;
-
-                &:hover {
-                    color: $opfront-teal;
-                }
-            }
-        }
-
-        .social-icon {
-            a {
-                color: inherit;
-                padding: 10px;
                 transition: ease 0.5s;
 
                 &:hover {
@@ -85,13 +100,18 @@ footer {
             max-width: calc(100% - #{$tablet-padding*2});
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
             div {
-                padding-bottom: 20px;
+                margin-top: $boobs;
             }
 
             span {
                 padding-bottom: 10px;
+            }
+
+            .social-icon {
+                margin-bottom: $boobs;
             }
         }
     }
@@ -102,19 +122,16 @@ footer {
 
         .subfooter {
             .subfooter-content {
-                width: calc(100% - #{$mobile-padding*2});
-                max-width: 450px;
+                width: calc(100% - $mobile-padding);
+                max-width: 100%;
+                margin-left: 5px;
+                margin-right: 5px;
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
 
                 .sitemap {
-                    flex-direction: column;
-
-                    a {
-                        padding-bottom: 10px;
-                        padding-right: 0;
-                    }
+                    display: none;
                 }
 
                 .social-icon {
