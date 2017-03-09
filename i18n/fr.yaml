@@ -7,6 +7,9 @@
 - id: menu-about
   translation: "à propos"
 
+- id: menu-blog
+  translation: "blog"
+
 - id: menu-contact
   translation: "contact"
 
@@ -48,3 +51,6 @@
 
 - id: subscribe
   translation: "s'inscrire"
+
+- id: read-time
+  translation: "min de lecture"
