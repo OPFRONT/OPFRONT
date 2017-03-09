@@ -12,7 +12,7 @@ authorPhoto = "https://media.licdn.com/media/p/4/005/06e/24e/23c05be.jpg"
 slug = "conventions"
 aliases = ["/blog/guidelines"]
 
-backgroundImage = "https://images.unsplash.com/photo-1488310371179-2efa381746d2"
+backgroundImage = "/img/guidelines.jpg"
 
 tags = ["commerce en ligne", "bloggeur"]
 
@@ -65,7 +65,9 @@ aliases = ["/blog/{nom_du_slug_anglais}"]
 // dans l'article en anglais
 aliases = ["/en/blog/{nom_du_slug_français}"] 
 
-// lien vers une photo, unsplash par exemple 
+// lien vers une photo locale
+backgroundImage = "/img/{nom_du_fichier}.jpg"
+// ou un lien externe
 backgroundImage = "https://..."
 
 // tags affichés sous le titre (permettra de filtrer un jour)
@@ -73,6 +75,13 @@ tags = ["commerce en ligne", "bloggeur"]
 
 draft=true // si l'article n'est pas final
 ```
+
+## Image de la banière
+Idéalement, ajouter une photo au dossier **/static/img** pour qu'on puisse la servir nous même. 
+
+Peut aussi être un lien externe (unsplash par exemple), mais ce n'est pas recommandé parce qu'on ne contrôle pas la grosseur de l'image et souvent ces services ne sont pas faits pour ça (lent).
+
+L'image doit être au minimum 1800x325.
 
 ## Générer le site web
 Pour générer le site web:
