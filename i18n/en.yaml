@@ -53,13 +53,13 @@
   translation: "1-855-702-1946"
 
 - id: address
-  translation: "830, rue Saint-Joseph street East"
+  translation: "226, rue Saint-Joseph street East"
 
 - id: suite
-  translation: "suite 202"
+  translation: "2nd floor"
 
 - id: city
-  translation: "Québec (Qc) G1K 3C9"
+  translation: "Quebec (Qc) G1K 3A9"
 
 - id: contact-subtitle
   translation: "Come greet us in downtown Quebec city."
