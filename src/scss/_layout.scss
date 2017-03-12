@@ -39,6 +39,21 @@
         margin-left: auto;
         margin-right: auto;
 
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.reverse {
+                flex-direction: row-reverse;
+            }
+
+            .half-col {
+                width: 45%;
+                margin: $boobs;
+            }
+        }
+
         .paragraph {
             margin-bottom: 30px;
 

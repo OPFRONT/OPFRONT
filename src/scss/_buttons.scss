@@ -43,7 +43,11 @@
 .start-now {
     width:100%;
     text-align: center;
-    margin: $layout-padding 0;
+    margin: $boobs 0;
+
+    #get-started-head {
+        margin: $layout-padding;
+    }
 }
 
 @media #{$phone-media-query} {
