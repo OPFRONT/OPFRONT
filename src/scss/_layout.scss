@@ -167,6 +167,22 @@
         .section-content {
             width: calc(100% - #{$mobile-padding*2});
             max-width: 450px;
+
+            .row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &.reverse {
+                    flex-direction: column;
+                }
+
+                .half-col {
+                    width: 100%;
+                    margin: $boobs;
+                }
+            }
         }
     }
 
