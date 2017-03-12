@@ -28,7 +28,7 @@
 
 .support {
     width: $content-width-desktop;
-    margin: -25px auto $boobs;
+    margin: -$boobs*2 0 $boobs;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,6 @@
     .support-title {
         @include letter-spacing-from-adobe(50);
         text-align: center;
-        padding-bottom: $boobs;
     }
 
     .support-img {
