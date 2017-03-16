@@ -11,24 +11,28 @@ contact_us = "contact us"
 
 
 [[paragraphs]]
-title = "A ready-to-use platform"
+title = "Online Catalogue with checkout"
 content = """
-    We are offering you more than a simple online showcase. Choose between our attractive canvases specifically \
-    designed for optometrists, and we will help you integrate your branding as well as your products and services.
+The Internet has revolutionized the way people shop. Give customers the experience they are looking for and attract new customers along the way with your online catalogue. One they can see when it is convenient for them and from where it is convenient for them.
+
     """
 
 [[paragraphs]]
-title = "Opfront integrates with your inventory management system"
+title = "Connected with your software"
 content = """
-    With Opfront, you will be able to connect your online inventory to your in-store inventory and keep it \
-    seamlessly synchronized.
+    Opfront connects with your clinic management software and makes sure patients and products informations are sync automatically. This two-way connection allows you to provide your clientele with a unique and personalized experience, one they won’t find elsewhere.
     """
 
 [[paragraphs]]
-title = "Technological tools that gives your clinic a real competitive advantage"
+title = "Inventory as a service"
 content = """
-    Opfront provides a professional and high quality toolset that is secure and user-friendly, so that you can \
-    concentrate on what matters the most: your patients.
+    Your online catalogue can display a lot more than your actual inventory. Opfront’s database is at your disposal to offer more choice to your patients.
+    """
+
+[[paragraphs]]
+title = "Comprehensive Analytics Dashboard"
+content = """
+    Your clinic management software is a gold mine that has been underestimated for too long. Unleash its power with a powerful analytic dashboard.
     """
 
 name = "products"
