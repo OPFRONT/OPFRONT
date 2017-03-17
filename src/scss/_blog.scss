@@ -1,0 +1,107 @@
+.single-page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 325px;
+
+    .section-container {
+        z-index: 1;
+    }
+
+    .tags, .infos {
+        color: $opfront-gray;
+    }
+}
+
+.single-page-content {
+    .section-content {
+        h2, h3, h4, h5, h6 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        pre {
+            margin: 20px 0;
+            background: $opfront-dark-gray;
+            code {
+                padding: 15px 25px;
+                color: white;
+                display: block;
+            }
+        }
+        ol, ul {
+            list-style-type: disc;
+            margin: 20px 25px;
+            padding: 0 5px;
+            li {
+                margin: 8px 0;
+            }
+        }
+    }
+}
+
+.blog-title {
+    position: relative;
+    color: $opfront-white;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tags {
+    .tag {
+        margin-right: 15px;
+        text-transform: none;
+        &:after {
+            content: "\2022";
+            font-size: 8px;
+            position: absolute;
+            margin: 0 6px;
+        }
+        &:last-child {
+            margin-right: 0;
+            &:after {
+                content: "";
+            }
+        }
+    }
+}
+
+.author {
+    display: flex;
+    margin-top: 50px;
+    .author-photo {
+        height: 70px;
+        border-radius: 50%;
+    }
+    .author-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25px;
+        span {
+            line-height: 24px;
+            &.author-title {
+                font-size: 16px;
+                color: $opfront-gray;
+            }
+        }
+    }
+}
+
+section#blog {
+    min-height: 0;
+    .date {
+        color: $opfront-gray;
+    }
+    .separator {
+        margin: 0 15px;
+        color: $opfront-gray;
+    }
+    .blogpost-title {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

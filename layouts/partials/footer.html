@@ -18,7 +18,7 @@
         <div class="subfooter-content">
             <div class="sitemap">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}">{{ i18n .Identifier }}</a>
+                <a href="{{ .URL | relLangURL }}">{{ i18n .Identifier }}</a>
                 {{ end }}
             </div>
             <div class="social-icon">
