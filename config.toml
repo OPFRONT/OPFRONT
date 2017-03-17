@@ -52,11 +52,11 @@ DefaultContentLanguage = "fr"
     url = "#about"
     weight = 3
 
-[[menu.main]]
-    name = "blog"
-    identifier = "menu-blog"
-    url = "/blog"
-    weight = 4
+# [[menu.main]]
+#     name = "blog"
+#     identifier = "menu-blog"
+#     url = "/blog"
+#     weight = 4
 
 [[menu.main]]
     name = "contact"
