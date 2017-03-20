@@ -96,8 +96,8 @@ strong {
 
 .single-page-content {
     .section-content {
-        *:not(h1, h2, h3, h4, h5, h6) {
-            text-transform: none;
+        a, span, p, li, code, em, strong {
+            text-transform: initial;
         }
         h2 {
             font-size: 26px;

@@ -12,7 +12,7 @@ authorPhoto = "https://media.licdn.com/media/p/4/005/06e/24e/23c05be.jpg"
 slug = "guidelines"
 aliases = ["/en/blog/conventions"]
 
-backgroundImage = "https://images.unsplash.com/photo-1488310371179-2efa381746d2"
+backgroundImage = "/img/guidelines.jpg"
 
 tags = ["e-commerce", "blogger"]
 
@@ -65,7 +65,9 @@ aliases = ["/blog/{english_slug_name}"]
 // english post
 aliases = ["/en/blog/{french_slug_name}"] 
 
-// photo link, unsplash for example
+// Local photo link
+backgroundImage = "/img/{filename}.jpg"
+// or external link
 backgroundImage = "https://..."
 
 // tags shown under the post title (filter purposes)
@@ -73,6 +75,13 @@ tags = ["e-commerce", "blogger"]
 
 draft=true // if blog post is not final
 ```
+
+## Banner image
+Ideally, add your own photo to the **/static/img** directory so we can serve it ourselves. 
+
+Could be an external image link (like unsplash) but it's not recommended as we do not control image size and these services aren't made for content delivery (slow).
+
+Image size must be at least 1800x325.
 
 ## Generate the website
 To generate:

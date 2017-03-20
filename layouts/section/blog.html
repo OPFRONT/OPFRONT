@@ -26,7 +26,7 @@
                 {{ range .Data.Pages }}
                     <span class="date">
                     {{ if eq .Lang "fr" }}
-                        {{ .PublishDate.Day }} {{ index $.Site.Data.mois (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
+                        {{ .PublishDate.Day }} {{ index $.Site.Data.months (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
                     {{ else }}
                         {{ .PublishDate.Month }} {{ .PublishDate.Day }} {{ .PublishDate.Year }}
                     {{ end }}
