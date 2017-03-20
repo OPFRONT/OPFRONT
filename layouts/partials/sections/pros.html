@@ -1,12 +1,11 @@
 <div class="row">
     <div class="half-col">
         {{ partial "paragraph.html" (index .Params.paragraphs 0) }}
+        {{ partial "startNowButton.html" "get-started-templates" }}
     </div>
     <div class="half-col">
         <div class="paragraph-image">
             <img class="preview img-large" src="{{ .Site.BaseURL }}/img/preview_{{ .Lang }}.jpg" alt="App preview">
-            {{ partial "startNowButton.html" "get-started-templates" }}
-
         </div>
     </div>
 </div>
@@ -15,16 +14,16 @@
 <div class="row reverse">
     <div class="half-col">
         {{ partial "paragraph.html" (index .Params.paragraphs 1) }}
+        {{ partial "startNowButton.html" "get-started-integrations" }}
     </div>
     <div class="half-col">
         <div class="paragraph-image text-center">
             <img class="img-large" src="{{ .Site.BaseURL }}/img/ehr-integration.png" alt="ehr software integrations">
             <p class="image-caption">
-                {{ .Params.using_another_system }}&nbsp;?
+                {{ .Params.using_another_system }}
                 <span class="visible-phone-inline"><br/></span>
                 <a class="classic-link" href="#contact">{{ .Params.contact_us }}</a>
             </p>
-            {{ partial "startNowButton.html" "get-started-integrations" }}
         </div>
     </div>
 </div>
@@ -32,33 +31,28 @@
 <div class="row">
     <div class="half-col">
         {{ partial "paragraph.html" (index .Params.paragraphs 2) }}
+        {{ partial "startNowButton.html" "get-started-templates" }}
     </div>
     <div class="half-col">
-        <div class="paragraph-icons">
-            {{ range .Params.icons }}
-                <div class="fourth">
-                    <img src="{{ .Site.BaseURL }}/img/icon-{{ .name }}.png">
-                    <h3 class="icon-title">{{ safeHTML .label }}</h3>
-                </div>
-            {{ end }}
+        <div class="paragraph-image">
+            <img class="preview img-large" src="{{ .Site.BaseURL }}/img/preview_{{ .Lang }}.jpg" alt="App preview">
         </div>
-        {{ partial "startNowButton.html" "get-started-features" }}
     </div>
 </div>
 
 <div class="row reverse">
     <div class="half-col">
         {{ partial "paragraph.html" (index .Params.paragraphs 3) }}
+        {{ partial "startNowButton.html" "get-started-integrations" }}
     </div>
     <div class="half-col">
         <div class="paragraph-image text-center">
             <img class="img-large" src="{{ .Site.BaseURL }}/img/ehr-integration.png" alt="ehr software integrations">
             <p class="image-caption">
-                {{ .Params.using_another_system }}&nbsp;?
+                {{ .Params.using_another_system }}
                 <span class="visible-phone-inline"><br/></span>
                 <a class="classic-link" href="#contact">{{ .Params.contact_us }}</a>
             </p>
         </div>
-        {{ partial "startNowButton.html" "get-started-integrations" }}
     </div>
 </div>
