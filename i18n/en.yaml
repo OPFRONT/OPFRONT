@@ -7,6 +7,9 @@
 - id: menu-about
   translation: "about"
 
+- id: menu-blog
+  translation: "blog"
+
 - id: menu-contact
   translation: "contact"
 
@@ -63,3 +66,6 @@
 
 - id: contact-subtitle
   translation: "Come greet us in downtown Quebec city!"
+
+- id: read-time
+  translation: "min read"

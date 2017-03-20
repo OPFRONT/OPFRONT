@@ -9,10 +9,13 @@ const TABLET_MAX_WIDTH = 1024;
 const isMobile = window.innerWidth <= TABLET_MAX_WIDTH;
 
 const setRandomBackgroundImage = () => {
-    const randomImage = BG_IMAGE_FILENAMES[Math.floor(Math.random() * BG_IMAGE_FILENAMES.length)];
-    const randomImageCSSString = `background-image: url(${location.origin}/img/${randomImage}${isMobile ? "small" : ""}.jpg)`;
+    const header = document.getElementById('header');
+    if(header) {
+        const randomImage = BG_IMAGE_FILENAMES[Math.floor(Math.random() * BG_IMAGE_FILENAMES.length)];
+        const randomImageCSSString = `background-image: url(${location.origin}/img/${randomImage}${isMobile ? "small" : ""}.jpg)`;
 
-    document.getElementById('header').setAttribute('style', randomImageCSSString);
+        header.setAttribute('style', randomImageCSSString);
+    }
 };
 
 setRandomBackgroundImage();

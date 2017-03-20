@@ -83,8 +83,41 @@ h2 {
     font-weight: 700;
 }
 
-h3 {
+h3, h4, h5, h6 {
     font-size: $default-font-size;
+}
+
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+
+.single-page-content {
+    .section-content {
+        *:not(h1, h2, h3, h4, h5, h6) {
+            text-transform: none;
+        }
+        h2 {
+            font-size: 26px;
+            line-height: 26px;
+            font-weight: normal;
+        }
+        pre {
+            white-space: pre;
+            word-wrap: break-word;
+            overflow: auto;
+            code {
+                font-family: monospace;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
 }
 
 .text-center {
@@ -154,7 +187,7 @@ p {
         font-size: 60px;
     }
 
-    h3 {
+    h3, h4, h5, h6 {
         font-size: 18px;
     }
 }
@@ -168,32 +201,7 @@ p {
         font-size: 24px;
     }
 
-    h3 {
-        font-size: 15px;
-    }
-    p {
-        font-size: 15px;
-    }
-    .subtitle {
-        width: calc(100% - 30px);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .tagline {
-        width: calc(100% - #{$mobile-padding});
-    }
-}
-
-@media #{$phone-media-query} {
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
+    h3, h4, h5, h6 {
         font-size: 15px;
     }
     p {
@@ -207,6 +215,15 @@ p {
     .tagline {
         width: calc(100% - #{$mobile-padding});
         letter-spacing: 3px;
+    }
+
+    .single-page-content {
+        .section-content {
+            h2 {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
     }
 }
 

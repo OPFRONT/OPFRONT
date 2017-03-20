@@ -17,9 +17,9 @@
     <div class="subfooter social">
         <div class="subfooter-content">
             <div class="sitemap">
-                {{ range .Site.Menus.main }}
-                    <a href="{{ .URL }}">{{ i18n .Identifier }}</a>
-                {{ end }}
+              {{ range .Site.Menus.main }}
+                <a href="{{ .URL | relLangURL }}">{{ i18n .Identifier }}</a>
+              {{ end }}
             </div>
             <div class="contact-info address">
                 <p class="greeting">{{ i18n "contact-subtitle" }}</p>

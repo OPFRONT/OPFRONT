@@ -7,6 +7,9 @@
 - id: menu-about
   translation: "à propos"
 
+- id: menu-blog
+  translation: "blog"
+
 - id: menu-contact
   translation: "contact"
 
@@ -63,3 +66,6 @@
 
 - id: contact-subtitle
   translation: "Visitez-nous au centre-ville de Québec!"
+
+- id: read-time
+  translation: "min de lecture"
