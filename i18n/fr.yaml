@@ -52,5 +52,20 @@
 - id: subscribe
   translation: "s'inscrire"
 
+- id: phone
+  translation: "1-855-702-1946"
+
+- id: address
+  translation: "226, rue Saint-Joseph Est"
+
+- id: suite
+  translation: "2e étage"
+
+- id: city
+  translation: "Québec (Qc) G1K 3A9"
+
+- id: contact-subtitle
+  translation: "Visitez-nous au centre-ville de Québec!"
+
 - id: read-time
   translation: "min de lecture"

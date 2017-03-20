@@ -32,10 +32,10 @@
 }
 
 .section-container {
-    margin: 100px 0;
+    margin: 100px $layout-padding;
 
     .section-content {
-        width: $content-width-desktop;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
 
@@ -58,7 +58,8 @@
                     box-shadow: 0px 11px 37px 2px rgba(0, 0, 0, 0.2);
                 }
                 &.img-large {
-                    width: 100%;
+                    width: 90%;
+                    margin: auto;
                 }
                 &.img-medium {
                   width: 70%;
@@ -79,14 +80,14 @@
             margin: $layout-padding 0;
 
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
 
             img {
                 width: 100%;
             }
 
             .fourth {
-                width: 20%;
+                width: 15%;
                 .icon-title {
                     margin-top: $layout-padding/2;
                     letter-spacing: 0;
@@ -113,14 +114,6 @@
     height: 20px;
 }
 
-@media #{$small-desktop-media-query} {
-    .section-container {
-        .section-content {
-            width: $content-width-small-desktop;
-        }
-    }
-}
-
 @media #{$tablet-media-query} {
     .page-content {
         width: calc(100% - #{$navbar-mobile-width});
@@ -128,7 +121,7 @@
     }
 
     .section-container .section-content {
-        width: 600px;
+        width: 100%;
         max-width: calc(100% - #{$tablet-padding*2});
         .paragraph-icons {
             .fourth {
