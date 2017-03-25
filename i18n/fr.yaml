@@ -13,6 +13,9 @@
 - id: btn-start-now
   translation: "commencer maintenant"
 
+- id: coming-soon
+  translation: "bientôt disponible"
+
 - id: page-loader
   translation: "soyez vu en ligne"
 

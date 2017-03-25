@@ -32,7 +32,7 @@
         }
     }
 
-    &:disabled {
+    &.disabled {
         color: $opfront-gray;
         background-color: lighten($opfront-teal, 25%);
         border-color: lighten($opfront-teal, 25%);
@@ -56,5 +56,6 @@
     }
     .start-now .btn {
         width: 200px;
+        margin-bottom: $layout-padding;
     }
 }

@@ -6,7 +6,7 @@ weight = 1
 
 type = "pros"
 
-using_another_system = "Using another system"
+using_another_system = "Using another system?"
 contact_us = "contact us"
 
 

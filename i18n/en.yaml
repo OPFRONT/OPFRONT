@@ -13,6 +13,9 @@
 - id: btn-start-now
   translation: "get started now"
 
+- id: coming-soon
+  translation: "coming soon"
+
 - id: page-loader
   translation: "be seen online"
 

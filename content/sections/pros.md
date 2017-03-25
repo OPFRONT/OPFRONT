@@ -6,7 +6,7 @@ weight = 1
 
 type = "pros"
 
-using_another_system = "Vous utilisez un autre système"
+using_another_system = "Vous utilisez un autre système?"
 contact_us = "Contactez-nous"
 
 [[paragraphs]]
