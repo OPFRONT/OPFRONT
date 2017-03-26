@@ -30,9 +30,9 @@ content = """
     """
 
 [[paragraphs]]
-title = "Comprehensive Analytics Dashboard"
+title = "Comprehensive Dashboard"
 content = """
-    Your clinic management software is a gold mine that has been underestimated for too long. Unleash its power with a powerful analytic dashboard.
+    You can easily manage your products, your orders and more with this comprehensive dashboard. You also get powerful insights on your patients thanks to our unique set of advanced analytics.
     """
 
 name = "products"

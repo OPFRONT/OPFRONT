@@ -27,9 +27,9 @@ content = """
     Grâce à la vaste base de données d’OPFRONT, présentez d’autres choix de montures et de couleurs disponibles sur commande.
     """
 [[paragraphs]]
-title = "Tableau de bord analytique"
+title = "Tableau de bord complet"
 content = """
-    Grâce à un tableau de bord facile d’utilisation, apprenez-en plus sur votre clientèle et leur préférences. Cet outil vous aidera à prendre des décisions qui ont une impact direct sur votre entreprise.
+    Grâce à un tableau de bord facile d’utilisation, vous pouvez gérer vos produits, vos commandes et en apprendre plus sur votre clientèle ainsi que leurs préférences. Cet outil vous aidera à prendre des décisions qui ont une impact direct sur votre entreprise.
     """
 
 [[icons]]
