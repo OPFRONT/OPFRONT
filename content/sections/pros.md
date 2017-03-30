@@ -24,28 +24,12 @@ content = """
 [[paragraphs]]
 title = "Service d'inventaire"
 content = """
-    Grâce à la vaste base de données d’OPFRONT, présentez d’autres choix de montures et de couleurs disponibles sur commande.
+    Grâce à la vaste base de données d’Opfront, présentez d’autres choix de montures et de couleurs disponibles sur commande.
     """
 [[paragraphs]]
 title = "Tableau de bord complet"
 content = """
     Grâce à un tableau de bord facile d’utilisation, vous pouvez gérer vos produits, vos commandes et en apprendre plus sur votre clientèle ainsi que leurs préférences. Cet outil vous aidera à prendre des décisions qui ont une impact direct sur votre entreprise.
     """
-
-[[icons]]
-name = "products"
-label =  "affichez vos produits"
-
-[[icons]]
-name = "branding"
-label =  "raffinez votre image de marque"
-
-[[icons]]
-name = "clients"
-label =  "gardez contact avec votre clientèle"
-
-[[icons]]
-name = "sales"
-label =  "augmentez vos ventes"
 
 +++
