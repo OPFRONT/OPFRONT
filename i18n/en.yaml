@@ -72,3 +72,6 @@
 
 - id: read-time
   translation: "min read"
+
+- id: press-coverage
+  translation: "as seen in the media"

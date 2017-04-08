@@ -2,35 +2,40 @@ footer {
     width: calc(100% - #{$navbar-width});
     margin-left: $navbar-width;
     color: $opfront-white;
-
-    input {
-        background-color: transparent;
-        color: inherit;
-        outline: none;
-        max-width: 225px;
-        border: $input-footer-border;
-        text-transform: none;
-
-        &.filled {
-            border-color: $input-border-grey;
-        }
-    }
 }
 
 .subfooter {
     width: 100%;
-    height: $subfooter-height;
     display: flex;
     justify-content: center;
     align-items: center;
     color: inherit;
 
-    &.newsletter {
-        background-color: $opfront-dark-gray;
-    }
-
     &.social {
         background-color: $opfront-black;
+        height: $subfooter-height;
+    }
+
+    &.press {
+        background-color: $opfront-dark-gray;
+        height: $subfooter-height/2;
+        display: flex;
+        flex-direction: column;
+
+        .border-bottom {
+            border-bottom: 2px solid $opfront-white;
+        }
+
+        .press-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: $boobs 0 $boobs 0;
+
+            img {
+                padding: $boobs/2;
+            }
+        }
     }
 
     .subfooter-content {
@@ -121,6 +126,12 @@ footer {
         position: relative;
 
         .subfooter {
+
+            .press {
+                .press-link {
+                    flex-direction: column;
+                }
+            }
             .subfooter-content {
                 width: calc(100% - $mobile-padding);
                 max-width: 100%;
@@ -138,10 +149,6 @@ footer {
                     justify-content: center;
                 }
             }
-        }
-
-        input {
-            margin-bottom: 10px;
         }
     }
 }
