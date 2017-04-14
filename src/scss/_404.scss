@@ -1,0 +1,42 @@
+.header-404 {
+    height: 325px;
+    background-size: cover;
+    background-image: url(/img/blog.jpg);
+}
+
+.section-404 {
+    display: flex;
+    flex-direction: column;
+
+    .content-404 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        p {
+            padding-bottom: $layout-padding;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        .text-404 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .border-bottom-404 {
+            margin-bottom: $layout-padding;
+            border-bottom: 2px solid $opfront-black;
+        }
+    }
+}
+
+@media #{$phone-media-query} {
+    .header-404 {
+        background-position: center;
+    }
+}
