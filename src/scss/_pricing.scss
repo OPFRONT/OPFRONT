@@ -1,0 +1,45 @@
+.pricing {
+	display: flex;
+	flex-direction: column;
+
+	&.dark {
+		background-color: $opfront-dark-gray;
+		color: $opfront-white;
+	}
+
+	&.light {
+		background-color: $opfront-white;
+		color: $opfront-dark-gray;
+	}
+
+    .content-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+	.pricing-container {
+		margin: $layout-padding auto;
+		width: 50%;
+
+        .border-bottom {
+            padding-bottom: $boobs;
+            margin-bottom: $boobs;
+            border-bottom: 2px solid $opfront-white;
+        }
+
+        h3 {
+        	font-size: 36px;
+        }
+
+        h5 {
+            padding-bottom: $boobs;
+        }
+
+        i {
+        	color: $opfront-teal;
+        	padding: 5px;
+        }
+	}
+}

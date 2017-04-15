@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "meta.html" . }}
+
+    <title>{{ .Site.Title }}</title>
+
+    {{ partial "headIncludes.html" . }}
+
+</head>
+<body>
+
+{{ partial "navbar.html" . }}
+
+<div class="page-content">
+	<div class="pricing dark">
+		<div class="pricing-container">
+			<div class="content-center">
+				<h5>{{ .Title }}</h5>
+				<h3 class="border-bottom">Simple & Flexible</h3>
+                <p>
+                    We offer you a simple and flexible pricing to minimize the impact on your cashflow and maximize the impact on your customer experience.
+                </p>
+			</div>
+		</div>
+	</div>
+    <div class="pricing light">
+        <div class="pricing-container">
+            <h5 class="text-center">included with your platform</h5>
+            <ul>
+                <li><i class="fa fa-check"></i>This</li>
+                <li><i class="fa fa-check"></i>That</li>
+                <li><i class="fa fa-check"></i>This</li>
+                <li><i class="fa fa-check"></i>That</li>
+            </ul>
+        </div>
+    </div>
+    <div class="pricing dark">
+        <div class="pricing-container content-center">
+            <h1>399$</h1>
+            <p>
+                per month
+            </p>
+            <p>billed annually</p>
+            <a class="btn start-now">sign up now</a>
+        </div>
+    </div>
+    <div class="pricing light">
+        <div class="pricing-container content-center">
+            <h5>Our clients</h5>
+            <img src="/img/logo-regardaction.png" />
+            <em>You want to learn more about Opfront?</em>
+            <a class="btn start-now inverted">Request a demo</a>
+        </div>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+{{ partial "analytics.html" . }}
+<!--<script src="{{ .Site.BaseURL }}/cookie.js"></script>-->
+
+<!--{{ if in (printf "%v" $.Site.BaseURL) "localhost" }}-->
+<!--<script src="{{ .Site.BaseURL }}/index.js"></script>-->
+<!--{{ else }}-->
+<!--<script src="{{ .Site.BaseURL }}/index.min.js"></script>-->
+<!--{{ end }}-->
+
+</body>
+</html>
