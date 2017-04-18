@@ -13,14 +13,14 @@
     <div class="menu">
         <ul class="menu-items">
             {{ range .Site.Menus.main }}
-                <a href="{{ .URL | relLangURL }}" class="menu-item">{{ i18n .Identifier }}</a>
+                <a href="{{ .URL }}" class="menu-item">{{ i18n .Identifier }}</a> <!--| relLangURL -->
             {{ end }}
         </ul>
     </div>
-    {{ $relativePath := replace (replace .Permalink .Site.BaseURL "") (printf "%s/" .Site.Language) "" }}
+    <!-- {{ $relativePath := replace (replace .Permalink .Site.BaseURL "") (printf "%s/" .Site.Language) "" }} -->
     <div class="lang {{ .Lang }}">
-        <a href="{{ .Site.BaseURL }}{{ $relativePath }}" class="fr">fr</a>
+        <a href="{{ .Site.BaseURL }}" class="fr">fr</a> <!-- {{ $relativePath }}-->
         <div class="separator">-</div>
-        <a href="{{ .Site.BaseURL }}en/{{ $relativePath }}" class="en">en</a>
+        <a href="{{ .Site.BaseURL }}en/" class="en">en</a> <!-- {{ $relativePath }}-->
     </div>
 </nav>

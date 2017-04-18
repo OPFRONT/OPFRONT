@@ -32,7 +32,7 @@
         }
     }
 
-    &:disabled {
+    &.disabled, &:disabled {
         color: $opfront-gray;
         background-color: lighten($opfront-teal, 25%);
         border-color: lighten($opfront-teal, 25%);
@@ -43,7 +43,11 @@
 .start-now {
     width:100%;
     text-align: center;
-    margin: $layout-padding 0;
+    margin: $boobs 0;
+
+    #get-started-head {
+        margin: $layout-padding 0;
+    }
 }
 
 @media #{$phone-media-query} {
@@ -52,5 +56,6 @@
     }
     .start-now .btn {
         width: 200px;
+        margin-bottom: $layout-padding;
     }
 }

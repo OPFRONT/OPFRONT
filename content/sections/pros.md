@@ -6,45 +6,30 @@ weight = 1
 
 type = "pros"
 
-using_another_system = "Vous utilisez un autre système"
+using_another_system = "Vous utilisez un autre système?"
 contact_us = "Contactez-nous"
 
 [[paragraphs]]
-title = "une plateforme prête à vous accueillir"
+title = "Catalogue en ligne"
 content = """
-    Nous vous offrons plus qu'une simple vitrine virtuelle. Choisissez parmis nos canevas attrayants spécialement \
-    conçus pour les optométristes et nous vous accompagnerons pour y intégrer votre image de marque, vos services et \
-    vos produits.
+    Internet a révolutionné la façon dont les gens magasinent. Les patients veulent magasiner dans le confort de leur foyer et quand bon leur semble. Offrez-leur la meilleure expérience qui soit et attirez une nouvelle clientèle dans votre clinique grâce à un catalogue en ligne.
     """
 
 [[paragraphs]]
-title = "Opfront s'intègre à votre système de gestion de clinique"
+title = "Connecté avec votre logiciel"
 content = """
-   Grâce à Opfront, votre inventaire en magasin sera synchronisé à votre boutique en ligne. Vous serez  ainsi en \
-   mesure de bien communiquer à vos clients l'éventail des produits offerts par votre clinique.
-   """
-
-[[paragraphs]]
-title = "Des outils technologiques représentant un réel avantage concurrentiel pour votre clinique"
-content = """
-    Un éventail d'outils de grande qualité, professionnels, conviviaux et sécuritaires, mais surtout simples et \
-    faciles d'utilisation. Ainsi, vous pourrez vous concentrer sur ce qui est le plus important: vos patients.
+    Opfront se connecte à votre logiciel de gestion de clinique, ce qui permet d’afficher en ligne votre inventaire physique en temps réel pour une offre mise à jour automatiquement et sans tracas.
     """
 
-[[icons]]
-name = "products"
-label =  "affichez vos produits"
-
-[[icons]]
-name = "branding"
-label =  "raffinez votre image de marque"
-
-[[icons]]
-name = "clients"
-label =  "gardez contact avec votre clientèle"
-
-[[icons]]
-name = "sales"
-label =  "augmentez vos ventes"
+[[paragraphs]]
+title = "Service d'inventaire"
+content = """
+    Grâce à la vaste base de données d’Opfront, présentez d’autres choix de montures et de couleurs disponibles sur commande.
+    """
+[[paragraphs]]
+title = "Tableau de bord complet"
+content = """
+    Grâce à un tableau de bord facile d’utilisation, vous pouvez gérer vos produits, vos commandes et en apprendre plus sur votre clientèle ainsi que leurs préférences. Cet outil vous aidera à prendre des décisions qui ont une impact direct sur votre entreprise.
+    """
 
 +++

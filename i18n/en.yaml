@@ -16,6 +16,9 @@
 - id: btn-start-now
   translation: "get started now"
 
+- id: coming-soon
+  translation: "coming soon"
+
 - id: page-loader
   translation: "be seen online"
 
@@ -32,7 +35,7 @@
   translation: "online"
 
 - id: head-support
-  translation: "recommended by"
+  translation: "our partners"
 
 - id: headline
   translation: "Sell online with our integrated e-commerce solution crafted for independent optometrists."
