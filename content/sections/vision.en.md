@@ -9,13 +9,13 @@ type = "vision"
 [[paragraphs]]
 title = "the patient's health in priority"
 content = """
-    Opfront strives to help optometrists keep control over the online optic market.
+    Opfront strives to help eye care professionals keep control over the online optic market.
     """
 
 [[paragraphs]]
 title = "our mission"
 content = """
-    Develop technological tools to support the commercial development of independent optometry clinics.
+    Develop technological tools to support the commercial development of eye care professional clinics.
     """
 
 +++
