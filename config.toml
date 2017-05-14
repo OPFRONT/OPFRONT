@@ -18,14 +18,14 @@ DefaultContentLanguage = "fr"
     [Languages.fr]
         weight = 1
         languageName = "Français"
-        title = "Opfront | solutions de commerce en ligne intégrées pour optométristes indépendants"
+        title = "Opfront | solutions de commerce en ligne pour les professionnels de la vue"
         copyright = "Tout est à moi"
         linkedin = "lien-francais"
 
     [Languages.en]
         weight = 2
         languageName = "English"
-        title = "Opfront | integrated e-commerce solution for independent optometrists"
+        title = "Opfront | e-commerce solutions for eye care professionals"
         copyright = "everything's mine"
         linkedin = "english-link"
 
