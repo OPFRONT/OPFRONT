@@ -2,35 +2,35 @@
 
 title = "Conventions du blog"
 description = "Voici les conventions pour le blog."
-publishdate = "2017-03-24"
+publishdate = "2025-09-24"
 draft = true
 
-authorName = "Olivier Sylvain" 
+authorName = "Olivier Sylvain"
 authorTitle = "Ingénieur logiciel chez Opfront"
 authorPhoto = "https://media.licdn.com/media/p/4/005/06e/24e/23c05be.jpg"
 
 slug = "conventions"
 aliases = ["/blog/guidelines"]
 
-backgroundImage = "/img/guidelines.jpg"
+backgroundImage = "/img/blog/guidelines.jpg"
 
 tags = ["commerce en ligne", "bloggeur"]
 
 +++
 
-Voici quelques conseils et lignes directrices accompagnés d'exemples pour aider à formatter les articles de blog. 
+Voici quelques conseils et lignes directrices accompagnés d'exemples pour aider à formatter les articles de blog.
 
 Les [règles habituelles](http://markdown-guide.readthedocs.io/en/latest/basics.html) de markdown s'appliquent.
 
 
 ## Headers
 
-Il est possible d'utiliser deux grosseurs de titres: 
+Il est possible d'utiliser deux grosseurs de titres:
 
 ## Gros titre (second niveau)
 ### Petit titre (troisième niveau et suivants)
 
-*Ne pas utiliser de titre de premier niveau (un seul #)* car ça génère un ```<h1>``` et il y en a déjà un dans la page. 
+*Ne pas utiliser de titre de premier niveau (un seul #)* car ça génère un ```<h1>``` et il y en a déjà un dans la page.
 
 ## Code
 
@@ -52,9 +52,9 @@ title = "Conventions du blog"
 // Date à laquelle sera publié l'article
 publishDate = "2017-03-08" // "AAAA-MM-JJ"
 
-authorName = "Olivier Sylvain" 
+authorName = "Olivier Sylvain"
 authorTitle = "Ingénieur logiciel chez Opfront"
-// lien vers une photo, linked in par exemple 
+// lien vers une photo, linked in par exemple
 authorPhoto = "https://..."
 
 slug = "conventions" // nom qui sera utilisé pour le routing
@@ -63,7 +63,7 @@ slug = "conventions" // nom qui sera utilisé pour le routing
 // dans l'article en français
 aliases = ["/blog/{nom_du_slug_anglais}"]
 // dans l'article en anglais
-aliases = ["/en/blog/{nom_du_slug_français}"] 
+aliases = ["/en/blog/{nom_du_slug_français}"]
 
 // lien vers une photo locale
 backgroundImage = "/img/{nom_du_fichier}.jpg"
@@ -77,7 +77,7 @@ draft=true // si l'article n'est pas final
 ```
 
 ## Image de la banière
-Idéalement, ajouter une photo au dossier **/static/img** pour qu'on puisse la servir nous même. 
+Idéalement, ajouter une photo au dossier **/static/img** pour qu'on puisse la servir nous même.
 
 Peut aussi être un lien externe (unsplash par exemple), mais ce n'est pas recommandé parce qu'on ne contrôle pas la grosseur de l'image et souvent ces services ne sont pas faits pour ça (lent).
 
@@ -88,10 +88,10 @@ Pour générer le site web:
 
 ```
 // Génère les fichiers dans /public
-hugo 
+hugo
 
 // Génère les fichiers en mémoire et les sert à http://localhost:1313
-hugo serve 
+hugo serve
 ```
 En développement, on peut utiliser les flags suivants:
 ```
