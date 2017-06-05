@@ -1,6 +1,6 @@
 +++
 
-title = "5 choses que vous pouvez faire pour améliorer l’expérience de vos clients"
+title = "5 choses que vous pouvez faire pour améliorer votre expérience client."
 publishdate = "2017-06-01"
 draft = true
 
@@ -30,9 +30,9 @@ L’objectif est de rendre la communication la plus accessible possible et dimin
 
 Un site web informatif est sans équivoque une nécessité. La majorité de vos clients se tournent vers Internet pour rechercher différents types d’information. De plus, les sites web sont souvent utilisés en référence par des applications comme Google Maps dans leurs résultats de recherche. Il est aujourd’hui très facile d’avoir un site web au goût du jour à peu de frais en utilisant des outils tels que <a href="https://wix.com" target="_blank">Wix</a> ou <a href="https://squarespace.com" target="_blank">Squarespace</a>.
 
-Le courriel est un autre point de contact très important. Il vous suffit de le mettre de l’avant sur votre site web, votre page Facebook, vos cartes d’affaires, bref un peu partout. Beaucoup de gens aiment communiquer par courriel parce que cela est simple et rapide. De votre côté, vous devriez récolter les adresses courriel de vos patients afin de  communiquer, partager de l’information et diffuser  des promotions.
+Le courriel est un autre point de contact très important. Il vous suffit de le mettre de l’avant sur votre site web, votre page Facebook, vos cartes d’affaires, bref un peu partout. Beaucoup de gens aiment communiquer par courriel puisque c'est simple et rapide. De votre côté, vous devriez récolter les adresses courriel de vos patients afin de  communiquer, partager de l’information et diffuser  des promotions.
 
-Le plus mitigé des canaux est certainement Facebook. Si vous désirez rester  en affaires, vous devez adopter cette plateforme. Les jeunes comme les moins jeunes ont adopté Facebook et s’en servent de toutes sortes de manières. C’est une simple question de commodité puisque vos clients y passent déjà beaucoup de temps. Facebook, un peu comme le courriel, est un outil marketing très puissant pour votre clinique.
+Le plus mitigé des canaux est certainement Facebook, mais aussi les médias sociaux en général. Si vous désirez rester  en affaires, vous vous devez d'adopter cette plateforme. Les jeunes comme les moins jeunes ont adopté Facebook et s’en servent de toutes sortes de manières. C’est une simple question de commodité puisque vos clients y passent déjà beaucoup de temps. Facebook, un peu comme le courriel, est un outil marketing très puissant pour votre clinique.
 
 ### <u>**2 - Créer du contenu de valeur pour vos clients**</u>
 
@@ -48,7 +48,7 @@ Si vous préférez ne pas vous lancer dans l’aventure d’un blogue, vous pouv
 
 Cette méthode est probablement la plus répandue et celle qui présente le meilleur rendement coût bénéfice pour améliorer l’expérience de vos patients. La majorité des logiciels de gestion de clinique ont développé un outil de prise de rendez-vous en ligne.
 
-Dans la plupart des cas, il ne vous suffit que de l’ajouter à votre site web pour y avoir accès. Cette fonctionnalité permet la prise de rendez-vous directement liée avec l’horaire des optométristes différents praticiens dans le logiciel de gestion de clinique. C’est très certainement l’action qui a le meilleur rendement pour le temps investi.
+Dans la plupart des cas, il ne vous suffit que de l’ajouter à votre site web pour y avoir accès. Cette fonctionnalité permet la prise de rendez-vous directement liée avec l’horaire des différents praticiens dans le logiciel de gestion de clinique. C’est très certainement l’action qui a le meilleur rendement pour le temps investi.
 
 C’est l’une des actions ayant le plus d’impact, car vous éliminez une source de  friction ; prendre le téléphone pour appeler à la clinique alors que la personne est probablement déjà sur votre site web.
 
@@ -58,11 +58,11 @@ Avec 90% des Canadiens qui font du prémagasinage en ligne avant de se rendre en
 
 Pour certains, cela devient un canal de vente supplémentaire. Pour d’autres, c’est un moyen d’attirer une nouvelle clientèle en boutique. Ceux qui aspirent à faire de la vente en ligne doivent être préparés à investir temps et argent. Outre la vente en ligne, il y a plusieurs autres bénéfices à avoir son e-commerce, tels que d’offrir la possibilité à vos patients actuels et futurs de voir votre inventaire et ainsi de susciter leur intérêt envers votre offre de produits.
 
-Parmi les autres bénéfices, on retrouve la convivialité d’avoir une boutique ouverte 24 / 7, la possibilité de mesurer avec précision l’intérêt de vos patients envers certains produits et évidemment améliorer  l’expérience client, ce qui aura un grand impact à moyen terme.
+Parmi les autres bénéfices, on retrouve la convivialité d’avoir une boutique ouverte 24 / 7 et la possibilité de mesurer avec précision l’intérêt de vos patients envers certains produits. C'est évidemment une amélioration importante de l’expérience client et cela aura un grand impact à moyen terme sur votre entreprise.
 
 ### <u>**5 - Former vos employés à offrir une expérience**</u>
 
-Les membres de votre équipe forment ensemble l’image de votre entreprise. Ils sont les créateurs de l’expérience vécue par la clientèle. Il est impératif que ces personnes aient tous les outils nécessaires afin d’offrir une expérience forte et positive à chaque client. Une formation bien structurée est primordiale, autant pour votre nouveau personnel que pour vos vétérans.
+Les membres de votre équipe forment ensemble l’image de votre entreprise. Ils sont les créateurs de l’expérience vécue par la clientèle. Il est impératif que ces acteurs aient tous les outils nécessaires afin d’offrir une expérience forte et positive à chaque client. Une formation bien structurée est primordiale, autant pour votre nouveau personnel que pour vos vétérans.
 
 Dans un premier temps, assurez-vous que chaque membre de votre équipe connaît bien les produits sur le plancher ou du moins sait comment trouver les informations nécessaires. Il en va de même pour les services que vous offrez. Ces derniers sont d’ailleurs un élément différenciateur de votre entreprise et vous vous devez d’en faire la promotion de manière adéquate auprès de vos patients.
 
