@@ -2,17 +2,17 @@
 
 title = "Blog Guidelines"
 description = "Here are the blog guidelines."
-publishdate = "2017-03-24"
+publishdate = "2025-09-24"
 draft = true
 
-authorName = "Olivier Sylvain" 
+authorName = "Olivier Sylvain"
 authorTitle = "Software engineer at Opfront"
 authorPhoto = "https://media.licdn.com/media/p/4/005/06e/24e/23c05be.jpg"
 
 slug = "guidelines"
 aliases = ["/en/blog/conventions"]
 
-backgroundImage = "/img/guidelines.jpg"
+backgroundImage = "/img/blog/guidelines.jpg"
 
 tags = ["e-commerce", "blogger"]
 
@@ -30,7 +30,7 @@ It is possible to use 2 header sizes:
 ## Big title (second level)
 ### Small title (third level and following)
 
-*Do not use first level headings (one #)* because it generates a ```<h1>``` and there's already one in the page. 
+*Do not use first level headings (one #)* because it generates a ```<h1>``` and there's already one in the page.
 
 ## Code
 
@@ -52,7 +52,7 @@ title = "Blog Guidelines"
 // Date when the blog post is going to be published
 publishDate = "2017-03-08" // "AAAA-MM-JJ"
 
-authorName = "Olivier Sylvain" 
+authorName = "Olivier Sylvain"
 authorTitle = "Software engineer at Opfront"
 // photo link, linked in for example
 authorPhoto = "https://..."
@@ -63,7 +63,7 @@ slug = "guidelines" // name used for routing
 // french post
 aliases = ["/blog/{english_slug_name}"]
 // english post
-aliases = ["/en/blog/{french_slug_name}"] 
+aliases = ["/en/blog/{french_slug_name}"]
 
 // Local photo link
 backgroundImage = "/img/{filename}.jpg"
@@ -77,7 +77,7 @@ draft=true // if blog post is not final
 ```
 
 ## Banner image
-Ideally, add your own photo to the **/static/img** directory so we can serve it ourselves. 
+Ideally, add your own photo to the **/static/img** directory so we can serve it ourselves.
 
 Could be an external image link (like unsplash) but it's not recommended as we do not control image size and these services aren't made for content delivery (slow).
 
@@ -88,10 +88,10 @@ To generate:
 
 ```
 // Generates files in /public
-hugo 
+hugo
 
 // Generates the files in memory and serves them at http://localhost:1313
-hugo serve 
+hugo serve
 ```
 In dev mode, you can use the following flags:
 ```
