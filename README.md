@@ -1,3 +1,3 @@
 # opfront-website
-Opfront landing page. http://opfront.ca
+Opfront landing page. https://opfront.ca
 

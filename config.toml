@@ -2,7 +2,7 @@
 # BASIC CONFIGURATION
 #----------------------
 
-baseurl = "http://opfront.ca"
+baseurl = "https://opfront.ca"
 title = "Opfront"
 
 

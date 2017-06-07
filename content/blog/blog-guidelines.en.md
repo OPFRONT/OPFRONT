@@ -36,7 +36,7 @@ It is possible to use 2 header sizes:
 
 ```
 # comment
-curl http://opfront.ca
+curl https://opfront.ca
 ```
 
 ## Listes
