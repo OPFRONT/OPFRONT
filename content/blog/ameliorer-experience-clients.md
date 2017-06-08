@@ -4,6 +4,8 @@ title = "5 choses que vous pouvez faire pour améliorer votre expérience client
 publishdate = "2017-06-01"
 draft = true
 
+description: "L'expérience client est un élément déterminant du succès de votre entreprise. Découvrez comment améliorer votre expérience client." 
+
 authorName = "Marc Mercier"
 authorTitle = "Opérations chez Opfront"
 authorPhoto = "/img/blog/marc.jpg"
