@@ -36,7 +36,7 @@ Il est possible d'utiliser deux grosseurs de titres:
 
 ```
 # commentaire
-curl http://opfront.ca
+curl https://opfront.ca
 ```
 
 ## Listes
