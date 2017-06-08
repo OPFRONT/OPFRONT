@@ -13,7 +13,7 @@
     <div class="menu">
         <ul class="menu-items">
             {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" class="menu-item">{{ i18n .Identifier }}</a> <!--| relLangURL -->
+                <a id="{{ .Identifier }}" href="{{ .URL }}" class="menu-item">{{ i18n .Identifier }}</a> <!--| relLangURL -->
             {{ end }}
         </ul>
     </div>
