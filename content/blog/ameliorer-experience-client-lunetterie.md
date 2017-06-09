@@ -12,7 +12,7 @@ authorPhoto = "/img/blog/marc.jpg"
 
 backgroundImage = "/img/blog/store.jpg"
 
-tags = ["omnicannal", "commerce en ligne", "expérience client"]
+tags = ["omnicanal", "commerce en ligne", "expérience client"]
 
 +++
 
