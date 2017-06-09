@@ -24,7 +24,7 @@ Chaque entreprise, peu importe sa sphère d’activités, doit trouver la maniè
 
 Que la compétition vienne du commerce en ligne, offrant convivialité et bas prix, ou des grandes sociétés ayant des moyens marketing colossaux, il ne faut pas oublier que les PME présentent aussi des avantages concurrentiels. Celles-ci sont plus agiles au niveau décisionnel et peuvent mieux s’investir dans leur relation avec leur clientèle.
 
-Nous avons ciblé 5 actions que les lunetteries d’optique peuvent implanter pour améliorer l’expérience client et ainsi mieux tirer leur épingle du jeu.
+Nous avons ciblé 5 actions que les lunetteries peuvent implanter pour améliorer l’expérience client et ainsi mieux tirer leur épingle du jeu.
 
 ### **1 - Ouvrez des canaux de communication**
 
