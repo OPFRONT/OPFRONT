@@ -37,19 +37,19 @@ DefaultContentLanguage = "fr"
 [[menu.main]]
     name = "avantages"
     identifier = "menu-features"
-    url = "#pros"
+    url = "/#pros"
     weight = 1
 
 [[menu.main]]
     name = "vision"
     identifier = "menu-vision"
-    url = "#vision"
+    url = "/#vision"
     weight = 2
 
 [[menu.main]]
     name = "about"
     identifier = "menu-about"
-    url = "#about"
+    url = "/#about"
     weight = 3
 
 [[menu.main]]
@@ -61,5 +61,5 @@ DefaultContentLanguage = "fr"
 [[menu.main]]
     name = "contact"
     identifier = "menu-contact"
-    url = "#contact"
+    url = "/#contact"
     weight = 5

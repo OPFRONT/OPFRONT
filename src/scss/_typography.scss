@@ -94,11 +94,22 @@ strong {
     font-weight: bold;
 }
 
+.single-page-title h1 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
 .single-page-content {
     .section-content {
-        a, span, p, li, code, em, strong {
+        a, span, li, code, em, strong {
             text-transform: initial;
         }
+
+        p {
+            text-transform: initial;
+            font-weight: 300;
+        }
+
         h2 {
             font-size: 26px;
             line-height: 26px;
@@ -164,6 +175,9 @@ a {
         }
     }
 
+    &.blogpost-title {
+        line-height: 25px;
+    }
 }
 
 p {
