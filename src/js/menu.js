@@ -34,11 +34,12 @@ class Menu {
 
     _markMenuItemAsActive(newId) {
         this.menuItems.removeClass('active');
-        this.topMenu.find('.menu-item[href="' + newId + '"]').addClass('active');
+        this.topMenu.find('.menu-item[href$="' + newId + '"]').addClass('active');
     };
 
     handleMenuItemClick(e) {
-        const sectionId = $(e.currentTarget).attr('href');
+        const menuLink = $(e.currentTarget).attr('href');
+        const sectionId = menuLink.substr(menuLink.indexOf('#'));
         const sectionOffset = getSectionOffset(sectionId);
 
         const getStartedWasOpened = closeGetStarted();
