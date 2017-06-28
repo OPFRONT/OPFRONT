@@ -15,7 +15,7 @@ content = """
 [[paragraphs]]
 title = "our mission"
 content = """
-    Develop technological tools to support the commercial development of eye care professional clinics.
+    Develop technological tools to support the commercial development of eye care professionals.
     """
 
 +++
