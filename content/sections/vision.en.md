@@ -9,7 +9,7 @@ type = "vision"
 [[paragraphs]]
 title = "the patient's health in priority"
 content = """
-    Opfront strives to help eye care professionals keep control over the online optic market.
+    Opfront strives to help eye care professionals keep control over the online optical market.
     """
 
 [[paragraphs]]
