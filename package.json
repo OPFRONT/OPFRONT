@@ -25,9 +25,7 @@
     "gulp-cli": "^1.2.2",
     "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0"
-  },
-  "dependencies": {
+    "gulp-uglify": "^2.0.0",
     "gulp-install": "^1.1.0"
-  }
+  },
 }
