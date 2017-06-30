@@ -72,3 +72,6 @@
 
 - id: read-time
   translation: "min de lecture"
+
+- id: imgosi
+  translation: "/img/soi-fr.png"

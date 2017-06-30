@@ -72,3 +72,6 @@
 
 - id: read-time
   translation: "min read"
+
+- id: imgosi
+  translation: "/img/soi.png"
