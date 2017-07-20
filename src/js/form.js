@@ -43,22 +43,25 @@ const _addUserAsLead = (userInfo) => {
 };
 
 //CONTACT
-document.getElementById('contact-us-form').addEventListener('submit', e => {
-    const form = e.target;
+if(document.getElementById('contact-us-form')) {
+    document.getElementById('contact-us-form').addEventListener('submit', e => {
+      const form = e.target;
 
-    e.preventDefault();
-    document.querySelector('#contact .thanks').classList.add('active');
-    form.querySelector('.btn[type="submit"]').setAttribute('disabled', true);
+      e.preventDefault();
+      document.querySelector('#contact .thanks').classList.add('active');
+      form.querySelector('.btn[type="submit"]').setAttribute('disabled', true);
 
-    const formValues = _getFormValuesObject(e.target);
+      const formValues = _getFormValuesObject(e.target);
 
-    const message = `${formValues.firstname} ${formValues.lastname} (${formValues.email}) asks for contact on website.\n message: ${formValues.message}`;
-    sendMessageToSlack(message);
-    analytics.track(CONTACT_FORM_EVENT, formValues);
-});
+      const message = `${formValues.firstname} ${formValues.lastname} (${formValues.email}) asks for contact on website.\n message: ${formValues.message}`;
+      sendMessageToSlack(message);
+      analytics.track(CONTACT_FORM_EVENT, formValues);
+    });
+  };
 
 //SUBSCRIBE
-document.getElementById('subscribe-form').addEventListener('submit', e => {
+if(document.getElementById('subscribe-form')) {
+  document.getElementById('subscribe-form').addEventListener('submit', e => {
     const form = e.target;
 
     e.preventDefault();
@@ -71,4 +74,5 @@ document.getElementById('subscribe-form').addEventListener('submit', e => {
 
     sendMessageToSlack(message);
     document.getElementById('thanks').classList.add('active');
-});
+  });
+};
