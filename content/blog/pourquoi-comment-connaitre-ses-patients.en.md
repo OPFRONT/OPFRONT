@@ -33,7 +33,7 @@ L’analyse du genre est primordiale. En effet, vous enquérir de la proportion 
 
 ### *L’âge*
 
-Deux indicateurs importants figurent à ce niveau: l’âge moyen de votre clientèle, ainsi que la distribution des différents groupes d’âge (moins de 12 ans; 13-18 ans; 18-24 ans; 25-39 ans; 40-64 ans; plus de 65 ans). Ces informations peuvent entre autres influer sur votre offre de services, particulièrement dans un contexte de médicalisation de la profession. Vous pourrez ainsi mesurer la pertinence d’acquérir de l’appareillage médical ou de bâtir une clinique de sécheresse oculaire par exemple. Tout cela ne vaut sans doute pas la peine si vous avez affaire à une clientèle plus jeune.Dans un autre ordre d’idées, vous pourrez également utiliser ces indicateurs d’âges afin de les comparer avec les données sociodémographiques de votre quartier.
+Deux indicateurs importants figurent à ce niveau: l’âge moyen de votre clientèle, ainsi que la distribution des différents groupes d’âge (moins de 12 ans; 13-18 ans; 18-24 ans; 25-39 ans; 40-64 ans; plus de 65 ans). Ces informations peuvent entre autres influer sur votre offre de services, particulièrement dans un contexte de médicalisation de la profession. Vous pourrez ainsi mesurer la pertinence d’acquérir de l’appareillage médical ou de bâtir une clinique de sécheresse oculaire par exemple. Tout cela ne vaut sans doute pas la peine si vous avez affaire à une clientèle plus jeune. Dans un autre ordre d’idées, vous pourrez également utiliser ces indicateurs d’âges afin de les comparer avec les données sociodémographiques de votre quartier.
 Par exemple, si vous êtes situé dans un secteur résidentiel de type familial, il pourrait être pertinent de faire la promotion des examens oculo-visuels pour enfants ainsi que d’intégrer à vos présentoirs des collections de montures destinées à ces derniers.
 
 ### *Le code postal*
@@ -59,7 +59,7 @@ Ce client est désormais vôtre, et ce grâce à l’une des actions que vous av
 
 Finalement, avec toutes ses données recueillies, il vous sera possible de dresser un profil de votre client type. Effectivement, en connaissant son âge moyen, son sexe, son lieu de résidence, ou encore ses centres d’intérêts, vous pourrez optimiser vos campagnes publicitaires ainsi qu’améliorer votre offre de produits et de services.
 
-Connaître sa clientèle est le premier pas en vue de la fidéliser.À l’ère du numérique, nous remarquons une recrudescence du concept de commerce de proximité. Or, nous oeuvrons dans un domaine où le contact humain est primordial. Profitons-en pour bâtir une relation solide avec notre clientèle et lui offrir une expérience client remarquable.
+Connaître sa clientèle est le premier pas en vue de la fidéliser. À l’ère du numérique, nous remarquons une recrudescence du concept de commerce de proximité. Or, nous oeuvrons dans un domaine où le contact humain est primordial. Profitons-en pour bâtir une relation solide avec notre clientèle et lui offrir une expérience client remarquable.
 
 <br>
 <br>

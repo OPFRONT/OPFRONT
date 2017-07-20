@@ -21,14 +21,18 @@
         <div class="section-container">
             <div class="section-content">
                 {{ range .Data.Pages }}
-                    <span class="date">
-                    {{ if eq .Lang "fr" }}
-                        {{ .PublishDate.Day }} {{ index $.Site.Data.months (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
-                    {{ else }}
-                        {{ .PublishDate.Month }} {{ .PublishDate.Day }} {{ .PublishDate.Year }}
-                    {{ end }}
-                    </span>
-                    <span class="separator">//</span><a class="blogpost-title" href="{{ .URL }}">{{ .Title }}</a>
+                  <ul>
+                    <li>
+                      <span class="date">
+                      {{ if eq .Lang "fr" }}
+                          {{ .PublishDate.Day }} {{ index $.Site.Data.months (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
+                      {{ else }}
+                          {{ .PublishDate.Month }} {{ .PublishDate.Day }} {{ .PublishDate.Year }}
+                      {{ end }}
+                      </span>
+                      <span class="separator">//</span><a class="blogpost-title" href="{{ .URL }}">{{ .Title }}</a>
+                    </li>
+                  </ul> 
                 {{ end }}
             </div>
         </div>
