@@ -10,7 +10,7 @@ authorName = "Alexandra Fortier"
 authorTitle = "Collaboratrice chez Opfront"
 authorPhoto = "/img/blog/alexe.jpg"
 
-backgroundImage = "/img/blog/store.jpg"
+backgroundImage = "/img/blog/astuces.jpg"
 
 tags = ["rétention", "commerce en ligne", "expérience client"]
 
