@@ -18,12 +18,12 @@ tags = ["rétention", "commerce en ligne", "expérience client"]
 
 Selon le Bureau du recensement des États-Unis, près de 16% des ventes de lentilles cornéennes réalisées en 2016 ont été effectuées sur le web. Ceci représente le taux le plus élevé de ventes en ligne toutes catégories confondues au sein du domaine de l’optique.
 
-Si vous constatez que vos patients se procurent leurs lentilles cornéennes en ligne plutôt qu’en clinique, voici quelques conseils pour les ramener auprès de vous et de votre équipe spécialisée en la matière.
+Si vous constatez que vos patients se procurent leurs lentilles cornéennes en ligne de manière déréglementée plutôt qu’en clinique, voici quelques conseils pour les ramener auprès de vous et de votre équipe spécialisée en la matière.
 
 
 ### Que faire pour conserver la vente de lentilles cornéennes au sein de votre pratique ?
 
-Les divers moyens que vous vous apprêtez à lire proviennent en majeure partie des conseils de deux optométristes ayant fait le choix de concurrencer les vendeurs en ligne.
+Les divers moyens que vous vous apprêtez à lire proviennent en majeure partie des conseils de deux optométristes ayant fait le choix de concurrencer les vendeurs déréglementé en ligne.
 
 Bien qu’ils n’appartiennent pas à la même génération d’optométristes, qu’ils ne pratiquent pas au même endroit et que leurs clientèles n’aient pas les mêmes caractéristiques démographiques, tous deux se sont penchés sur cette problématique.
 
@@ -31,7 +31,7 @@ Bien qu’ils n’appartiennent pas à la même génération d’optométristes,
 Il s’agit du Dr Allan Panzer, optométriste depuis près de 40 ans et propriétaire de la clinique Dry Eye à Houston, et du Dr Kristopher May, optométriste ayant gradué en 2001, oeuvrant au Coldwater Vision Center au Mississippi.
 
 ##### Quel est leur but?
-Faire en sorte que les patients ayant besoin de lentilles cornéennes achètent en clinique plutôt qu’en ligne.
+Faire en sorte que les patients ayant besoin de lentilles cornéennes achètent d'un professionnel de la vue plutôt qu’en ligne.
 
 Voici plus précisément de quelle façon ils parviennent à poursuivre ce combat au quotidien.
 
