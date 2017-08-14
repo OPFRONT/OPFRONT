@@ -4,7 +4,7 @@ title = "6 astuces données par des optométristes pour regagner vos patients. "
 publishdate = "2017-08-14"
 draft = false
 
-description = "Qui de mieux placé qu'un optométriste pour donner des astuces à un autre optométriste lorsque vient le temps de d'interagir avec ses patients."
+description = "Qui de mieux placé qu'un optométriste pour donner des astuces à un autre optométriste lorsque vient le temps d'interagir avec ses patients."
 
 authorName = "Alexandra Fortier"
 authorTitle = "Collaboratrice chez Opfront"
@@ -18,12 +18,12 @@ tags = ["rétention", "commerce en ligne", "expérience client"]
 
 Selon le Bureau du recensement des États-Unis, près de 16% des ventes de lentilles cornéennes réalisées en 2016 ont été effectuées sur le web. Ceci représente le taux le plus élevé de ventes en ligne toutes catégories confondues au sein du domaine de l’optique.
 
-Si vous constatez que vos patients se procurent leurs lentilles cornéennes en ligne de manière déréglementée plutôt qu’en clinique, voici quelques conseils pour les ramener auprès de vous et de votre équipe spécialisée en la matière.
+Si vous constatez que vos patients se procurent leurs lentilles cornéennes en ligne plutôt que d'un professionnel de la vue, voici quelques conseils pour les ramener auprès de vous et de votre équipe spécialisée en la matière.
 
 
 ### Que faire pour conserver la vente de lentilles cornéennes au sein de votre pratique ?
 
-Les divers moyens que vous vous apprêtez à lire proviennent en majeure partie des conseils de deux optométristes ayant fait le choix de concurrencer les vendeurs déréglementé en ligne.
+Les divers moyens que vous vous apprêtez à lire proviennent en majeure partie des conseils de deux optométristes ayant fait le choix de concurrencer les vendeurs en ligne.
 
 Bien qu’ils n’appartiennent pas à la même génération d’optométristes, qu’ils ne pratiquent pas au même endroit et que leurs clientèles n’aient pas les mêmes caractéristiques démographiques, tous deux se sont penchés sur cette problématique.
 
@@ -31,24 +31,24 @@ Bien qu’ils n’appartiennent pas à la même génération d’optométristes,
 Il s’agit du Dr Allan Panzer, optométriste depuis près de 40 ans et propriétaire de la clinique Dry Eye à Houston, et du Dr Kristopher May, optométriste ayant gradué en 2001, oeuvrant au Coldwater Vision Center au Mississippi.
 
 ##### Quel est leur but?
-Faire en sorte que les patients ayant besoin de lentilles cornéennes achètent d'un professionnel de la vue plutôt qu’en ligne.
+Faire en sorte que les patients ayant besoin de lentilles cornéennes achètent d'un professionnel de la vue plutôt que d'un vendeur en ligne.
 
 Voici plus précisément de quelle façon ils parviennent à poursuivre ce combat au quotidien.
 
 
 ### Moyen # 1: Prendre avantage de la visite du client.
 
-Dr Panzer et Dr May s’entendent pour dire que le meilleur outil dont dispose tout professionnel de la vue - et aucun vendeur en ligne - est sans contredit la visite du client.
+Dr Panzer et Dr May s’entendent pour dire que le meilleur outil dont dispose tout professionnel de la vue - et aucun vendeur en ligne - est sans contredit la visite du client. Les stratégies omnicanal sont parmi les plus efficaces et vous êtes dans une position unique pour les exécuter.
 
 Comme vous le savez, l’établissement d’une relation de confiance entre le professionnel et son patient ainsi qu’un service personnalisé de qualité sont deux éléments gagnants. Utilisez la visite de votre client comme un moment privilégié. En étant investi dans ce contact, vous pourrez certainement en apprendre plus sur lui que votre compétiteur en ligne ne pourra le faire via quelques clics de souris.
 
-Pour plus d’informations concernant la relation professionnel-client, consultez l’article <a href="https://opfront.ca/blog/pourquoi-comment-connaitre-ses-patients/">Analytique 101: Pourquoi et comment mieux connaître vos patients.</a>
+Pour plus d’informations concernant la relation professionnelle-client, consultez l’article <a href="https://opfront.ca/blog/pourquoi-comment-connaitre-ses-patients/">Analytique 101: Pourquoi et comment mieux connaître vos patients.</a>
 
 ### Moyen #2: Faciliter le renouvellement.
 
 Dr Panzer s’exprimant sur le renouvellement des lentilles cornéennes:
 
-Nous pouvons gagner en accommodant notre clientèle. Si le patient sait qu’il suffit d’un téléphone pour renouveler ses lentilles, il sera plus enclin à le faire.  
+Nous pouvons gagner en accommodant notre clientèle. Si le patient sait qu’il suffit d’un téléphone ou d'un clic pour renouveler ses lentilles, il sera plus enclin à le faire.  
 
 Tel que le mentionne Dr Panzer, faciliter ce processus vous permettra d'accommoder vos patients dans leur train de vie effréné. Un simple appel ou encore mieux un petit courriel paraîtra beaucoup plus simple pour eux qu’un détour à la clinique après le boulot.
 
