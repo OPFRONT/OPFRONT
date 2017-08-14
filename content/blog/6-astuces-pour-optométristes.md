@@ -1,7 +1,7 @@
 +++
 
-title = "6 astuces donné par des optométristes pour regagner vos patients. "
-publishdate = "2017-08-01"
+title = "6 astuces données par des optométristes pour regagner vos patients. "
+publishdate = "2017-08-14"
 draft = false
 
 description = "Qui de mieux placé qu'un optométriste pour donner des astuces à un autre optométriste lorsque vient le temps de d'interagir avec ses patients."
@@ -16,7 +16,7 @@ tags = ["rétention", "commerce en ligne", "expérience client"]
 
 +++
 
-Selon le Bureau du recensement des États-Unis, près de 16% des ventes de lentilles cornéennes réalisées en 2016 ont été effectuées sur le web. Ce qui représente le taux le plus élevé de ventes en ligne toutes catégories confondues au sein du domaine de l’optique.
+Selon le Bureau du recensement des États-Unis, près de 16% des ventes de lentilles cornéennes réalisées en 2016 ont été effectuées sur le web. Ceci représente le taux le plus élevé de ventes en ligne toutes catégories confondues au sein du domaine de l’optique.
 
 Si vous constatez que vos patients se procurent leurs lentilles cornéennes en ligne plutôt qu’en clinique, voici quelques conseils pour les ramener auprès de vous et de votre équipe spécialisée en la matière.
 
@@ -64,7 +64,7 @@ Il s’agit de choisir la bonne lentille pour le patient et de s’assurer que n
 
 En discutant avec vos patients, vous en apprendrez plus sur leur style de vie et les activités qu’ils pratiquent. Dr May explique que sa pratique attire un groupe atypique de personnes qui ne seraient jamais intéressées par le magasinage en ligne.
 
-Ils sont [des hommes] qui chasse. Ils passent déjà une énorme partie de leur temps à regarder à travers une mire et des jumelles, alors ils comprennent. Ensuite, ils reviennent en me demandant si je peux leur faire des lentilles cornéennes pour le travail. C’est un nouveau segment de consommateurs qui n’auraient jamais magasiné en ligne. -Dr. May
+Ils sont [des hommes] qui chassent. Ils passent déjà une énorme partie de leur temps à regarder à travers une mire et des jumelles, alors ils comprennent. Ensuite, ils reviennent en me demandant si je peux leur faire des lentilles cornéennes pour le travail. C’est un nouveau segment de consommateurs qui n’auraient jamais magasiné en ligne. -Dr. May
 
 ### Moyen #5: Innover et renseigner.
 
