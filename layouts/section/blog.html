@@ -20,7 +20,7 @@
     <section id="blog">
         <div class="section-container">
             <div class="section-content">
-                {{ range .Data.Pages }}
+                {{ range .Data.Pages.ByPublishDate }}
                   <ul>
                     <li>
                       <span class="date">
