@@ -1,7 +1,7 @@
 {
   "name": "opfront-website",
   "version": "1.0.0",
-  "description": "Opfront landing page. https://opfront.ca",
+  "description": "Opfront landing page. https://opfront.com",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
