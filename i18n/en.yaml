@@ -15,6 +15,12 @@
 
 - id: btn-start-now
   translation: "get started now"
+  
+- id: btn-request-demo
+  translation: "request a demo"
+  
+- id: talk-to-sales
+  translation: "Ready to speak with sales? Schedule a product demo now!"
 
 - id: coming-soon
   translation: "coming soon"

@@ -15,6 +15,12 @@
 
 - id: btn-start-now
   translation: "commencer maintenant"
+    
+- id: btn-request-demo
+  translation: "demander une démo"
+  
+- id: talk-to-sales
+  translation: "Prêt à parler avec un représentant aux ventes? Prenez-rendez-vous dès maintenant et laissez-nous vous démontrer le produit en action!"
 
 - id: coming-soon
   translation: "bientôt disponible"
