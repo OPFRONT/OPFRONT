@@ -15,10 +15,10 @@
 
 - id: btn-start-now
   translation: "commencer maintenant"
-    
+
 - id: btn-request-demo
   translation: "demander une démo"
-  
+
 - id: talk-to-sales
   translation: "Prêt à parler avec un représentant aux ventes? Prenez-rendez-vous dès maintenant et laissez-nous vous démontrer le produit en action!"
 
@@ -81,3 +81,81 @@
 
 - id: imgosi
   translation: "/img/soi-fr.png"
+
+- id: features
+  translation: "Fonctionnalités"
+
+- id: ehr-integration
+  translation: "Intégration avec logiciel clinique"
+
+- id: online-catalogue
+  translation: "Catalogue en ligne"
+
+- id: inventory-as-a-service
+  translation: "Inventaire sur demande"
+
+- id: payments
+  translation: "Payments en ligne et en magasin"
+
+- id: multilocation-inventory
+  translation: "Inventaire multi-cliniques"
+
+- id: user-access-management
+  translation: "Gestion des accès usagers"
+
+- id: admin-console
+  translation: "Console d'administration intuitive"
+
+- id: behavior-analytics
+  translation: "Statistiques comportementales"
+
+- id: product
+  translation: "Produit"
+
+- id: login-to-console
+  translation: "Connexion à la console opfront"
+
+- id: pricing
+  translation: "Politique de prix"
+
+- id: api-integration
+  translation: "Intégration par API"
+
+- id: shopify-integration
+  translation: "Intégration Shopify"
+
+- id: request-a-demo
+  translation: "Demandez une démo"
+
+- id: company
+  translation: "L'entreprise"
+
+- id: about
+  translation: "À propos"
+
+- id: why-opfront
+  translation: "La raison d'être d'opfront "
+
+- id: partnership-program
+  translation: "Programme partenaires"
+
+- id: opfront-education
+  translation: "Opfront pour l'éducation"
+
+- id: term-of-service
+  translation: "Conditions d'utilisation"
+
+- id: contact-us
+  translation: "Contatez-nous"
+
+- id: resources
+  translation: "Ressources"
+
+- id: api-doc
+  translation: "Documentation de l'API"
+
+- id: blog
+  translation: "Blogue"
+
+- id: copyright
+  translation: "Tous droits réservés, technologies opfront inc. 2017"

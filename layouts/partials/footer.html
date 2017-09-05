@@ -1,87 +1,85 @@
-<!-- TODO make this page i18n ready  -->
-
 <footer>
   <div class="main-footer section-content">
     <div class="footer-col">
-      <p class="footer-col-title">Features</p>
+      <p class="footer-col-title">{{ i18n "features" }}</p>
       <ul>
         <li>
-          <a>Clinic software integration</a>
+          <a>{{ i18n "ehr-integration" }}</a>
         </li>
         <li>
-          <a>Online catalogue</a>
+          <a> {{ i18n "online-catalogue" }}</a>
         </li>
         <li>
-          <a>Inventory as a service</a>
+          <a>{{ i18n "inventory-as-a-service" }}</a>
         </li>
         <li>
-          <a>Online & in-store payment</a>
+          <a>{{ i18n "payments" }}</a>
         </li>
         <li>
-          <a>Multilocation inventory</a>
+          <a>{{ i18n "multilocation-inventory" }}</a>
         </li>
         <li>
-          <a>User access management</a>
+          <a>{{ i18n "user-access-management" }}</a>
         </li>
         <li>
-          <a>Comprehensive admin console</a>
+          <a>{{ i18n "admin-console" }}</a>
         </li>
         <li>
-          <a>Behavior analytics</a>
+          <a>{{ i18n "behavior-analytics" }}</a>
         </li>
       </ul>
     </div>
     <div class="footer-col">
-      <p class="footer-col-title">Product</p>
+      <p class="footer-col-title">{{ i18n "product" }}</p>
       <ul>
         <li>
-          <a href="https://admin.opfront.ca" target="_blank">Login to admin console</a>
+          <a href="https://admin.opfront.ca" target="_blank">{{ i18n "login-to-console" }}</a>
         </li>
         <li>
-          <a>Pricing</a>
+          <a>{{ i18n "pricing" }}</a>
         </li>
         <li>
-          <a>Api integration</a>
+          <a>{{ i18n "api-integration" }}</a>
         </li>
         <li>
-          <a>Shopify integration</a>
+          <a>{{ i18n "shopify-integration" }}</a>
         </li>
         <li>
-          <a class="get-started">Request a demo</a>
+          <a class="get-started">{{ i18n "request-a-demo" }}</a>
         </li>
       </ul>
     </div>
     <div class="footer-col">
-      <p class="footer-col-title">Company</p>
+      <p class="footer-col-title">{{ i18n "company" }}</p>
       <ul>
         <li>
-          <a>About us</a>
+          <a>{{ i18n "about" }}</a>
         </li>
         <li>
-          <a>Why Opfront</a>
+          <a>{{ i18n "why-opfront" }}</a>
         </li>
         <li>
-          <a>Partnership program</a>
+          <a>{{ i18n "partnership-program" }}</a>
         </li>
         <li>
-          <a>Opfront for education</a>
+          <a>{{ i18n "opfront-education" }}</a>
         </li>
         <li>
-          <a>Term of service</a>
+          <a>{{ i18n "term-of-service" }}</a>
         </li>
         <li>
-          <a>Contact us</a>
+          <a>{{ i18n "contact-us" }}</a>
         </li>
       </ul>
     </div>
     <div class="footer-col">
-      <p class="footer-col-title">Resources</p>
+      <p class="footer-col-title">{{ i18n "resources" }}</p>
       <ul>
         <li>
-          <a href="https://docs.opfront.ca">Api documentation</a>
+          <a href="https://docs.opfront.ca">{{ i18n "api-doc" }}</a>
         </li>
         <li>
-          <a href="{{ .Site.BaseURL }}blog">Blog</a>
+          <a href="{{ .Site.BaseURL }}blog">{{ i18n "blog" }}</a>
         </li>
       </ul>
     </div>
@@ -91,7 +89,7 @@
       <p>{{ i18n "city" }}</p>
       <p>{{ i18n "suite" }}</p>
       <br/>
-      <p>1-855-702-1946</p>
+      <p><a href="tel:+18557021946">1-855-702-1946</a></p>
       <p><a href="mailto:info@opfront.ca">info@opfront.ca</a></p>
 
       <div class="social-icon">
@@ -108,7 +106,7 @@
     </div>
   </div>
   <div class="sub-footer">
-    <p>&copy; All rights reserved, opfront technologies inc. 2017</p>
+    <p>&copy; {{ i18n "copyright" }}</p>
     <a href="{{ "/#" | relLangURL }}">
       <img class="hidden-tablet" src="{{ .Site.BaseURL }}/img/opfront-logo-rev.png" alt="Opfront logo">
       <img class="visible-tablet" src="{{ .Site.BaseURL }}/img/opfront-logo-mobile-rev.png" alt="Opfront logo">
