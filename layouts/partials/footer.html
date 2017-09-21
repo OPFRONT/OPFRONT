@@ -1,44 +1,115 @@
 <footer>
-  <!--  <div class="subfooter newsletter">
-        <div id="mc_embed_signup" class="subfooter-content">
-            <span>{{ i18n "newsletter" }}</span>
-            <form action="{{ i18n "mailchimp" }}" method="post" id="mc-embedded-subscribe-form"
-                  name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{{ i18n "newsletter-placeholder" }}" required>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_c40666a9e35639e313e69839f_795a94f3ff" tabindex="-1" value="">
-                </div>
-                <button class="btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
-                    {{ i18n "subscribe" }}
-                </button>
-            </form>
-        </div>
-    </div> -->
-    <div class="subfooter social">
-        <div class="subfooter-content">
-            <div class="sitemap">
-              {{ range .Site.Menus.main }}
-                <a href="{{ .URL | relLangURL }}">{{ i18n .Identifier }}</a>
-              {{ end }}
-            </div>
-            <div class="contact-info address">
-                <p class="greeting">{{ i18n "contact-subtitle" }}</p>
-                <p>{{ i18n "address" }}</p>
-                <p>{{ i18n "city" }}</p>
-                <p>{{ i18n "suite" }}</p>
-                <p><img class="phone" src="{{ .Site.BaseURL }}/img/phone.png" alt="Phone icon">{{ i18n "phone" }}</p>
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/Opfront/" target="_blank">
-                        <i class="fa fa-lg fa-facebook-square"></i>
-                    </a>
-                    <a href="https://twitter.com/opfront" target="_blank">
-                        <i class="fa fa-lg fa-twitter-square"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/opfront" target="_blank">
-                        <i class="fa fa-lg fa-linkedin-square"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+  <div class="main-footer section-content">
+    <div class="footer-col">
+      <p class="footer-col-title">{{ i18n "features" }}</p>
+      <ul>
+        <li>
+          <a>{{ i18n "ehr-integration" }}</a>
+        </li>
+        <li>
+          <a> {{ i18n "online-catalogue" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "inventory-as-a-service" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "payments" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "multilocation-inventory" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "user-access-management" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "admin-console" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "behavior-analytics" }}</a>
+        </li>
+      </ul>
     </div>
+    <div class="footer-col">
+      <p class="footer-col-title">{{ i18n "product" }}</p>
+      <ul>
+        <li>
+          <a href="https://admin.opfront.ca" target="_blank">{{ i18n "login-to-console" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "pricing" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "api-integration" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "shopify-integration" }}</a>
+        </li>
+        <li>
+          <a class="get-started">{{ i18n "request-a-demo" }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">{{ i18n "company" }}</p>
+      <ul>
+        <li>
+          <a>{{ i18n "about" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "why-opfront" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "partnership-program" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "opfront-education" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "term-of-service" }}</a>
+        </li>
+        <li>
+          <a>{{ i18n "contact-us" }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">{{ i18n "resources" }}</p>
+      <ul>
+        <li>
+          <a href="https://docs.opfront.ca">{{ i18n "api-doc" }}</a>
+        </li>
+        <li>
+          <a href="{{ .Site.BaseURL }}blog">{{ i18n "blog" }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-col contact-info">
+      <p class="greeting">{{ i18n "contact-subtitle" }}</p>
+      <p>{{ i18n "address" }}</p>
+      <p>{{ i18n "city" }}</p>
+      <p>{{ i18n "suite" }}</p>
+      <br/>
+      <p><a href="tel:+18557021946">1-855-702-1946</a></p>
+      <p><a href="mailto:info@opfront.ca">info@opfront.ca</a></p>
+
+      <div class="social-icon">
+          <a href="https://www.facebook.com/Opfront/" target="_blank">
+              <i class="fa fa-lg fa-facebook-square"></i>
+          </a>
+          <a href="https://twitter.com/opfront" target="_blank">
+              <i class="fa fa-lg fa-twitter-square"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/opfront" target="_blank">
+              <i class="fa fa-lg fa-linkedin-square"></i>
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+    <p>&copy; {{ i18n "copyright" }}</p>
+    <a href="{{ "/#" | relLangURL }}">
+      <img class="hidden-tablet" src="{{ .Site.BaseURL }}/img/opfront-logo-rev.png" alt="Opfront logo">
+      <img class="visible-tablet" src="{{ .Site.BaseURL }}/img/opfront-logo-mobile-rev.png" alt="Opfront logo">
+    </a>
+  </div>
 </footer>

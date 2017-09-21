@@ -16,6 +16,12 @@
 - id: btn-start-now
   translation: "get started now"
 
+- id: btn-request-demo
+  translation: "request a demo"
+
+- id: talk-to-sales
+  translation: "Ready to speak with sales? Schedule a product demo now!"
+
 - id: coming-soon
   translation: "coming soon"
 
@@ -75,3 +81,81 @@
 
 - id: imgosi
   translation: "/img/soi.png"
+
+- id: features
+  translation: "Features"
+
+- id: ehr-integration
+  translation: "Clinic software integration"
+
+- id: online-catalogue
+  translation: "Online catalogue"
+
+- id: inventory-as-a-service
+  translation: "Inventory as a service"
+
+- id: payments
+  translation: "Online & in-store payment"
+
+- id: multilocation-inventory
+  translation: "Multilocation inventory"
+
+- id: user-access-management
+  translation: "User access management"
+
+- id: admin-console
+  translation: "Comprehensive admin console"
+
+- id: behavior-analytics
+  translation: "Behavior analytics"
+
+- id: product
+  translation: "Product"
+
+- id: login-to-console
+  translation: "Login to admin console"
+
+- id: pricing
+  translation: "Pricing"
+
+- id: api-integration
+  translation: "Api integration"
+
+- id: shopify-integration
+  translation: "Shopify integration"
+
+- id: request-a-demo
+  translation: "Request a demo"
+
+- id: company
+  translation: "Company"
+
+- id: about
+  translation: "About us"
+
+- id: why-opfront
+  translation: "Why Opfront"
+
+- id: partnership-program
+  translation: "Partnership program"
+
+- id: opfront-education
+  translation: "Opfront for education"
+
+- id: term-of-service
+  translation: "Terms of service"
+
+- id: contact-us
+  translation: "Contact us"
+
+- id: resources
+  translation: "Resources"
+
+- id: api-doc
+  translation: "Api documentation"
+
+- id: blog
+  translation: "Blog"
+
+- id: copyright
+  translation: "All rights reserved, opfront technologies inc. 2017"
