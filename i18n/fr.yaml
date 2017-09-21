@@ -95,7 +95,7 @@
   translation: "Inventaire sur demande"
 
 - id: payments
-  translation: "Payments en ligne et en magasin"
+  translation: "Paiements en ligne et en magasin"
 
 - id: multilocation-inventory
   translation: "Inventaire multi-cliniques"
