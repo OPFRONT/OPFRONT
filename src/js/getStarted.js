@@ -1,6 +1,6 @@
 const GET_STARTED_ANIMATION_DURATION = 600;
 
-$('.btn.get-started').click((e) => {
+$('.get-started').click((e) => {
     $('#get-started').addClass('active');
 });
 
