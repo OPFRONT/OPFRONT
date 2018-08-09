@@ -89,3 +89,34 @@
         }
     }
 }
+
+header.product-header {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    background: $background-light-gray;
+
+    .product-description {
+        padding: 0 2*$boobs;
+        width: 45%;
+
+        h1 {
+            font-size: 40px; 
+        }
+        p {
+            margin: 20px 0;
+        }
+    }
+}
+
+@media #{$phone-media-query} {
+    header.product-header {
+        .product-description {
+            width: 100%;
+            text-align: center;
+        }
+        .product-img {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "meta.html" . }}
+
+    {{ partial "headIncludes.html" . }}
+</head>
+<body>
+
+{{ partial "navbar.html" . }}
+
+<div class="page-content">
+  <!-- Product header -->
+  <header class="product-header">
+    <div class="product-description">
+      <h1>{{.Title}}</h1>
+      <p>{{.Params.Subtitle}}</p>
+      <button id="clear-head-start" class="btn get-started" track-click>{{ i18n "btn-start-now"}}</button>
+    </div>
+    <div class="product-img">
+      <img src="http://via.placeholder.com/600x500" alt="">
+    </div>
+  </header>
+  <!-- Product features -->
+  <div class="section-container">
+    <div class="section-content">
+      {{ range $index, $el := .Params.Features }}
+      {{ if (mod $index 2) eq 0}}
+        <div class="row">
+      {{ else }}
+        <div class="row reverse">
+      {{ end }}
+          <div class="half-col">
+              <div class="paragraph-image">
+                  <img class="img-large" src={{ .imageURL }} alt="">
+              </div>
+          </div>
+          <div class="half-col feature-description">
+            <h3>{{ .title}}</h3>
+            <ul>
+              {{ range .bullets}}
+              <li>{{ .name }}</li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+  <!-- Talk to sales -->
+  {{ partial "talk-to-sales.html" .}}
+</div>
+{{ partial "footer.html" . }}
+{{ partial "analytics.html" . }}
+</body>
+</html>

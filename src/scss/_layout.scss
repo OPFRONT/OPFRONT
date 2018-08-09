@@ -44,13 +44,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 100px 0;
 
             &.reverse {
                 flex-direction: row-reverse;
             }
 
             .half-col {
-                text-align: justify;
                 width: 45%;
             }
         }

@@ -19,12 +19,16 @@ footer {
         margin-top: $boobs;
         li {
           width: 100%;
-          border-bottom: 1px solid rgba(255,255,255,0.3);
+          border-bottom: 1px solid transparent;
+          &:hover{
+            border-bottom: 1px solid rgba(255,255,255,0.3)
+          }
           a {
             color: $opfront-white;
             font-size: $sitemap-font-size;
             text-transform: none;
             line-height: 35px;
+            font-size: 14px;
           }
         }
       }

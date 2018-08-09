@@ -20,7 +20,7 @@
   translation: "demander une démo"
 
 - id: talk-to-sales
-  translation: "Prêt à parler avec un représentant aux ventes? Prenez-rendez-vous dès maintenant et laissez-nous vous démontrer le produit en action!"
+  translation: "Prêt à commencer? Laissez-nous vous démontrer nos produits en action!"
 
 - id: coming-soon
   translation: "bientôt disponible"
@@ -124,6 +124,9 @@
 - id: shopify-integration
   translation: "Intégration Shopify"
 
+- id: cl-renewal
+  translation: "Renouvellement de verres de contact"
+
 - id: request-a-demo
   translation: "Demandez une démo"
 
@@ -158,4 +161,4 @@
   translation: "Blogue"
 
 - id: copyright
-  translation: "Tous droits réservés, technologies opfront inc. 2017"
+  translation: "Tous droits réservés, technologies opfront inc. 2018"
