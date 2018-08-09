@@ -162,3 +162,6 @@
 
 - id: copyright
   translation: "Tous droits réservés, technologies opfront inc. 2018"
+
+- id: back
+  translation: "Retourner"
