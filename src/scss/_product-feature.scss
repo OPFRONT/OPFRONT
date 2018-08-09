@@ -7,5 +7,14 @@
   ul li {
     text-transform: none;
     line-height: 2rem;
+
+    &::before{
+      font-family: FontAwesome;
+      content: "\f00c";
+      color: $opfront-teal;
+      text-align: center;
+      margin-right: 20px;
+      display: inline-block;
+    }
   }
 }
