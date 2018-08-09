@@ -17,9 +17,9 @@ subtitle= "Spécialement conçu pour les professionels de la vue. Dites au revoi
   imageURL = "http://via.placeholder.com/350x350"
   title = "Simple et rapide"
   [[features.bullets]]
-    name = "Entrée de donnée minimale vous sauvera du temps."
+    name = "Entrée de donnée minimale"
   [[features.bullets]]
-    name = "Conservez les données sensibles de vos patients."
+    name = "Conservez les données sensibles"
 
 [[features]]
   imageURL = "http://via.placeholder.com/350x350"
@@ -27,7 +27,7 @@ subtitle= "Spécialement conçu pour les professionels de la vue. Dites au revoi
   [[features.bullets]]
     name = "Restez en contrôle, semaines après semaines"
   [[features.bullets]]
-    name = "Clearly see how your organization is doing"
+    name = "Voyez l'évolution de votre organisation"
   [[features.bullets]]
     name = "Planifiez vos commandes à l'avance"
     
