@@ -5,7 +5,8 @@ subtitle= "Carefully designed for eye care professionnals. No mode angry custome
 
 [[features]]
   imageURL = "http://via.placeholder.com/350x350"
-  title = "Smart SMS notification"
+  title = "Notify your patient on renewal time"
+  tagline = "Smart SMS notification"
   [[features.bullets]]
     name = "Improve customers experience and loyalty"
   [[features.bullets]]
@@ -15,7 +16,8 @@ subtitle= "Carefully designed for eye care professionnals. No mode angry custome
 
 [[features]]
   imageURL = "http://via.placeholder.com/350x350"
-  title = "Fast and simple to use"
+  title = "Fast to fill & user friendly form"
+  tagline = "Simple as 1, 2, 3"
   [[features.bullets]]
     name = "Minimal data entry saves you time"
   [[features.bullets]]
@@ -24,8 +26,7 @@ subtitle= "Carefully designed for eye care professionnals. No mode angry custome
 [[features]]
   imageURL = "http://via.placeholder.com/350x350"
   title = "Weekly report"
-  [[features.bullets]]
-    name = "Stay in control weeks over weeks"
+  tagline = "Stay in control"
   [[features.bullets]]
     name = "Clearly see how your organization is doing"
   [[features.bullets]]
