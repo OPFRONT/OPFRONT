@@ -1,6 +1,6 @@
 +++
 
-title = "Renouvellement de verres de contact simplifié."
+title = "Renouvellement simplifié de lentilles cornéennes."
 subtitle= "Spécialement conçu pour les professionels de la vue. Dites adieu aux mauvaises surprises, aux clients déçus et au personnel frustré."
 headerImg = "/img/clear/header_fr.png"
 headerImgAlt = ""
