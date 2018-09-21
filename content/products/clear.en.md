@@ -2,9 +2,12 @@
 
 title = "Simplified contact lens renewal."
 subtitle= "Carefully designed for eye care professionnals. No mode angry customers and angry staff."
+headerImg = "/img/clear/header_en.png"
+headerImgAlt = ""
 
 [[features]]
-  imageURL = "http://via.placeholder.com/350x350"
+  imageURL = "/img/clear/sms_en.gif"
+  imgAlt = ""
   title = "Notify your patient on renewal time"
   tagline = "Smart SMS notification"
   [[features.bullets]]
@@ -15,7 +18,8 @@ subtitle= "Carefully designed for eye care professionnals. No mode angry custome
     name = "Reduce number of lost renewal"
 
 [[features]]
-  imageURL = "http://via.placeholder.com/350x350"
+  imageURL = "/img/clear/simple_en.png"
+  imgAlt = ""
   title = "Fast to fill & user friendly form"
   tagline = "Simple as 1, 2, 3"
   [[features.bullets]]
@@ -24,7 +28,8 @@ subtitle= "Carefully designed for eye care professionnals. No mode angry custome
     name = "You own patient's data, let's keep it this way."
 
 [[features]]
-  imageURL = "http://via.placeholder.com/350x350"
+  imageURL = "/img/clear/report_en.png"
+  imgAlt = ""
   title = "Weekly report"
   tagline = "Stay in control"
   [[features.bullets]]

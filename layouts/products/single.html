@@ -18,7 +18,7 @@
       <button id="clear-head-start" class="btn get-started" track-click>{{ i18n "btn-start-now"}}</button>
     </div>
     <div class="product-img">
-      <img src="http://via.placeholder.com/600x500" alt="">
+      <img src="{{ .Params.HeaderImg }}" alt="">
     </div>
   </header>
   <!-- Product features -->
@@ -31,9 +31,9 @@
         <div class="row reverse">
       {{ end }}
           <div class="half-col">
-              <div class="paragraph-image">
-                  <img class="img-large" src={{ .imageURL }} alt="">
-              </div>
+            <div class="feature-image">
+              <img class="img-large" src={{ .imageURL }} alt="">
+            </div>
           </div>
           <div class="half-col feature-description">
             <h2>{{ .title }}</h2>

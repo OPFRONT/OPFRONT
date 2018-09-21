@@ -1,10 +1,13 @@
 +++
 
 title = "Renouvellement de verres de contact simplifié."
-subtitle= "Spécialement conçu pour les professionels de la vue. Dites au revoir aux mauvaises surprises, aux clients déçus et au personnel frustré."
+subtitle= "Spécialement conçu pour les professionels de la vue. Dites adieu aux mauvaises surprises, aux clients déçus et au personnel frustré."
+headerImg = "/img/clear/header_fr.png"
+headerImgAlt = ""
 
 [[features]]
-  imageURL = "http://i.stack.imgur.com/SBv4T.gif"
+  imageURL = "/img/clear/sms_fr.gif"
+  imgAlt = ""
   title = "Aviser le patient à quasi échéance"
   tagline = "Alerte SMS intelligente"
   [[features.bullets]]
@@ -12,19 +15,21 @@ subtitle= "Spécialement conçu pour les professionels de la vue. Dites au revoi
   [[features.bullets]]
     name = "Économisez du temps passé au téléphone"
   [[features.bullets]]
-    name = "Réduisez le nombre de renouvellements perdus"
+    name = "Augmentez votre nombre de renouvellements"
 
 [[features]]
-  imageURL = "http://via.placeholder.com/350x350"
-  title = "Formulaire intuitif rapide à remplir"
+  imageURL = "/img/clear/simple_fr.png"
+  imgAlt = ""
+  title = "Formulaire intuitif et rapide à remplir"
   tagline = "Simple comme 1, 2, 3"
   [[features.bullets]]
-    name = "Entrée de donnée minimale"
+    name = "Entrée de données minimale"
   [[features.bullets]]
     name = "Conservez les données sensibles"
 
 [[features]]
-  imageURL = "http://via.placeholder.com/350x350"
+  imageURL = "/img/clear/report_fr.png"
+  imgAlt = ""
   title = "Rapport hebdomadaire"
   tagline = "Restez en contrôle"
   [[features.bullets]]
