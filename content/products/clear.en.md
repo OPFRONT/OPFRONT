@@ -1,7 +1,7 @@
 +++
 
-title = "Simplified contact lens renewal."
-subtitle= "Carefully designed for eye care professionnals. No mode angry customers and angry staff."
+title = "Simplified contact lenses renewal."
+subtitle= "Carefully designed for eye care professionnals. No more angry customers and angry staff."
 headerImg = "/img/clear/header_en.png"
 headerImgAlt = ""
 
